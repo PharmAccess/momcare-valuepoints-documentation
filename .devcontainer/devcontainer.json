@@ -1,0 +1,17 @@
+{
+    "name": "Quarto Dev Container",
+    "image": "quarto-dev/quarto:latest",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "quarto.quarto",
+                "ms-python.python", // optional: for Python support
+                "ms-toolsai.jupyter" // optional: for working with Jupyter notebooks
+            ]
+        }
+    },
+    "postCreateCommand": "quarto check install"
+}

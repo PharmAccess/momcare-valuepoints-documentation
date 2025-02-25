@@ -1,0 +1,46 @@
+---
+title: "Technical Components"
+description: "Key systems used in Phase 1 implementation."
+---
+
+## Interoperability Layer (IOL)
+The IOL serves as the backbone for data exchange between various systems in Phase 1, ensuring secure and efficient communication.
+
+### Key Features
+- Integration with SHR and Carepay.
+- Real-time synchronization of maternal health data.
+
+### Example Configuration
+```json
+{
+  "realm": "mamatoto",
+  "clientId": "openhim-client",
+  "authUrl": "https://keycloak.mamatoto.org/auth"
+}
+```
+
+## Shared Health Record (SHR)
+The SHR acts as the central repository for all maternal healthcare data, enabling longitudinal tracking of patient records.
+
+### Key Features
+- FHIR-compliant data storage.
+- Accessibility for authorized healthcare providers.
+
+### Example Payload
+```json
+{
+  "resourceType": "Patient",
+  "id": "12345",
+  "name": [
+    { "family": "Doe", "given": ["Jane"] }
+  ],
+  "birthDate": "1990-01-01"
+}
+```
+
+## Carepay
+Carepay ensures that financial transactions related to maternal healthcare are linked to clinical data, streamlining payment processes.
+
+### Key Features
+- Automated tracking of financial transactions.
+- Integration with SHR to associate transactions with patient records.
