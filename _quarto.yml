@@ -22,7 +22,9 @@ website:
       - file: docs/dak/dak_overview.qmd
         text: Digital Adaptation Kit
       - file: docs/implementation.qmd
-        text: Implementation
+        text: Tech Specifications
+      - file: docs/software.qmd
+        text: Software
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
         text: GitHub
