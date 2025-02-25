@@ -16,63 +16,64 @@ website:
     pinned: true
     left:
       - href: index.qmd
-        text: Introduction
-      - href: docs/getting_started.qmd
-        text: Getting Started
-      - file: docs/phase1/phase1.qmd
-        text: Beneficiary Enrollment
-      - file: docs/whatsapp.qmd
-        text: WhatsApp
-      - file: docs/rationale.qmd
-        text: Rationale
-      - file: docs/iol/index.qmd
-        text: IOL
-      - file: docs/shr.qmd
-        text: SHR
+        text: Index
+      - href: docs/Background/momcare
+        text: Background
+      - file: docs/implementation.qmd
+        text: Implementation
+      - file: docs/dak.qmd
+        text: Digital Adaptation Kit
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
         text: GitHub
   
   sidebar: 
-    - id: phase1
-      title: Phase 1
+    - id: dak
+      title: Digital Adaptation Kit
       style: "floating"
       search: false
       align: left
       contents: 
-        - section: "Phase 1"
-          href: docs/phase1/phase1.qmd
+        - section: "Digital Adaptation Kit"
+          href: docs/dak/dak_overview.qmd
           contents:
-            # - file: docs/phase1/introduction.qmd
-            #   text: Introduction
-            - file: docs/phase1/workflow.qmd
-              text: Workflow
-            - file: docs/phase1/technical-components.qmd
-              text: Technical Components
-            - file: docs/phase1/data-elements.qmd
-              text: Data Elements
-            - file: docs/phase1/challenges-solutions.qmd
-              text: Challenges and Solutions
-            - file: docs/phase1/outcomes.qmd
-              text: Outcomes
-    - id: iol
-      title: IOL
+            - file: docs/dak/dak_overview.qmd
+              text: DAK overview
+            - file: docs/dak/dashboard.qmd
+              text: Dashboard rules
+            #- file: docs/phase1/technical-components.qmd
+            #  text: Technical Components
+            #- file: docs/phase1/data-elements.qmd
+             # text: Data Elements
+            #- file: docs/phase1/challenges-solutions.qmd
+            #  text: Challenges and Solutions
+            #- file: docs/phase1/outcomes.qmd
+            #  text: Outcomes
+    - id: background
+      title: Background
       style: "floating"
       search: false
       align: left
       contents: 
-        - section: "IOL"
-          href: docs/iol/index.qmd
-          contents:
-            - section: "Challenges"
-              contents: 
-                - file: docs/iol/challenges/keycloak_intergration.qmd
-                - file: docs/iol/challenges/fhir_web.qmd
-            - file: docs/iol/iol-customization/iol-customizations.qmd
-              text: "IOL Customisation"
-            - section: "Instant OpenHIE v2"
-              contents: 
-                - file: docs/iol/instant-v2/instant_v2.qmd
+        - section: "Background"
+          href: docs/background/momcare.qmd
+        contents:
+        - section: "Elements"
+          - file: docs/background/valuepoints.qmd
+            text: ValuePoints
+        - section: "Implementations"
+          - file: docs/background/hanang.qmd
+            text: Hanang
+          #contents:
+            #- section: "ValuePoints"
+              #contents: 
+                #- file: docs/iol/challenges/keycloak_intergration.qmd
+                #- file: docs/iol/challenges/fhir_web.qmd
+           # - file: docs/iol/iol-customization/iol-customizations.qmd
+            #  text: "IOL Customisation"
+            #- section: "Instant OpenHIE v2"
+            #  contents: 
+             #   - file: docs/iol/instant-v2/instant_v2.qmd
          
 
 format:
