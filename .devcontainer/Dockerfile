@@ -1,6 +1,7 @@
 # TODO: update to latest again when connectorx 0.3.4 released
 FROM condaforge/mambaforge:24.3.0-0
 ENV PIP_NO_CACHE_DIR=1
+ENV DEBIAN_FRONTEND=noninteractive
 
 
 # librsvg2-bin is to allow SVG conversion when rendering a PDF file
