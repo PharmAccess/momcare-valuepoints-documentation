@@ -1,0 +1,23 @@
+---
+title: "ValuePoints"
+format: html
+---
+
+
+##### ValuePoints
+
+ValuePoints (VPs) consist of a set of six indicators that reflect the quality of pregnancy care. Each indicator is assigned a number of points and a maximum of 10 points can be obtained for each pregnancy journey. A small financial incentive is earned by the healthcare provider for every point that is obtained. A dashboard ensures that the healthcare provider has real-time insights into their performance on the quality indicators and expected reimbursement as well as a benchmark view. For network managers (like a district or county government), the dashboard also contains an overview page of all the clinics. 
+The ValuePoints are designed for low-resource settings, which informed the following key design decisions
+-	The indicators are adapted from WHO and local guidelines for pregnancy care
+-	The indicators are easy to understand for healthcare providers
+-	Healthcare providers are able to take action to improve these indicators
+-	Limited data is required to calculate the VPs
+-	A small financial incentive is linked to to the VPs so that the intervention can be adopted in settings with limited budget
+
+**The objective of the ValuePoints is to improve quality of pregnancy care.**
+-	The financial incentive allows for healthcare providers to invest in quality improvements. Examples include drug procurement, outreach programs, & 
+-	The insights stimulate behaviour change at the healthcare providers which lead to increased adherence by both healthcare providers and pregnant women to the pregnancy care pathway.
+-	Points can be shared by healthcare providers if a woman attends multiple clinics. This creates a shared sense of responsibility between healthcare providers and promotes collaboration.
+-	Improved data entry leads to better insights and informed decision-making at network level, especially compared to paper-based reporting.  
+
+ValuePoints demonstrate the implementation of an interoperable, value-based approach that connects healthcare providers with data, enabling secondary use of data for improved decision-making, and incentivizing care quality to transform maternal health outcomes.
