@@ -17,12 +17,12 @@ website:
     left:
       - href: index.qmd
         text: Index
-      - href: docs/Background/momcare
+      - href: docs/background/momcare.qmd
         text: Background
+      - file: docs/dak/dak_overview.qmd
+        text: Digital Adaptation Kit
       - file: docs/implementation.qmd
         text: Implementation
-      - file: docs/dak.qmd
-        text: Digital Adaptation Kit
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
         text: GitHub
@@ -57,13 +57,15 @@ website:
       contents: 
         - section: "Background"
           href: docs/background/momcare.qmd
-        contents:
-        - section: "Elements"
-          - file: docs/background/valuepoints.qmd
-            text: ValuePoints
-        - section: "Implementations"
-          - file: docs/background/hanang.qmd
-            text: Hanang
+          contents:
+            - section: "Elements"
+              contents:
+                - file: docs/background/valuepoints.qmd
+                  text: ValuePoints
+            - section: "Implementations"
+              contents:
+                - file: docs/background/hanang.qmd
+                  text: Hanang
           #contents:
             #- section: "ValuePoints"
               #contents: 
