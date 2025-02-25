@@ -1,46 +1,24 @@
 ---
-title: "The MamaToto Digital Adaptation Kit (DAK)"
+title: "The ValuePoints Digital Adaptation Kit (DAK)"
 format: html
 ---
-
-
 ## Background.
 The Digital Assessment Kit (DAK) is a World Health Organization (WHO) initiative designed to streamline the development and implementation of effective digital health solutions in low- and middle-income countries (LMICs). It provides a standardized framework and a set of tools to guide stakeholders through the process of assessing the feasibility, effectiveness, and scalability of digital health interventions.
-
+This document details the project's specifics using the DAK framework.
 The DAK framework emphasizes a user-centered approach, ensuring that digital health solutions address the specific needs and challenges faced by healthcare providers and patients in LMIC settings. By following the DAK guidelines, developers and implementers can increase the likelihood of developing digital health solutions that are sustainable, impactful, and contribute to improved health outcomes.
 
-### Steps.
-#### MamaToto Nairobi: Transforming Maternal Healthcare
-This document outlines the technical requirements for the MamaToto Nairobi project, which leverages technology to improve maternal healthcare. Built on the World Health Organization's DAK framework, it guides the system's design and development.
+### Core Data Elements in the ValuePoints Tool
+The ValuePoints tool leverages a set of data elements captured across the care journey of pregnant women, to enable data-driven quality-improvements.  
+The data elements are captured at various points across the journey. The "WHO SMART ANC Guideliens" provide detailed definitions of data capture processes for these data elements. 
 
-##### The Challenge:
+Here's a categorized overview of some core data elements that are used for the ValuePoints Tool: 
 
-Despite global efforts, maternal health in Nairobi faces a burden of high mortality and morbidity rates.
 
-##### MamaToto's Solution:
 
-MamaToto tackles this challenge through:
 
-1. Enrollment: Self-registration via WhatsApp and clinics.
-2. ata Tracking: Shared Health Record (SHR) for mobile and clinic access.
-3. Improved Care: Data exchange through a Health Information Exchange (HIE).
 
-##### Benefits:
 
-1. Increased antenatal visit attendance.
-2. Optimized resource allocation.
-3. Improved program evaluation (e.g., MomCare).
-
-##### Next Steps:
-
-This document details the project's specifics using the DAK framework.
-
-### Core Data Elements in MamaToto
-The MamaToto project leverages a comprehensive set of data elements to track and manage the health information of pregnant women.  These elements are captured at various points, including enrollment, antenatal visits, and data exchange.
-
-A dedicated "Data Dictionary" appendix within this guide will provide detailed definitions, data types, and how each element is used.
-
-Here's a categorized overview of some core data elements you'll find in the Data Dictionary:
+### mamatoto (for reference)
 
 1. Patient Sociodemographics: Name, date of birth, address, phone number.
 2. Pregnancy Information: Estimated due date, gestational age, pregnancy history.

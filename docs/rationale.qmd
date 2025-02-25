@@ -1,7 +1,17 @@
 ---
-title: "Rationale"
+title: "Narrative"
 format: html
 ---
 
+##### MomCare: PharmAccess Maternal & Child Health Program
 
-##### Rationale.
+The MomCare program aims to drive better outcomes in maternity care with a value-based care model, combining mobile communication, quality support, and innovative financing features.   
+
+MomCare has been active in Tanzania since 2019, supporting over 40,000 pregnancy journeys at 40 clinics. 
+
+- Invested in clinics **to close any gaps in government funding for MNCH services** (incl. antenatal care, delivery, and postnatal care)
+- Tested the impact of **incentives for patients and providers**
+
+**Key finding:** On top of the available government funding, **an investment of 75K TSh per PJ** at public clinics is **sufficient to achieve good-quality pregnancy journeys**
+
+

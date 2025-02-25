@@ -15,13 +15,13 @@ website:
       - href: index.qmd
         text: Introduction
       - href: docs/getting_started.qmd
-        text: Getting Started
+        text: Implementation
       - file: docs/phase1/phase1.qmd
         text: Beneficiary Enrollment
       - file: docs/whatsapp.qmd
         text: WhatsApp
       - file: docs/rationale.qmd
-        text: Rationale
+        text: Narrative
       - file: docs/iol/index.qmd
         text: IOL
       - file: docs/shr.qmd
