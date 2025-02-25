@@ -4,6 +4,9 @@ project:
   resources: 
     - "assets/"
 
+execute: 
+  freeze: auto
+
 website:
   title: ""
   navbar:
