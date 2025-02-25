@@ -5,13 +5,23 @@ format: html
 
 ##### MomCare: PharmAccess Maternal & Child Health Program
 
-The MomCare program aims to drive better outcomes in maternity care with a value-based care model, combining mobile communication, quality support, and innovative financing features.   
-
-MomCare has been active in Tanzania since 2019, supporting over 40,000 pregnancy journeys at 40 clinics. 
-
-- Invested in clinics **to close any gaps in government funding for MNCH services** (incl. antenatal care, delivery, and postnatal care)
-- Tested the impact of **incentives for patients and providers**
-
-**Key finding:** On top of the available government funding, **an investment of 75K TSh per PJ** at public clinics is **sufficient to achieve good-quality pregnancy journeys**
+MomCare is a digital pregnancy care bundle built on the following three pillars:  value-based financing, patient-centered (digital) care delivery and quality improvement tools. It is a set of interventions that together improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost. 
 
 
+##### ValuePoints
+
+ValuePoints (VPs) consist of a set of six indicators that reflect the quality of pregnancy care. Each indicator is assigned a number of points and a maximum of 10 points can be obtained for each pregnancy journey. A small financial incentive is earned by the healthcare provider for every point that is obtained. A dashboard ensures that the healthcare provider has real-time insights into their performance on the quality indicators and expected reimbursement as well as a benchmark view. For network managers (like a district or county government), the dashboard also contains an overview page of all the clinics. 
+The ValuePoints are designed for low-resource settings, which informed the following key design decisions
+-	The indicators are adapted from WHO and local guidelines for pregnancy care
+-	The indicators are easy to understand for healthcare providers
+-	Healthcare providers are able to take action to improve these indicators
+-	Limited data is required to calculate the VPs
+-	A small financial incentive is linked to to the VPs so that the intervention can be adopted in settings with limited budget
+
+**The objective of the ValuePoints is to improve quality of pregnancy care.**
+-	The financial incentive allows for healthcare providers to invest in quality improvements. Examples include drug procurement, outreach programs, & 
+-	The insights stimulate behaviour change at the healthcare providers which lead to increased adherence by both healthcare providers and pregnant women to the pregnancy care pathway.
+-	Points can be shared by healthcare providers if a woman attends multiple clinics. This creates a shared sense of responsibility between healthcare providers and promotes collaboration.
+-	Improved data entry leads to better insights and informed decision-making at network level, especially compared to paper-based reporting.  
+
+ValuePoints demonstrate the implementation of an interoperable, value-based approach that connects healthcare providers with data, enabling secondary use of data for improved decision-making, and incentivizing care quality to transform maternal health outcomes.
