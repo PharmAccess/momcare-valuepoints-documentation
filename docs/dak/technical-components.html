@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Key systems used in Phase 1 implementation.">
 
-<title>Rationale</title>
+<title>Technical Components</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +21,58 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e0c73feee6c50111ee5e59cb68fca519.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-074a08f89041f95c76d55ee19f900815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,8 +111,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -87,32 +122,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Introduction</span></a>
+    <a class="nav-link" href="../../momcare.html"> 
+<span class="menu-text">MomCare</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../docs/getting_started.html"> 
-<span class="menu-text">Getting Started</span></a>
+    <a class="nav-link" href="../../docs/background/valuepoints.html"> 
+<span class="menu-text">ValuePoints</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../docs/phase1/phase1.html"> 
-<span class="menu-text">Beneficiary Enrollment</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../docs/whatsapp.html"> 
-<span class="menu-text">WhatsApp</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../docs/rationale.html" aria-current="page"> 
-<span class="menu-text">Rationale</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../docs/iol/index.html"> 
-<span class="menu-text">IOL</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../docs/shr.html"> 
-<span class="menu-text">SHR</span></a>
+    <a class="nav-link" href="../../docs/mamatoto/background.qmd"> 
+<span class="menu-text">MamaToto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -131,17 +150,41 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#interoperability-layer-iol" id="toc-interoperability-layer-iol" class="nav-link active" data-scroll-target="#interoperability-layer-iol">Interoperability Layer (IOL)</a>
+  <ul class="collapse">
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#example-configuration" id="toc-example-configuration" class="nav-link" data-scroll-target="#example-configuration">Example Configuration</a></li>
+  </ul></li>
+  <li><a href="#shared-health-record-shr" id="toc-shared-health-record-shr" class="nav-link" data-scroll-target="#shared-health-record-shr">Shared Health Record (SHR)</a>
+  <ul class="collapse">
+  <li><a href="#key-features-1" id="toc-key-features-1" class="nav-link" data-scroll-target="#key-features-1">Key Features</a></li>
+  <li><a href="#example-payload" id="toc-example-payload" class="nav-link" data-scroll-target="#example-payload">Example Payload</a></li>
+  </ul></li>
+  <li><a href="#carepay" id="toc-carepay" class="nav-link" data-scroll-target="#carepay">Carepay</a>
+  <ul class="collapse">
+  <li><a href="#key-features-2" id="toc-key-features-2" class="nav-link" data-scroll-target="#key-features-2">Key Features</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Rationale</h1>
+<h1 class="title">Technical Components</h1>
 </div>
 
+<div>
+  <div class="description">
+    Key systems used in Phase 1 implementation.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -156,10 +199,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="rationale." class="level5">
-<h5 class="anchored" data-anchor-id="rationale.">Rationale.</h5>
+<section id="interoperability-layer-iol" class="level2">
+<h2 class="anchored" data-anchor-id="interoperability-layer-iol">Interoperability Layer (IOL)</h2>
+<p>The IOL serves as the backbone for data exchange between various systems in Phase 1, ensuring secure and efficient communication.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li>Integration with SHR and Carepay.</li>
+<li>Real-time synchronization of maternal health data.</li>
+</ul>
+</section>
+<section id="example-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="example-configuration">Example Configuration</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"realm"</span><span class="fu">:</span> <span class="st">"mamatoto"</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"clientId"</span><span class="fu">:</span> <span class="st">"openhim-client"</span><span class="fu">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"authUrl"</span><span class="fu">:</span> <span class="st">"https://keycloak.mamatoto.org/auth"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="shared-health-record-shr" class="level2">
+<h2 class="anchored" data-anchor-id="shared-health-record-shr">Shared Health Record (SHR)</h2>
+<p>The SHR acts as the central repository for all maternal healthcare data, enabling longitudinal tracking of patient records.</p>
+<section id="key-features-1" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-1">Key Features</h3>
+<ul>
+<li>FHIR-compliant data storage.</li>
+<li>Accessibility for authorized healthcare providers.</li>
+</ul>
+</section>
+<section id="example-payload" class="level3">
+<h3 class="anchored" data-anchor-id="example-payload">Example Payload</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"resourceType"</span><span class="fu">:</span> <span class="st">"Patient"</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"id"</span><span class="fu">:</span> <span class="st">"12345"</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"name"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span> <span class="dt">"family"</span><span class="fu">:</span> <span class="st">"Doe"</span><span class="fu">,</span> <span class="dt">"given"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"Jane"</span><span class="ot">]</span> <span class="fu">}</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"birthDate"</span><span class="fu">:</span> <span class="st">"1990-01-01"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="carepay" class="level2">
+<h2 class="anchored" data-anchor-id="carepay">Carepay</h2>
+<p>Carepay ensures that financial transactions related to maternal healthcare are linked to clinical data, streamlining payment processes.</p>
+<section id="key-features-2" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-2">Key Features</h3>
+<ul>
+<li>Automated tracking of financial transactions.</li>
+<li>Integration with SHR to associate transactions with patient records.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
