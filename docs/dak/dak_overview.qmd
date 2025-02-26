@@ -1,7 +1,5 @@
---
-title: "The ValuePoints Digital Adaptation Kit (DAK)"
-format: html
-----
+# Digital Adaptation Kit Overview
+
 ## Background.
 The Digital Assessment Kit (DAK) is a World Health Organization (WHO) initiative designed to streamline the development and implementation of effective digital health solutions in low- and middle-income countries (LMICs). It provides a standardized framework and a set of tools to guide stakeholders through the process of assessing the feasibility, effectiveness, and scalability of digital health interventions.
 This document details the project's specifics using the DAK framework.
@@ -14,7 +12,7 @@ The data elements are captured at various points across the journey. The "WHO SM
 Here's a categorized overview of some core data elements that are used for the ValuePoints Tool: 
 
 
-
+HELLOOOOOO
 
 
 

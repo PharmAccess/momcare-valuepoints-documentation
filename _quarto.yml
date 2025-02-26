@@ -15,66 +15,63 @@ website:
     logo-alt: "PharmAccess"
     pinned: true
     left:
-      - href: index.qmd
-        text: Index
-      - href: docs/Background/momcare
-        text: Background
-      - file: docs/implementation.qmd
-        text: Implementation
-      - file: docs/dak.qmd
-        text: Digital Adaptation Kit
+      - href: momcare.qmd
+        text: MomCare
+      - file: docs/background/valuepoints.qmd
+        text: ValuePoints
+      - file: docs/mamatoto/background.qmd
+        text: MamaToto
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
         text: GitHub
-  
+
   sidebar: 
-    - id: dak
-      title: Digital Adaptation Kit
+    - id: valuepoints
+      title: ValuePoints
       style: "floating"
       search: false
       align: left
       contents: 
+        - section: "Narrative"
+          href: docs/background/valuepoints.qmd
+          contents:
+            - file: docs/background/valuepoints.qmd
+              text: Introduction to ValuePoints
+            - file: docs/background/abbreviations.qmd
+              text: List of Abbreviations
+            - file: docs/background/financialmodel.qmd
+              text: Financial Model
+            - file: docs/background/hanang.qmd
+              text: Implementation in Hanang
         - section: "Digital Adaptation Kit"
           href: docs/dak/dak_overview.qmd
           contents:
             - file: docs/dak/dak_overview.qmd
-              text: DAK overview
-            - file: docs/dak/dashboard.qmd
-              text: Dashboard rules
-            #- file: docs/phase1/technical-components.qmd
-            #  text: Technical Components
-            #- file: docs/phase1/data-elements.qmd
-             # text: Data Elements
-            #- file: docs/phase1/challenges-solutions.qmd
-            #  text: Challenges and Solutions
-            #- file: docs/phase1/outcomes.qmd
-            #  text: Outcomes
-    - id: background
-      title: Background
-      style: "floating"
-      search: false
-      align: left
-      contents: 
-        - section: "Background"
-          href: docs/background/momcare.qmd
-        contents:
-        - section: "Elements"
-          - file: docs/background/valuepoints.qmd
-            text: ValuePoints
-        - section: "Implementations"
-          - file: docs/background/hanang.qmd
-            text: Hanang
-          #contents:
-            #- section: "ValuePoints"
-              #contents: 
-                #- file: docs/iol/challenges/keycloak_intergration.qmd
-                #- file: docs/iol/challenges/fhir_web.qmd
-           # - file: docs/iol/iol-customization/iol-customizations.qmd
-            #  text: "IOL Customisation"
-            #- section: "Instant OpenHIE v2"
-            #  contents: 
-             #   - file: docs/iol/instant-v2/instant_v2.qmd
-         
+              text: Objectives of the DAK
+            - file: docs/dak/healthinterventions.qmd
+              text: Health Interventions
+            - file: docs/dak/personas.qmd
+              text: Generic Personas
+            - file: docs/dak/userscenarios.qmd
+              text: User Scenarios
+            - file: docs/dak/businessprocesses.qmd
+              text: Business Processes
+            - file: docs/dak/data-elements.qmd
+              text: Core Data Elements
+            - file: docs/dak/metrics.qmd
+              text: Indicators and Performance Metrics
+            - file: docs/dak/requirements.qmd
+              text: Functional and non-functional requirements
+        - section: "Technical Specification"
+          href: docs/implementation.qmd
+          contents: 
+            - file: docs/implementation.qmd
+              text: Tech Specifications
+        - section: "Software"
+          href: docs/software.qmd
+          contents: 
+            - file: docs/software.qmd
+              text: Software
 
 format:
   html:
