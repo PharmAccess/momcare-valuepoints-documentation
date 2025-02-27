@@ -1,0 +1,127 @@
+#### User scenarios
+
+User scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:
+
+1.	User scenario for registration of a mother and an ANC visit (**Exemplary summarized process. No interaction with the digital system**).
+2.	User scenario for analysis of historical data in the dashboard.
+3.	User scenario for identifying actionable groups of mothers in the dashboard.
+4.	User scenario for utilization of the dashboard by a district official.
+5.	User scenario for incentives payment based on value points.
+
+**Note with regards to user scenario 1**: As has been stated earlier, this DAK does not intend to focus on the process of registration of patients and execution of ANC touchpoints, as the main digital system described in this DAK (the dashboard) is not used during these processes. Those processes have been described in detail in other sources (LINK 1 EN LINK 2). Availability of the core data elements (LINK TO THAT SECTION) is a prerequisite to the use of the dashboard. As such, the user scenario below is to provide an example of those data elements are collected in a real-life setting.
+
+###### **User scenario for registration of a mother and an ANC visit.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Client:</strong> Leyla<br>
+            <strong>MNCH nurse:</strong> Anne
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            This is Leyla’s first time coming to this health-care facility. The clerk asks about the services she is seeking and directs her to the reproductive and child health (RCH) unit where she is received by an MNCH nurse, Anne.
+            <br><br>
+            Anne asks questions regarding Leyla’s reason for coming to the facility, as well as the date of her last menstrual period (LMP). Anne administers a test to confirm Leyla’s pregnancy. Upon confirming the positive pregnancy test, Anne proceeds to register Leyla on the ANC register and provides her with an RCH card.
+            <br><br>
+            Anne then asks more detailed questions regarding Leyla’s general health status, previous conditions, and obstetric history. Based on the information Leyla provides regarding her LMP, Anne estimates her gestational age. Anne also records Leyla’s weight and height measurements, conducts a physical exam, and prescribes any test as appropriate. 
+            <br><br>
+            Anne registers all the gathered information in the digital system, as well as on the RCH card where she indicates the date for the next follow-up visit.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scenario for analysis of historical data in the dashboard.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Hospital administrator:</strong> Josephine<br>
+            <strong>Quality improvement officer:</strong> Millicent
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            By looking at the graphs of the dashboard, Josephine has seen that historically the hospital’s clients come in late for their first ANC visit (after 13 weeks) and only 50% of the mothers attend 4 ANC visits or more prior to delivery. Together with Millicent, she has developed and implemented a new strategy to improve on these two key MNCH quality metrics. 
+            <br><br>
+            By offering a discount for the first ANC visit for mothers that are less than 13 weeks pregnant, she aims to increase the number of mothers that have a timely first ANC check-up. Also, she has implemented a discount for the 4th ANC visit to mothers that have fulfilled 3 ANC visits at her clinic.
+            <br><br>
+            Every other week, Josephine and Millicent have a look at the dashboard together to see whether the score on both metrics improves over time. Also, they monitor whether there is an effect on any of the other metrics, and how their score compares to the average across the district. 
+            <br><br>
+            Following a period of a consistently improved score for the two metrics, they encounter a sudden change in performance. By checking the historical scores in the graph, they can identify whether this change might be due to a seasonal influence or if there is another matter that needs to be investigated.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scenario for identifying actionable groups of mothers in the dashboard.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Head of MNCH department:</strong> Ruth<br>
+            <strong>Hospital administrator:</strong> Josephine
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            At the start of each week, Ruth looks at the dashboard to check how many mothers are eligible for specific services. This week, she notices that at this moment, the number of mothers enrolled at her clinic which are expected to deliver within the next 2-4 weeks is 25% higher than usual.
+            <br><br>
+            Firstly, she now instructs her team to identify these mothers in the HMIS system and to actively reach out to them to educate the mothers on the process and the benefits of delivery at the facility.
+            <br><br>
+            Secondly, she informs Josephine. Together they can adequately plan for sufficient staffing and resources to accommodate for the expected increase in deliveries for the coming period. Josephine can also inform other clinics to which she can refer mothers in case there is a lack of capacity during a sudden overload of needs for service.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scenario for utilization of the dashboard by a district official.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>District Reproductive and Child Health Coordinator:</strong> Mary<br>
+            <strong>Hospital administrator:</strong> Josephine
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            Mary, a District Reproductive and Child Health Coordinator, is responsible for ensuring that health facilities in her district meet key maternal and child health indicators. To monitor the performance of the health facilities, she logs into a program dashboard that showcases the progress of each facility across different indicators such as early ANC visit, timely ultrasound, facility-based delivery, etc.
+            <br><br>
+            Mary observes that a specific Health Centre has a significantly low number of women completing the early ANC visit (less than 12 weeks). She contacts the health facility in charge, Ali, to flag the facility’s low performance on the early ANC visit indicator. 
+            <br><br>
+            Josephine informs her that the low volume of clients visiting the health facility is due to the remoteness of the surrounding villages. After some discussion, they agree to conduct some outreach services, including setting up a mobile clinic at least once a month in each nearby village. 
+            <br><br>
+            In the next weekly update meeting with the council health management team, Mary shares this proposal and requests for a budget to be allocated from the district health services basket fund to support the clinic’s outreach activities.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scenario for incentives payment based on value points.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Payer (e.g. District Reproductive and Child Health Coordinator):</strong> Mary
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            Mary, a District Reproductive and Child Health Coordinator, is responsible for the financial reward payouts to participating facilities. At the end of each quarter, Mary uses the high-level clinic dashboard to identify how many value points each of the clinics in her district has obtained.
+            <br><br>
+            Mary writes a short report on the performance of each of the clinics, including a specification of the size of the financial reward per clinic. Mary shares this report with the financial team of the district, who makes the payout to the clinics.
+        </td>
+    </tr>
+</table>

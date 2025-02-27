@@ -1,3 +1,55 @@
+# Indicators and performance metrics
+
+This section details indicators and performance metrics that would be aggregated from core data elements identified in Core data elements. The list in the table below is a set of indicators that can be aggregated for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems. 
+
+
+[LET'S DISCUSS THE CONTENT OF THE TABLES FIRST BEFORE LOADING INTO QUARTO]
+
+Definitions for procedures:
+
+- Full ANC profile: Execution of all the following tests/measurements is required to meet the “Full ANC profile”
+  - Vitals check (BP+Pulse+SPo2+RR)
+  - VDRL
+  - Haemoglobine
+  - Blood grouping
+  - HIV screening
+  - Blood pressure
+  - Urinalysis
+
+
+
+
+- ANC: All other ANC visits require execution of at least the following tests / measurements to meet the requirements of an ANC:
+  - Vitals check (BP+Pulse+SPo2+RR)
+  - Urinalysis + PrCr
+  - Haemoglobin (HB)
+
+
+
+
+
+- PNC: All PNC visits require execution of at least the following tests / measurements to meet the requirements of an PNC
+  - Vitals check (BP+Pulse+SPo2+RR)
+
+#### Missed and obtained Value Points
+For each of the 6 indicators, the VP tool will show the number of mothers that have either obtained or missed that service in the current month. The logic used for determining when a service has been obtained or missed is described below. Similarly, the dashboard will show these indicators for historic months, where the same logic holds. The purpose of these indicators is to quickly identify in which areas a clinic has a high or low “Obtained” score, and to be able to compare that to previous months.
+
+[TABLE - LET'S DISCUSS CONTENT FIRST]
+
+#### Eligible Value Points
+For the current month only, the dashboard will also visualise the number of “eligible mothers”.
+
+- Eligible mothers: On this given day, all mothers that are within the right time frame to obtain a service.
+
+The goal of the “Eligible mothers” indicator is to induce action to be taken by the provider. As such, in this logic “Eligible mothers” for the previous months is always 0 because no actions can be taken anymore.
+
+[TABLE - LET'S DISCUSS CONTENT FIRST]
+
+<br>
+<br>
+
+------------------
+-----------------
 --
 title: "Dashboard Business Rules"
 format: html
