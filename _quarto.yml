@@ -33,15 +33,15 @@ website:
       align: left
       contents: 
         - section: "Narrative"
-          href: docs/background/valuepoints.qmd
+          href: docs/narrative/valuepoints.qmd
           contents:
-            - file: docs/background/valuepoints.qmd
+            - file: docs/narrative/valuepoints.qmd
               text: Introduction to ValuePoints
-            - file: docs/background/abbreviations.qmd
+            - file: docs/narrative/abbreviations.qmd
               text: List of Abbreviations
-            - file: docs/background/financialmodel.qmd
+            - file: docs/narrative/financialmodel.qmd
               text: Financial Model
-            - file: docs/background/hanang.qmd
+            - file: docs/narrative/hanang.qmd
               text: Implementation in Hanang
         - section: "Digital Adaptation Kit"
           href: docs/dak/dak_overview.qmd
