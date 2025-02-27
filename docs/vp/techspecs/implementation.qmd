@@ -1,0 +1,18 @@
+## Data Pipeline 
+We provide a **base reporter** that extracts the most important information for the ValuePoints tool from the FHIR resources into standardized tables. These standardized tables serve as a starting point for further analysis.
+
+![](reporting schema.png)
+
+### [Patient timeline table](pipeline.qmd)
+In the ValuePoints tool, the patient’s journey over time is tracked. This means that most important information would be captured with a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. For this reason we implemented a functionality to create the patient timeline table.
+
+Based on the base reports described above, different reports of interest can be created:
+
+#### [Value Points Reporter](metrics.qmd)
+
+Value point reports provide the value points (described in the value points section) obtained by clinics by threathing their patients.
+
+#### [DHIS2 Reporter](dhis2.qmd)
+
+DHIS2 reports provide insight in how many mothers visit a clinic, what conditions occur amongst mothers that visit that clinic, and what procedures mothers obtain in a clinic.
+

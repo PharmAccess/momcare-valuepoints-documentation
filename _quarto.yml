@@ -17,9 +17,9 @@ website:
     left:
       - href: momcare.qmd
         text: MomCare
-      - file: docs/background/valuepoints.qmd
+      - file: docs/vp/narrative/valuepoints.qmd
         text: ValuePoints
-      - file: docs/mamatoto/background.qmd
+      - file: docs/mamatoto/narrative.qmd
         text: MamaToto
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
@@ -33,44 +33,50 @@ website:
       align: left
       contents: 
         - section: "Narrative"
-          href: docs/narrative/valuepoints.qmd
+          href: docs/vp/narrative/valuepoints.qmd
           contents:
-            - file: docs/narrative/valuepoints.qmd
+            - file: docs/vp/narrative/valuepoints.qmd
               text: Introduction to ValuePoints
-            - file: docs/narrative/abbreviations.qmd
+            - file: docs/vp/narrative/abbreviations.qmd
               text: List of Abbreviations
-            - file: docs/narrative/financialmodel.qmd
+            - file: docs/vp/narrative/financialmodel.qmd
               text: Financial Model
-            - file: docs/narrative/hanang.qmd
+            - file: docs/vp/narrative/hanang.qmd
               text: Implementation in Hanang
         - section: "Digital Adaptation Kit"
-          href: docs/dak/dak_overview.qmd
+          href: docs/vp/dak/dak_overview.qmd
           contents:
-            - file: docs/dak/dak_overview.qmd
+            - file: docs/vp/dak/dak_overview.qmd
               text: Objectives of the DAK
-            - file: docs/dak/healthinterventions.qmd
+            - file: docs/vp/dak/healthinterventions.qmd
               text: Health Interventions
-            - file: docs/dak/personas.qmd
+            - file: docs/vp/dak/personas.qmd
               text: Generic Personas
-            - file: docs/dak/userscenarios.qmd
+            - file: docs/vp/dak/userscenarios.qmd
               text: User Scenarios
-            - file: docs/dak/businessprocesses.qmd
+            - file: docs/vp/dak/businessprocesses.qmd
               text: Business Processes
-            - file: docs/dak/data-elements.qmd
+            - file: docs/vp/dak/data-elements.qmd
               text: Core Data Elements
-            - file: docs/dak/metrics.qmd
+            - file: docs/vp/dak/metrics.qmd
               text: Indicators and Performance Metrics
-            - file: docs/dak/requirements.qmd
+            - file: docs/vp/dak/requirements.qmd
               text: Functional and non-functional requirements
         - section: "Technical Specification"
-          href: docs/implementation.qmd
+          href: docs/vp/techspecs/implementation.qmd
           contents: 
-            - file: docs/implementation.qmd
-              text: Tech Specifications
+            - file: docs/vp/techspecs/implementation.qmd
+              text: General Specifications
+            - file: docs/vp/techspecs/pipeline.qmd
+              text: Base Tables
+            - file: docs/vp/techspecs/metrics.qmd
+              text: ValuePoint Dashboards
+            - file: docs/vp/techspecs/dhis2.qmd
+              text: DHIS2 Reports
         - section: "Software"
-          href: docs/software.qmd
+          href: docs/vp/software.qmd
           contents: 
-            - file: docs/software.qmd
+            - file: docs/vpsoftware.qmd
               text: Software
 
 format:
@@ -80,7 +86,7 @@ format:
       - theme/styles.scss
     grid: 
       gutter-width: 0.8rem
-      sidebar-width: 250px
-      body-width: 900px
-      margin-width: 300px
-    toc: true
+      sidebar-width: 300px
+      body-width: 1200px
+      margin-width: 100px
+    toc: false
