@@ -1,0 +1,16 @@
+# Health interventions
+
+#### WHO universal health coverage interventions referenced in this DAK 
+This “ValuePoints – Smart incentives to improve pregnancy journeys” intervention falls within the Maternal and Newborn Health programme area of the [WHO UHC compendium](https://www.who.int/universal-health-coverage/compendium). As this intervention is aimed at improvement of clinic level performance, and not at individual patient interactions / procedures, it is not specified towards any of the specific interventions within the Maternal and newborn health program. 
+
+#### Digital health interventions covered in this DAK
+This “ValuePoints – Smart incentives to improve pregnancy journeys” intervention contributes to the topic “4.1 Data management” in the [WHO Classification of digital interventions, services and applications in health](https://iris.who.int/bitstream/handle/10665/373581/9789240081949-eng.pdf?sequence=1&isAllowed=y). 
+Specifically, it addresses “4.1.3 Data visualisation” and “4.1.4 Automated analysis of data to generate new information or predictions on future events”.
+
+#### L1 guidelines, recommendations and guidance
+The DAKs are intended to reflect health recommendations and content that has already been published in guidelines and guidance documents. The health content and interventions for this DAK are based on the following documents.
+
+-	[WHO recommendations on antenatal care for a positive pregnancy experience.](https://www.who.int/publications/i/item/9789241549912)
+-	[Digital Adaptation Kit for Antenatal Care: Operational Requirements for Implementing WHO Recommendations in Digital Systems.](https://www.aidsdatahub.org/sites/default/files/resource/who-digital-adaptation-kit-antenatal-care-2021.pdf) 
+-	XX
+-	[COMMENT PS: IN CASE WE DO NOT ADD ANY OTHER REFERENCES, THIS SECTION FEELS A BIT REDUNDENT GIVEN THE LINKS ARE PROVIDED ABOVE]

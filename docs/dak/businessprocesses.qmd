@@ -1,0 +1,8 @@
+# Generic business processes and workflows
+
+A business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area. Workflows are a visual representation of the progression of activities (tasks, events, interactions) that are performed within the business process. The workflow provides a “story” for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders and engineers. This DAK focuses on key business processes conducted by the personas as part of the Value points intervention.
+
+**Note**: This DAK does not intend to focus on the process of registration of patients and execution of ANC touchpoints, as the main digital system described in this DAK (the dashboard) is not used during these processes. The corresponding business process and workflows have been described in the “Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems”. 
+
+[TABLES TO BE INSERTED]
+
