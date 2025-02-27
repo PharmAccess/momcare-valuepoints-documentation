@@ -265,11 +265,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#patients-per-trimester" id="toc-patients-per-trimester" class="nav-link active" data-scroll-target="#patients-per-trimester">Patients per trimester</a></li>
+  <li><a href="#indicators-and-performance-metrics" id="toc-indicators-and-performance-metrics" class="nav-link active" data-scroll-target="#indicators-and-performance-metrics">Indicators and performance metrics</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">——————</a>
+  <ul class="collapse">
+  <li><a href="#patients-per-trimester" id="toc-patients-per-trimester" class="nav-link" data-scroll-target="#patients-per-trimester">Patients per trimester</a></li>
   <li><a href="#obtained-points" id="toc-obtained-points" class="nav-link" data-scroll-target="#obtained-points">Obtained Points</a></li>
   <li><a href="#missed-value-points" id="toc-missed-value-points" class="nav-link" data-scroll-target="#missed-value-points">Missed Value Points</a></li>
   <li><a href="#attainable-value-points" id="toc-attainable-value-points" class="nav-link" data-scroll-target="#attainable-value-points">Attainable Value Points</a></li>
   <li><a href="#shared-value-points" id="toc-shared-value-points" class="nav-link" data-scroll-target="#shared-value-points">Shared Value POints</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -279,6 +285,50 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="indicators-and-performance-metrics" class="level1">
+<h1>Indicators and performance metrics</h1>
+<p>This section details indicators and performance metrics that would be aggregated from core data elements identified in Core data elements. The list in the table below is a set of indicators that can be aggregated for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems.</p>
+<p>[LET’S DISCUSS THE CONTENT OF THE TABLES FIRST BEFORE LOADING INTO QUARTO]</p>
+<p>Definitions for procedures:</p>
+<ul>
+<li>Full ANC profile: Execution of all the following tests/measurements is required to meet the “Full ANC profile”
+<ul>
+<li>Vitals check (BP+Pulse+SPo2+RR)</li>
+<li>VDRL</li>
+<li>Haemoglobine</li>
+<li>Blood grouping</li>
+<li>HIV screening</li>
+<li>Blood pressure</li>
+<li>Urinalysis</li>
+</ul></li>
+<li>ANC: All other ANC visits require execution of at least the following tests / measurements to meet the requirements of an ANC:
+<ul>
+<li>Vitals check (BP+Pulse+SPo2+RR)</li>
+<li>Urinalysis + PrCr</li>
+<li>Haemoglobin (HB)</li>
+</ul></li>
+<li>PNC: All PNC visits require execution of at least the following tests / measurements to meet the requirements of an PNC
+<ul>
+<li>Vitals check (BP+Pulse+SPo2+RR)</li>
+</ul></li>
+</ul>
+<section id="missed-and-obtained-value-points" class="level4">
+<h4 class="anchored" data-anchor-id="missed-and-obtained-value-points">Missed and obtained Value Points</h4>
+<p>For each of the 6 indicators, the VP tool will show the number of mothers that have either obtained or missed that service in the current month. The logic used for determining when a service has been obtained or missed is described below. Similarly, the dashboard will show these indicators for historic months, where the same logic holds. The purpose of these indicators is to quickly identify in which areas a clinic has a high or low “Obtained” score, and to be able to compare that to previous months.</p>
+<p>[TABLE - LET’S DISCUSS CONTENT FIRST]</p>
+</section>
+<section id="eligible-value-points" class="level4">
+<h4 class="anchored" data-anchor-id="eligible-value-points">Eligible Value Points</h4>
+<p>For the current month only, the dashboard will also visualise the number of “eligible mothers”.</p>
+<ul>
+<li>Eligible mothers: On this given day, all mothers that are within the right time frame to obtain a service.</li>
+</ul>
+<p>The goal of the “Eligible mothers” indicator is to induce action to be taken by the provider. As such, in this logic “Eligible mothers” for the previous months is always 0 because no actions can be taken anymore.</p>
+<p>[TABLE - LET’S DISCUSS CONTENT FIRST]</p>
+<p><br> <br></p>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">——————</h2>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -316,6 +366,8 @@ ul.task-list li input[type="checkbox"] {
 The date for these shared value points is defined as the date that the procedure was performed. For the 4ANC and 2PNC criteria, points are only assigned if the mother had at least 4 ANC visits or at least 2 PNC visits in total. For further visits, no value points are obtained.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
