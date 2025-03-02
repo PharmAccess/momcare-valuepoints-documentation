@@ -19,7 +19,7 @@ website:
         text: MomCare
       - file: docs/vp/narrative/valuepoints.qmd
         text: ValuePoints
-      - file: docs/mamatoto/narrative/rationale.qmd
+      - file: docs/mamatoto/narrative/index.qmd
         text: MamaToto
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
@@ -78,7 +78,32 @@ website:
           contents: 
             - file: docs/vpsoftware.qmd
               text: Software
-
+sidebar:
+  - id: mamatoto
+    title: MamaToto
+    style: "floating"
+    search: false
+    align: left
+    contents: 
+      - section: "Narrative"
+        href: docs/mamatoto/narrative/index.qmd
+        contents:
+           - file: docs/mamatoto/narrative/index.qmd
+             text: Introduction to MamaToto
+           - file: docs/mamatoto/narrative/shr.qmd
+             text: Shared Health Record
+           - file: docs/mamatoto/narrative/whatsapp.qmd
+             text: WhatsApp Enrolment
+      - section: "Digital Adaptation Kit"
+        href: docs/mamatoto/dak/dak.qmd
+        contents:
+           - file: docs/mamatoto/dak/dak.qmd
+             text: MamaToto DAK
+      - section: "Technical Specification"
+        href: docs/mamatoto/techspecs/gettingstarted.qmd
+        contents: 
+           - file: docs/mamatoto/techspecs/gettingstarted.qmd
+             text: General Specifications
 format:
   html:
     theme:
