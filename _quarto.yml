@@ -19,7 +19,7 @@ website:
         text: MomCare
       - file: docs/vp/narrative/valuepoints.qmd
         text: ValuePoints
-      - file: docs/mamatoto/narrative.qmd
+      - file: docs/mamatoto/narrative/rationale.qmd
         text: MamaToto
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
