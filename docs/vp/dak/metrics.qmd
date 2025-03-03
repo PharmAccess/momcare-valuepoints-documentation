@@ -1,13 +1,27 @@
 # Indicators and performance metrics
+This chapter details indicators and performance metrics that would be aggregated from core data elements for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems. 
 
-This section details indicators and performance metrics that would be aggregated from core data elements identified in Core data elements. The list in the table below is a set of indicators that can be aggregated for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems. 
+#### Mothers per trimester
+The mothers per trimester table shows the number of mothers that have visited the clinic and have an active journey (within EDD + four weeks) per month. Mothers are shown that have visited the clinic at least once during their journey. AS a mother can fall in two trimesters within one month, we have decided to show the status at the 1st of the month.
+Table: Business rules for the stratification of care users across trimesters.
 
+| Trimester  | Start  | End  |
+|------------|--------|------------------------------|
+| First      | Week 1 | Week 12                      |
+| Second     | Week 13 | Week 26                     |
+| Third      | Week 27 | Week 42 or date of delivery |
+| Past EDD   | Week 42 or date of delivery | Week 46 |
 
-[LET'S DISCUSS THE CONTENT OF THE TABLES FIRST BEFORE LOADING INTO QUARTO]
+<br>
+
+#### Obtained, missed and Attainable points
+The list in the table below is a set of indicators that can be used to calculate the value points obtained and missed by a provider, which can be visualised in a dashboard. For these same indicators, the attainable points show the potential  points that can still be obtained by a clinic in that month.  
+
+![](IndicatorTable.png)
 
 Definitions for procedures:
 
-- Full ANC profile: Execution of all the following tests/measurements is required to meet the “Full ANC profile”
+- Full ANC profile: Execution of all the following tests/measurements is required to meet the “Full ANC profile” during the first ANC.
   - Vitals check (BP+Pulse+SPo2+RR)
   - VDRL
   - Haemoglobine
@@ -16,87 +30,78 @@ Definitions for procedures:
   - Blood pressure
   - Urinalysis
 
-
-
-
 - ANC: All other ANC visits require execution of at least the following tests / measurements to meet the requirements of an ANC:
   - Vitals check (BP+Pulse+SPo2+RR)
   - Urinalysis + PrCr
   - Haemoglobin (HB)
 
 
-
-
-
 - PNC: All PNC visits require execution of at least the following tests / measurements to meet the requirements of an PNC
   - Vitals check (BP+Pulse+SPo2+RR)
 
-#### Missed and obtained Value Points
+
+###### Obtained value points
+There is a limited time in which the different value points can be obtained per patient. The cut-off date and the total number of value points that can be obtained for each topic are displayed in the graph below. The week of pregnancy (gestational age) for a mother is calculated based on her Expected Delivery Date (EDD). In the care process, the EDD is estimated by adding 280 days to the first day of the last menstrual period (LMP).
+
+| Criterium                                  | Points | Cut-off date |
+|--------------------------------------------|--------|-------------|
+| ANC profile                                | 1      | 12 weeks    |
+| Early ANC                                  | 1      | 24 weeks    |
+| Ultrasound before end of second trimester  | 1      | 24 weeks    |
+| 4ANC                                       | 2      | 42 weeks    |
+| Facility Based Delivery                    | 4      | 42 weeks    |
+| 2PNCs                                      | 1      | 44 weeks    |
+
+<br>
+
+###### Missed value points
+If a mother does not obtain a value point before the cut-off date, we consider this value point as missed. Missed value points are linked to a missed date. The missed date is calculated based on the EDD and the cut-off weeks.
+A mother can go to different clinics during her journey. At this point, we only calculate missed value points for the clinic where the mother had her first visit.
+<br>
+
+###### Attainable Value Points
+Attainable points are only calculated for the current date and defined for any topic that has not yet been obtained, but where the current date is earlier than the missed date.
+Attainable points are only given to the clinic where the mother had her first visit.
+<br>
+
+###### Shared Value Points
+A pregnant woman can visit different clinics. She can decide to do this for various reasons, including referral for certain medical conditions. To promote continuity of care, the concept of shared value points was introduced.
+
+Value points can be shared for:
+
+- Ultrasound
+- 4 ANC
+- Facility Based Delivery
+- 2 PNC
+
+For Ultrasound and Facility Based DElivery the value points are always shared between the clinic where the procedure took place (procedure clinic) and the clinic where the first visit took place (enrollment clinic). The value points are shared as follows:
+
+| Criterium                 | Procedure Clinic | Enrollment Clinic |
+|---------------------------|-----------------|-------------------|
+| Ultrasound               | 0.75            | 0.25              |
+| Facility Based Delivery  | 3.00            | 1.00              |
+| 4ANC*                    | 0.5 per visit   |                   |
+| 2PNC*                    | 0.5 per visit   |                   |
+
+The date for these shared value points is defined as the date that the procedure was performed.
+For the 4ANC and 2PNC criteria, points are only assigned if the mother had at least 4 ANC visits or at least 2 PNC visits in total. For further visits, no value points are obtained.
+
+
+<br>
+<br>
+
+[COMMENT PS: BELOW IS THE DOCUMENTATION WE USED FOR THE SAFECARE DASHBOARD. A BIT MORE ELABORATE, BUT LESS FOCUSSED ON THE VALUE POINTS, MORE ON THE DASHBOARD. THAT ALSO WORKED SLIGHTLY DIFFERENT. WHICH DO WE WANT TO INCLUDE?]
+
+###### Missed and obtained Value Points
 For each of the 6 indicators, the VP tool will show the number of mothers that have either obtained or missed that service in the current month. The logic used for determining when a service has been obtained or missed is described below. Similarly, the dashboard will show these indicators for historic months, where the same logic holds. The purpose of these indicators is to quickly identify in which areas a clinic has a high or low “Obtained” score, and to be able to compare that to previous months.
 
-[TABLE - LET'S DISCUSS CONTENT FIRST]
+![](Missed_obtained.png)
 
-#### Eligible Value Points
+###### Eligible Value Points
 For the current month only, the dashboard will also visualise the number of “eligible mothers”.
 
 - Eligible mothers: On this given day, all mothers that are within the right time frame to obtain a service.
 
 The goal of the “Eligible mothers” indicator is to induce action to be taken by the provider. As such, in this logic “Eligible mothers” for the previous months is always 0 because no actions can be taken anymore.
 
-[TABLE - LET'S DISCUSS CONTENT FIRST]
-
-<br>
-<br>
-
-------------------
------------------
---
-title: "Dashboard Business Rules"
-format: html
-----
-
-#### Dashboard elements business rules
-### Patients per trimester
-The mothers per trimester table shows the number of mothers that have visited the clinic and have an active journey (within EDD + four weeks) per month. Mothers are shown that have visited the clinic at least once during their journey. AS a mother can fall in two trimesters within one month, we have decided to show the status at the 1st of the month.
-Table: Business rules for the stratification of care users across trimesters.
-
-TRIMESTER	START	END
-FIRST	week 1	week 12
-SECOND	week 13	week 26
-THIRD	week 27	week 42 or date of delivery
-PAST EDD	week 42 or date of delivery	week 46
-
-### Obtained Points
-There is a limited time in which the different value points can be obtained per patient. The cut-off date and the total number of value points that can be obtained for each topic are displayed in the graph below. The week of pregnancy (gestational age) for a mother is calculated based on her Expected Delivery Date (EDD). In the care process, the EDD is estimated by adding 280 days to the first day of the last menstrual period (LMP).
-Criterium	Points	Cut-off-date
-ANC profile	1	12 weeks
-Early ANC	1	24 weeks
-Ultrasound before end of second trimester	1	24 weeks
-4ANC	2	42 weeks
-Facility Based Delivery	4	42 weeks
-2PNCs	1	44 weeks
-The date assigned to an obtained ValuePoint is the date that a procedure was performed.
-
-### Missed Value Points
-If a mother does not obtain a value point before the cut-off date, we consider this value point as missed. Missed value points are linked to a missed date. The missed date is calculated based on the EDD and the cut-off weeks.
-A mother can go to different clinics during her journey. At this point, we only calculate missed value points for the clinic where the mother had her first visit.
-
-### Attainable Value Points
-Attainable points are only calculated for the current date and defined for any topic that has not yet been obtained, but where the current date is earlier than the missed date.
-Attainable points are only given to the clinic where the mother had her first visit.
-
-### Shared Value POints
-A pregnant woman can visit different clinics. She can decide to do this for various reasons, including referral for certain medical conditions. To promote continuity of care, the concept of shared value points was introduced.
-Value points can be shared for:
-•	Ultrasound
-•	4 ANC
-•	Facility Based Delivery
-•	2 PNC
-For Ultrasound and Facility Based DElivery the value points are always shared between the clinic where the procedure took place (procedure clinic) and the clinic where the first visit took place (enrollment clinic). The value points are shared as follows:
-CRITERIUM	PROCEDURE CLINIC	ENROLLMENT CLINIC
-ULTRASOUND	0.75	0.25
-FACILITY BASED DELIVERY	3	1
-4ANC*	0.5 per visit	
-2PNC*	0.5 per visit	
-The date for these shared value points is defined as the date that the procedure was performed.
-For the 4ANC and 2PNC criteria, points are only assigned if the mother had at least 4 ANC visits or at least 2 PNC visits in total. For further visits, no value points are obtained.
+![](Eligible.png)
