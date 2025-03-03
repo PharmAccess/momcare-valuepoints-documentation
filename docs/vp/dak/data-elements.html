@@ -287,20 +287,21 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="core-data-elements" class="level1">
 <h1>Core data elements</h1>
-<p>This section outlines the minimum set of data needed to use the Value Points tool. This data set can be used on any software system and lists the data elements relevant for service delivery and for populating indicators and performance metrics. Figure [XXX] is a schematic drawing that describes process of data capture, calculation of new datapoints, data transformation of developing performance metrics and calculation of performance indicators.</p>
-<p>
-<span style="color: green; font-weight: bold;">Highlighted in green</span> are the data elements which are expected to be available for the implementation of the VP tool. These are obtained during the process of registration of the mother and at each following MNCH visit (ANCs, delivery, PNCs). These required data elements are a subset of the full list of data elements described in <a href="https://www.who.int/publications/i/item/9789240020306">“Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems”</a>.These required data elements are listed in the table below.
-</p>
-<p>
-<span style="color: purple; font-weight: bold;">Highlighted in purple</span> are data elements calculated based on the core data elements to construct the patient information table (Fig. x) and patient timeline table (Fig X.). These calculated data elements are listed in table 9.
-</p>
-<p>
-<span style="color: orange; font-weight: bold;">Highlighted in orange</span> is the step where the value points per patient are calculated. The data elements added to facilitate this data transformation are excluded from this DAK (and thus not in table 9) as they are not relevant for the end-user. More details on these this step can be found in L3.
-</p>
-<p>
-<span style="color: #d4af37; font-weight: bold;">Highlighted in Yellow</span> are the data elements calculated for the risk table and for allocation of value points to clinics. This is further described in section 8.
-</p>
+<p>This section outlines the minimum set of data needed to use the Value Points tool. This data set can be used on any software system and lists the data elements relevant for service delivery and for populating indicators and performance metrics. Figure XX is a schematic drawing that describes process of data capture, calculation of new datapoints, data transformation of developing performance metrics and calculation of performance indicators.</p>
 <p><img src="Data_SourceToDashboard.png" class="img-fluid"></p>
+<p>
+<span style="color: green; font-weight: bold;">Highlighted in green</span> are the data elements which are expected to be available for the implementation of the VP tool. These are obtained during the process of registration of the mother and at each following MNCH visit (ANCs, delivery, PNCs). These required data elements are a subset of the full list of data elements described in <a href="https://www.who.int/publications/i/item/9789240020306">“Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems”</a>. These required data elements are listed in the table Core data elements – One time collection at registration and Core data elements – Repeat collection during each visit.
+</p>
+<p>
+<span style="color: purple; font-weight: bold;">Highlighted in purple</span> are data elements calculated based on the core data elements to construct the patient information table (Fig. x) and patient timeline table (Fig X.). These calculated data elements are listed in table Calculated data elements.
+</p>
+<p>
+<span style="color: orange; font-weight: bold;">Highlighted in orange</span> is the step where the value points per patient are calculated. The data elements added to facilitate this data transformation are excluded from this DAK (and thus not in table XX) as they are not relevant for the end-user. More details on these this step can be found in L3.
+</p>
+<p>
+<span style="color: #d4af37; font-weight: bold;">Highlighted in Yellow</span> are the data elements calculated for the risk table and for allocation of value points to clinics. This is further described in “Indicators and performance metrics” section.
+</p>
+<p><br> <img src="Data_SourceToDashboard.png" class="img-fluid"></p>
 <section id="core-data-elements-one-time-collection-at-registration" class="level6">
 <h6 class="anchored" data-anchor-id="core-data-elements-one-time-collection-at-registration">Core data elements – One time collection at registration</h6>
 <table style="border-collapse: collapse; width: 100%;">
@@ -609,8 +610,8 @@ TBD Observation result in text format. So positive/negative for a test, or a num
 </table>
 <p><br></p>
 </section>
-<section id="calculated-data-elements" class="level4">
-<h4 class="anchored" data-anchor-id="calculated-data-elements">Calculated data elements</h4>
+<section id="calculated-data-elements-for-the-patient-timeline-table-and-patient-information-table" class="level6">
+<h6 class="anchored" data-anchor-id="calculated-data-elements-for-the-patient-timeline-table-and-patient-information-table">Calculated data elements for the patient timeline table and patient information table</h6>
 <pre><code>&lt;td style="padding: 12px;"&gt;&lt;/td&gt;</code></pre><table style="border-collapse: collapse; width: 100%;">
 <thead style="background-color: #2F64B5; color: white;">
 <tr>
@@ -701,17 +702,16 @@ Gestational week on the date of the event.
 
 
 <p><br></p>
+</section>
 <section id="the-patient-timeline-table" class="level6">
 <h6 class="anchored" data-anchor-id="the-patient-timeline-table">The patient timeline table</h6>
-<p>To use the VP tool, the patient’s journey over time needs to be tracked. This means that most important information is captured in a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. This is the patient timeline table (Fig. X). The patient_timeline table is created based on the following FHIR resources: Patient, Procedure, Condition, Encounter, Observation, Organization</p>
-<p>[IMAGE INSERT]</p>
+<p>To use the VP tool, the patient’s journey over time needs to be tracked. This means that most important information is captured in a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. This is the patient timeline table (Fig. X). The patient timeline table is created based on the following FHIR resources: Patient, Procedure, Condition, Encounter, Observation, Organization.</p>
+<p><img src="PatientTimeline.png" class="img-fluid"></p>
 <p>Each row in the table represents an unique event that occurred for the patient, for example the diagnosis of a condition or provision of a procedure. As such, multiple events can occur during a single visit of a mother to a clinic. Events are organised in chronological order. The data elements within the green box are part of the core data elements, meaning they are expected to be obtained during the registration process or during a visit. The data elements within the purple box are calculated based on the core data elements.</p>
 </section>
 <section id="the-patient-information-table" class="level6">
 <h6 class="anchored" data-anchor-id="the-patient-information-table">The patient information table</h6>
-<p>The patient information table mostly shows data elements part of the core data elements list. Based on these data elements, what is calculated in the age at enrolment.</p>
-<p>[IMAGE INSERT]</p>
-</section>
+<p>The patient information table mostly shows data elements part of the core data elements list. Based on these data elements, what is calculated in the age at enrolment. The data elements within the purple box are calculated based on the core data elements. <img src="PatientInfo.png" class="img-fluid"></p>
 </section>
 <section id="additional-considerations-for-adapting-the-data-dictionary" class="level4">
 <h4 class="anchored" data-anchor-id="additional-considerations-for-adapting-the-data-dictionary">Additional considerations for adapting the data dictionary</h4>
