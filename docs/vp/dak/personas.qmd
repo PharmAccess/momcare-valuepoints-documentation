@@ -24,7 +24,7 @@ The targeted personas for this DAK are the end users of the dashboard, such as d
 
 #### Additional considerations for contextualizing personas
 
-[COMMENT PS: TO DECIDE IS WE NEED THIS SECTION]
+[COMMENT PS: TO DECIDE IF WE NEED THIS SECTION]
 
 Although this section provides an overview of the generic roles of the targeted personas, it will be important to contextualize these personas to your setting. The generic personas described in Tables 3 and 4 can be supplemented by reflecting on these additional considerations:
 
