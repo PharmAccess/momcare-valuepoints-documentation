@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Key systems used in Phase 1 implementation.">
 
-<title>MomCare</title>
+<title>Technical Components</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +21,58 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-eebe519ede767c7ce66909653bd01df0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-eebe519ede767c7ce66909653bd01df0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,8 +111,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -87,15 +122,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./momcare.html" aria-current="page"> 
+    <a class="nav-link" href="../../../momcare.html"> 
 <span class="menu-text">MomCare</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs/vp/narrative/valuepoints.html"> 
+    <a class="nav-link" href="../../../docs/vp/narrative/valuepoints.html"> 
 <span class="menu-text">ValuePoints</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./docs/mamatoto/narrative/index.html"> 
+    <a class="nav-link" href="../../../docs/mamatoto/narrative/index.html"> 
 <span class="menu-text">MamaToto</span></a>
   </li>  
 </ul>
@@ -121,9 +156,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MomCare</h1>
+<h1 class="title">Technical Components</h1>
 </div>
 
+<div>
+  <div class="description">
+    Key systems used in Phase 1 implementation.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -138,12 +178,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="momcare-pharmaccess-maternal-child-health-program" class="level5">
-<h5 class="anchored" data-anchor-id="momcare-pharmaccess-maternal-child-health-program">MomCare: PharmAccess Maternal &amp; Child Health Program</h5>
-<p>MomCare is a digital pregnancy care bundle built on the following three pillars: value-based financing, patient-centered (digital) care delivery and quality improvement tools. It is a set of interventions that together improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost.</p>
-<p>The table below provides an overview of all the interventions in the MomCare bundle for reference. This guideline covers specifics needed to implement the ValuePoints. Additional guidelines will be made available for other interventions over time to support complete implementation of the MomCare principles.</p>
+<section id="interoperability-layer-iol" class="level2">
+<h2 class="anchored" data-anchor-id="interoperability-layer-iol">Interoperability Layer (IOL)</h2>
+<p>The IOL serves as the backbone for data exchange between various systems in Phase 1, ensuring secure and efficient communication.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li>Integration with SHR and Carepay.</li>
+<li>Real-time synchronization of maternal health data.</li>
+</ul>
+</section>
+<section id="example-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="example-configuration">Example Configuration</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"realm"</span><span class="fu">:</span> <span class="st">"mamatoto"</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"clientId"</span><span class="fu">:</span> <span class="st">"openhim-client"</span><span class="fu">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"authUrl"</span><span class="fu">:</span> <span class="st">"https://keycloak.mamatoto.org/auth"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="shared-health-record-shr" class="level2">
+<h2 class="anchored" data-anchor-id="shared-health-record-shr">Shared Health Record (SHR)</h2>
+<p>The SHR acts as the central repository for all maternal healthcare data, enabling longitudinal tracking of patient records.</p>
+<section id="key-features-1" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-1">Key Features</h3>
+<ul>
+<li>FHIR-compliant data storage.</li>
+<li>Accessibility for authorized healthcare providers.</li>
+</ul>
+</section>
+<section id="example-payload" class="level3">
+<h3 class="anchored" data-anchor-id="example-payload">Example Payload</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"resourceType"</span><span class="fu">:</span> <span class="st">"Patient"</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"id"</span><span class="fu">:</span> <span class="st">"12345"</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"name"</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span> <span class="dt">"family"</span><span class="fu">:</span> <span class="st">"Doe"</span><span class="fu">,</span> <span class="dt">"given"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"Jane"</span><span class="ot">]</span> <span class="fu">}</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"birthDate"</span><span class="fu">:</span> <span class="st">"1990-01-01"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="carepay" class="level2">
+<h2 class="anchored" data-anchor-id="carepay">Carepay</h2>
+<p>Carepay ensures that financial transactions related to maternal healthcare are linked to clinical data, streamlining payment processes.</p>
+<section id="key-features-2" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-2">Key Features</h3>
+<ul>
+<li>Automated tracking of financial transactions.</li>
+<li>Integration with SHR to associate transactions with patient records.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

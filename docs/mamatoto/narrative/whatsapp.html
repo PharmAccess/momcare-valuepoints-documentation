@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Detailed overview of the WhatsApp integration in the Mamatoto project.">
 
-<title>metrics</title>
+<title>WhatsApp</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +21,58 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-074a08f89041f95c76d55ee19f900815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-eebe519ede767c7ce66909653bd01df0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,15 +104,15 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -87,15 +122,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../momcare.html"> 
+    <a class="nav-link" href="../../../momcare.html"> 
 <span class="menu-text">MomCare</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../docs/background/valuepoints.html" aria-current="page"> 
+    <a class="nav-link" href="../../../docs/vp/narrative/valuepoints.html"> 
 <span class="menu-text">ValuePoints</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../docs/mamatoto/background.qmd"> 
+    <a class="nav-link" href="../../../docs/mamatoto/narrative/index.html"> 
 <span class="menu-text">MamaToto</span></a>
   </li>  
 </ul>
@@ -110,260 +145,98 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/dak/dak_overview.html">Digital Adaptation Kit</a></li><li class="breadcrumb-item"><a href="../../docs/dak/metrics.html">Indicators and Performance Metrics</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../docs/background/valuepoints.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Narrative</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/background/valuepoints.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to ValuePoints</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/background/abbreviations.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">List of Abbreviations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/background/financialmodel.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Financial Model</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/background/hanang.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Implementation in Hanang</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../docs/dak/dak_overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Digital Adaptation Kit</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/dak_overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Objectives of the DAK</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/healthinterventions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Health Interventions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/personas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Generic Personas</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/userscenarios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">User Scenarios</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/businessprocesses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Business Processes</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/data-elements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Core Data Elements</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/metrics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Indicators and Performance Metrics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/dak/requirements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Functional and non-functional requirements</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../docs/implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Technical Specification</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tech Specifications</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../docs/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#indicators-and-performance-metrics" id="toc-indicators-and-performance-metrics" class="nav-link active" data-scroll-target="#indicators-and-performance-metrics">Indicators and performance metrics</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">——————</a>
-  <ul class="collapse">
-  <li><a href="#patients-per-trimester" id="toc-patients-per-trimester" class="nav-link" data-scroll-target="#patients-per-trimester">Patients per trimester</a></li>
-  <li><a href="#obtained-points" id="toc-obtained-points" class="nav-link" data-scroll-target="#obtained-points">Obtained Points</a></li>
-  <li><a href="#missed-value-points" id="toc-missed-value-points" class="nav-link" data-scroll-target="#missed-value-points">Missed Value Points</a></li>
-  <li><a href="#attainable-value-points" id="toc-attainable-value-points" class="nav-link" data-scroll-target="#attainable-value-points">Attainable Value Points</a></li>
-  <li><a href="#shared-value-points" id="toc-shared-value-points" class="nav-link" data-scroll-target="#shared-value-points">Shared Value POints</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/dak/dak_overview.html">Digital Adaptation Kit</a></li><li class="breadcrumb-item"><a href="../../docs/dak/metrics.html">Indicators and Performance Metrics</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">WhatsApp</h1>
+</div>
+
+<div>
+  <div class="description">
+    Detailed overview of the WhatsApp integration in the Mamatoto project.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<section id="indicators-and-performance-metrics" class="level1">
-<h1>Indicators and performance metrics</h1>
-<p>This section details indicators and performance metrics that would be aggregated from core data elements identified in Core data elements. The list in the table below is a set of indicators that can be aggregated for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems.</p>
-<p>[LET’S DISCUSS THE CONTENT OF THE TABLES FIRST BEFORE LOADING INTO QUARTO]</p>
-<p>Definitions for procedures:</p>
+</header>
+
+
+<section id="whatsapp-integration-in-the-mamatoto-project" class="level1">
+<h1>WhatsApp Integration in the Mamatoto Project</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The WhatsApp platform plays a pivotal role in the Mamatoto project, serving as the primary interface for user engagement and self-enrollment. Its familiarity and accessibility make it an ideal choice for reaching a wide range of users, particularly pregnant mothers, ensuring ease of access to maternal healthcare services.</p>
+</section>
+<section id="features-and-functionalities" class="level2">
+<h2 class="anchored" data-anchor-id="features-and-functionalities">Features and Functionalities</h2>
+<ol type="1">
+<li><strong>User-Friendly Interface</strong>:
 <ul>
-<li>Full ANC profile: Execution of all the following tests/measurements is required to meet the “Full ANC profile”
-<ul>
-<li>Vitals check (BP+Pulse+SPo2+RR)</li>
-<li>VDRL</li>
-<li>Haemoglobine</li>
-<li>Blood grouping</li>
-<li>HIV screening</li>
-<li>Blood pressure</li>
-<li>Urinalysis</li>
+<li>Designed to guide users through the enrollment process with minimal effort.</li>
+<li>Employs conversational prompts and buttons for intuitive navigation.</li>
 </ul></li>
-<li>ANC: All other ANC visits require execution of at least the following tests / measurements to meet the requirements of an ANC:
+<li><strong>Automated Communication</strong>:
 <ul>
-<li>Vitals check (BP+Pulse+SPo2+RR)</li>
-<li>Urinalysis + PrCr</li>
-<li>Haemoglobin (HB)</li>
+<li>Responds instantly to user inputs, delivering timely messages and instructions.</li>
+<li>Sends reminders for antenatal care visits and collects post-visit feedback.</li>
 </ul></li>
-<li>PNC: All PNC visits require execution of at least the following tests / measurements to meet the requirements of an PNC
+<li><strong>Dynamic Workflow</strong>:
 <ul>
-<li>Vitals check (BP+Pulse+SPo2+RR)</li>
+<li>Seamlessly transitions users through key stages: consent, registration, and confirmation.</li>
+<li>Adjusts prompts based on user responses, ensuring personalized engagement.</li>
+</ul></li>
+<li><strong>Data Collection</strong>:
+<ul>
+<li>Collects vital information such as name, date of birth, marital status, and health history.</li>
+<li>Validates data in real-time to ensure accuracy.</li>
+</ul></li>
+</ol>
+</section>
+<section id="technical-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation">Technical Implementation</h2>
+<p>The WhatsApp integration leverages chatbot technology and backend systems to manage workflows and data processing.</p>
+<section id="architecture" class="level3">
+<h3 class="anchored" data-anchor-id="architecture">Architecture</h3>
+<ul>
+<li><strong>WhatsApp Business API</strong>: Handles communication between users and the chatbot.</li>
+<li><strong>Backend Services</strong>:
+<ul>
+<li>Manages user sessions, stores data securely, and interfaces with other systems like SHR and IOL.</li>
+</ul></li>
+<li><strong>Consent Management</strong>:
+<ul>
+<li>Generates PDF consent forms and tracks user approvals.</li>
 </ul></li>
 </ul>
-<section id="missed-and-obtained-value-points" class="level4">
-<h4 class="anchored" data-anchor-id="missed-and-obtained-value-points">Missed and obtained Value Points</h4>
-<p>For each of the 6 indicators, the VP tool will show the number of mothers that have either obtained or missed that service in the current month. The logic used for determining when a service has been obtained or missed is described below. Similarly, the dashboard will show these indicators for historic months, where the same logic holds. The purpose of these indicators is to quickly identify in which areas a clinic has a high or low “Obtained” score, and to be able to compare that to previous months.</p>
-<p>[TABLE - LET’S DISCUSS CONTENT FIRST]</p>
 </section>
-<section id="eligible-value-points" class="level4">
-<h4 class="anchored" data-anchor-id="eligible-value-points">Eligible Value Points</h4>
-<p>For the current month only, the dashboard will also visualise the number of “eligible mothers”.</p>
-<ul>
-<li>Eligible mothers: On this given day, all mothers that are within the right time frame to obtain a service.</li>
-</ul>
-<p>The goal of the “Eligible mothers” indicator is to induce action to be taken by the provider. As such, in this logic “Eligible mothers” for the previous months is always 0 because no actions can be taken anymore.</p>
-<p>[TABLE - LET’S DISCUSS CONTENT FIRST]</p>
-<p><br> <br></p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">——————</h2>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td>title: “Dashboard Business Rules”</td>
-</tr>
-<tr class="even">
-<td>format: html</td>
-</tr>
-</tbody>
-</table>
-<section id="dashboard-elements-business-rules" class="level4">
-<h4 class="anchored" data-anchor-id="dashboard-elements-business-rules">Dashboard elements business rules</h4>
-</section>
-<section id="patients-per-trimester" class="level3">
-<h3 class="anchored" data-anchor-id="patients-per-trimester">Patients per trimester</h3>
-<p>The mothers per trimester table shows the number of mothers that have visited the clinic and have an active journey (within EDD + four weeks) per month. Mothers are shown that have visited the clinic at least once during their journey. AS a mother can fall in two trimesters within one month, we have decided to show the status at the 1st of the month. Table: Business rules for the stratification of care users across trimesters.</p>
-<p>TRIMESTER START END FIRST week 1 week 12 SECOND week 13 week 26 THIRD week 27 week 42 or date of delivery PAST EDD week 42 or date of delivery week 46</p>
-</section>
-<section id="obtained-points" class="level3">
-<h3 class="anchored" data-anchor-id="obtained-points">Obtained Points</h3>
-<p>There is a limited time in which the different value points can be obtained per patient. The cut-off date and the total number of value points that can be obtained for each topic are displayed in the graph below. The week of pregnancy (gestational age) for a mother is calculated based on her Expected Delivery Date (EDD). In the care process, the EDD is estimated by adding 280 days to the first day of the last menstrual period (LMP). Criterium Points Cut-off-date ANC profile 1 12 weeks Early ANC 1 24 weeks Ultrasound before end of second trimester 1 24 weeks 4ANC 2 42 weeks Facility Based Delivery 4 42 weeks 2PNCs 1 44 weeks The date assigned to an obtained ValuePoint is the date that a procedure was performed.</p>
-</section>
-<section id="missed-value-points" class="level3">
-<h3 class="anchored" data-anchor-id="missed-value-points">Missed Value Points</h3>
-<p>If a mother does not obtain a value point before the cut-off date, we consider this value point as missed. Missed value points are linked to a missed date. The missed date is calculated based on the EDD and the cut-off weeks. A mother can go to different clinics during her journey. At this point, we only calculate missed value points for the clinic where the mother had her first visit.</p>
-</section>
-<section id="attainable-value-points" class="level3">
-<h3 class="anchored" data-anchor-id="attainable-value-points">Attainable Value Points</h3>
-<p>Attainable points are only calculated for the current date and defined for any topic that has not yet been obtained, but where the current date is earlier than the missed date. Attainable points are only given to the clinic where the mother had her first visit.</p>
-</section>
-<section id="shared-value-points" class="level3">
-<h3 class="anchored" data-anchor-id="shared-value-points">Shared Value POints</h3>
-<p>A pregnant woman can visit different clinics. She can decide to do this for various reasons, including referral for certain medical conditions. To promote continuity of care, the concept of shared value points was introduced. Value points can be shared for: • Ultrasound • 4 ANC • Facility Based Delivery • 2 PNC For Ultrasound and Facility Based DElivery the value points are always shared between the clinic where the procedure took place (procedure clinic) and the clinic where the first visit took place (enrollment clinic). The value points are shared as follows: CRITERIUM PROCEDURE CLINIC ENROLLMENT CLINIC ULTRASOUND 0.75 0.25 FACILITY BASED DELIVERY 3 1 4ANC* 0.5 per visit<br>
-2PNC* 0.5 per visit<br>
-The date for these shared value points is defined as the date that the procedure was performed. For the 4ANC and 2PNC criteria, points are only assigned if the mother had at least 4 ANC visits or at least 2 PNC visits in total. For further visits, no value points are obtained.</p>
+<section id="key-code-snippet" class="level3">
+<h3 class="anchored" data-anchor-id="key-code-snippet">Key Code Snippet</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Example: Sending a welcome message</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> message <span class="op">=</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">to</span><span class="op">:</span> userPhone<span class="op">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">type</span><span class="op">:</span> <span class="st">"text"</span><span class="op">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">text</span><span class="op">:</span> {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">body</span><span class="op">:</span> <span class="st">"Welcome to the Mamatoto platform! How can we assist you today? Please select an option:</span><span class="sc">\n</span><span class="st">1. Register</span><span class="sc">\n</span><span class="st">2. Ask a Question"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">sendWhatsAppMessage</span>(message)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
