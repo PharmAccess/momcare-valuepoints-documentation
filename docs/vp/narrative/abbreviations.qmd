@@ -1,0 +1,20 @@
+## List of Abbreviations
+
+| Abbreviation | Abbreviated Term |
+|-------------|------------------|
+| BPMN        | Business Process Model and Notation |
+| DAK         | Digital Adaptation Kit |
+| DT          | Decision Support Table |
+| EMR         | Electronic Medical Record |
+| FHIR        | Fast Healthcare Interoperability Resources |
+| HL7         | Health Level Seven International |
+| ICD         | International Classification of Diseases |
+| ICD-11      | International Classification of Diseases 11th Revision |
+| ICF         | International Classification of Functioning, Disability and Health |
+| ICHI        | International Classification of Health Interventions |
+| ID          | Identification |
+| LOINC       | Logical Observation Identifiers Names and Codes |
+| PCPOSS      | Person-Centred Point of Service System |
+| SMART       | Standards-based, Machine-readable, Adaptive, Requirements-based and Testable |
+| SNOMED      | Systematized Nomenclature of Medicine |
+| WHO         | World Health Organization |
