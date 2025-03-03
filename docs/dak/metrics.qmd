@@ -90,7 +90,7 @@ For the 4ANC and 2PNC criteria, points are only assigned if the mother had at le
 <br>
 <br>
 
-[COMMENT PS: BLOEW IS THE DOCUMENTATION WE USED FOR THE SAFECARE DASHBOARD. A BIT MORE ELABORATE, BUT LESS FOCUSSED ON THE VALUE POINTS, MORE ON THE DASHBOARD. THAT ALSO WORKED SLIGHTLY DIFFERENT. WHICH DO WE WANT TO INCLUDE?]
+[COMMENT PS: BELOW IS THE DOCUMENTATION WE USED FOR THE SAFECARE DASHBOARD. A BIT MORE ELABORATE, BUT LESS FOCUSSED ON THE VALUE POINTS, MORE ON THE DASHBOARD. THAT ALSO WORKED SLIGHTLY DIFFERENT. WHICH DO WE WANT TO INCLUDE?]
 
 ###### Missed and obtained Value Points
 For each of the 6 indicators, the VP tool will show the number of mothers that have either obtained or missed that service in the current month. The logic used for determining when a service has been obtained or missed is described below. Similarly, the dashboard will show these indicators for historic months, where the same logic holds. The purpose of these indicators is to quickly identify in which areas a clinic has a high or low “Obtained” score, and to be able to compare that to previous months.
