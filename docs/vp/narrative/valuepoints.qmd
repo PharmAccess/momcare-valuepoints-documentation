@@ -1,9 +1,3 @@
----
-title: "ValuePoints"
-format: html
----
-
-
 ##### ValuePoints
 
 ValuePoints (VPs) consist of a set of six indicators that reflect the quality of pregnancy care. Each indicator is assigned a number of points and a maximum of 10 points can be obtained for each pregnancy journey. A small financial incentive is earned by the healthcare provider for every point that is obtained. A dashboard ensures that the healthcare provider has real-time insights into their performance on the quality indicators and expected reimbursement as well as a benchmark view. For network managers (like a district or county government), the dashboard also contains an overview page of all the clinics. 
