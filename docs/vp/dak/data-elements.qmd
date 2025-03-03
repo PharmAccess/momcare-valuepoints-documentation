@@ -185,7 +185,7 @@ This section outlines the minimum set of data needed to use the Value Points too
     <tr style="border-bottom: 1px solid #ccc;">
       <td style="padding: 12px; font-weight: bold;">Age at enrolment</td>
       <td style="padding: 12px;">The age of the mother at the date of enrolment. This age is used for age classification.</td>
-      <td style="padding: 12px;">- Date of birth <br> - Current date</td>
+      <td style="padding: 12px;">- Date of birth <br> - Current date </td>
       <td style="padding: 12px;"></td>
     </tr>
     <tr>
