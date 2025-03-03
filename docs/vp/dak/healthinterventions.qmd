@@ -8,7 +8,7 @@ This “ValuePoints – Smart incentives to improve pregnancy journeys” interv
 Specifically, it addresses “4.1.3 Data visualisation” and “4.1.4 Automated analysis of data to generate new information or predictions on future events”.
 
 #### L1 guidelines, recommendations and guidance
-The DAKs are intended to reflect health recommendations and content that has already been published in guidelines and guidance documents. The health content and interventions for this DAK are based on the following documents.
+The DAK is intended to reflect health recommendations and content that has already been published in guidelines and guidance documents. The health content and interventions for this DAK are based on the following documents.
 
 -	[WHO recommendations on antenatal care for a positive pregnancy experience.](https://www.who.int/publications/i/item/9789241549912)
 -	[Digital Adaptation Kit for Antenatal Care: Operational Requirements for Implementing WHO Recommendations in Digital Systems.](https://www.aidsdatahub.org/sites/default/files/resource/who-digital-adaptation-kit-antenatal-care-2021.pdf) 
