@@ -1,0 +1,26 @@
+## Journey Tracking
+
+**ValuePoints (VPs)** are a set of standardized metrics designed to assess and incentivize high-quality maternal healthcare delivery. These metrics quantify key aspects of care throughout the pregnancy journey, offering insights into maternal care-seeking behavior and rewarding healthcare providers for timely and essential service delivery.
+
+Developed with guidance from the Leapfrog-to-Value Maternity Playbook (2024), the ValuePoints framework integrates WHO maternity care guidelines with practical insights gained from [**MomCare implementation**] (cd:momcare.qmd). This approach ensures alignment with both global best practices and local healthcare systems to drive improved maternal and neonatal outcomes.
+
+### How ValuePoints Work
+
+Each pregnant participant can attain up to **10 ValuePoints**, allocated across key maternity services. Healthcare providers earn these points by registering service delivery in a digital health management tool, ensuring transparency and accountability. The core **care indicators** include:
+
+- **Early antenatal care (<12 weeks)**
+- **Early ultrasound (<24 weeks)**
+- **Comprehensive antenatal screening (full ANC profile)**
+- **At least four antenatal care (ANC) visits**
+- **Facility-based delivery**
+- **At least two postnatal care (PNC) visits**
+
+Services with stronger evidence linking them to positive health outcomes are weighted more heavily, reinforcing the importance of high-value care interventions. Additionally, ValuePoints can be **shared among multiple providers**—for instance, when a facility refers a patient for an ultrasound, points are distributed between the referring and receiving providers. This approach fosters collaboration and continuity of care across the maternal health system.
+
+A high **ValuePoint score** reflects a more complete journey, and serves as a valuable proxy for , high-quality maternity care. The score aims to provide a simplified overview of care practices to assess maternal health interventions, allocate resources effectively, and drive quality improvements.
+
+Furthermore, while VPs primarily measure care delivery outcomes, **patient experience surveys**—adapted from the ICHOM Pregnancy and Childbirth standard set—are incorporated to integrate maternal feedback. Future iterations of the framework will leverage these insights to enhance patient-centered care and ensure that maternity services are not only effective but also respectful and responsive to women’s needs.
+
+### Take-aways
+
+By adopting the **ValuePoints approach**, care providers and policy makers have access to a digital tool that **incentivizes best practices**, **strengthens provider accountability**, and ultimately, **improves maternal and neonatal health outcomes** at scale.

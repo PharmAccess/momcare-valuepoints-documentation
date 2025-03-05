@@ -1,6 +1,7 @@
 ---
 title: "The MamaToto Digital Adaptation Kit (DAK)"
 format: html
+sidebar: mamatoto
 ---
 
 

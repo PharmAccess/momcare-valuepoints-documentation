@@ -3,7 +3,7 @@ title: "MamaToto"
 subtitle: "An Instant HIE implementation for low- and middle-income countries (LMICs) that demonstrates seamless data sharing for maternal care within a hybrid brick-and-click model."
 details: |
   Pharmaccess • Turn.io • IntelliSOFT Consulting
-sidebar: false
+sidebar: mamatoto
 toc: false
 page-layout: full
 format:
