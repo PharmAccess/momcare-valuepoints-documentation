@@ -1,0 +1,18 @@
+## Pay for Performance 
+
+To reinforce high-quality maternal care delivery, the ValuePoints (VP) system integrated a performance-based financial incentive for healthcare providers. Each ValuePoint earned was linked to a monetary reward, enabling providers to access additional resources that directly supported maternity care services.
+
+### Incentive Structure and Provider Benefits  
+
+For every ValuePoint obtained, providers received a financial incentive of 7,500 TZS (approximately 2.8 USD). These funds were either payed in cash or credited to a digital wallet, which providers could use to procure essential medical supplies.  
+
+Providers leveraged their wallet balances to order key resources such as:  
+
+- Medical equipment to improve service delivery  
+- Medications and consumables to enhance patient care  
+- Other critical supplies essential for high-quality maternal health services  
+
+Procurement and logistics were centrally managed by the local PharmAccess team, ensuring efficient, transparent, and timely distribution of resources.
+
+### Take-aways
+By integrating financial incentives into maternal health service delivery, the ValuePoints system offers a cost-effective strategy to ensure evidence-based resource distribution and performance-linked healthcare improvements.
