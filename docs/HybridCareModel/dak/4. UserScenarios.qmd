@@ -1,0 +1,31 @@
+User scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:
+
+1.	xx
+2.	xx
+
+
+###### **User scenario for registration of a mother and first ANC visit.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Pregnant woman:</strong> Ruth<br>
+            <strong>Registration personnel:</strong> Ann<br>
+            <strong>MNCH nurse:</strong> Eli
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            Ruth arrives at the Mamatoto-accredited clinic for her first antenatal visit. After confirming her identity, she provides her personal details to Ann (the receptionist). Ann informs Ruth about the Hybrid care program, specifically detailing the aspect of data sharing between providers. Upon approving taking part in the program, Ruth signs a consent form. Ann logs into the HMIS system using the secure credentials. Upon entering the system, she searches in the system using identifiers like a national ID or phone number to check if Ruth has an existing record. As the record does not already exist in the system, Ann selects the “Register New Patient” option and then fills in the necessary details, including the mother’s full name, date of birth, contact information, and gestational age (if known).  She then directs Ruth to the attending nurse.
+            <br><br>
+            XX
+            <br><br>
+            XX 
+            <br><br>
+            XX
+        </td>
+    </tr>
+</table>
+
+<br>
