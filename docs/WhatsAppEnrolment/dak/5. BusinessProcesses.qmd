@@ -1,0 +1,14 @@
+# Generic business processes and workflows
+
+#### Business processes
+[TEXT AND TABLE]
+
+#### Workflows
+Workflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.
+
+###### A. Workflow for WhatsApp enrolment of a pregnant mother
+![](WappEnrolment.png)
+
+<br>
+
+###### B. Workflow for [XXX]
