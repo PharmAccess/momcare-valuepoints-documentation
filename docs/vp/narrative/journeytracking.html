@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>implementation</title>
+<title>journeytracking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/valuepoints.html">Narrative</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/journeytracking.html">Journey Tracking</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/narrative/journeytracking.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/narrative/journeytracking.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Journey Tracking</span></a>
   </div>
 </li>
@@ -235,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Technical Specification</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -244,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General Specifications</span></a>
   </div>
 </li>
@@ -292,29 +292,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/valuepoints.html">Narrative</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/journeytracking.html">Journey Tracking</a></li></ol></nav></header>
 
 
 
 
-<section id="data-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="data-pipeline">Data Pipeline</h2>
-<p>We provide a <strong>base reporter</strong> that extracts the most important information for the ValuePoints tool from the FHIR resources into standardized tables. These standardized tables serve as a starting point for further analysis.</p>
-<p><img src="reporting schema.png" class="img-fluid"></p>
-<section id="patient-timeline-table" class="level3">
-<h3 class="anchored" data-anchor-id="patient-timeline-table"><a href="../../../docs/vp/techspecs/pipeline.html">Patient timeline table</a></h3>
-<p>In the ValuePoints tool, the patient’s journey over time is tracked. This means that most important information would be captured with a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. For this reason we implemented a functionality to create the patient timeline table.</p>
-<p>Based on the base reports described above, different reports of interest can be created:</p>
-<section id="value-points-reporter" class="level4">
-<h4 class="anchored" data-anchor-id="value-points-reporter"><a href="../../../docs/vp/techspecs/metrics.html">Value Points Reporter</a></h4>
-<p>Value point reports provide the value points (described in the value points section) obtained by clinics by threathing their patients.</p>
+<section id="journey-tracking" class="level2">
+<h2 class="anchored" data-anchor-id="journey-tracking">Journey Tracking</h2>
+<p><strong>ValuePoints (VPs)</strong> are a set of standardized metrics designed to assess and incentivize high-quality maternal healthcare delivery. These metrics quantify key aspects of care throughout the pregnancy journey, offering insights into maternal care-seeking behavior and rewarding healthcare providers for timely and essential service delivery.</p>
+<p>Developed with guidance from the Leapfrog-to-Value Maternity Playbook (2024), the ValuePoints framework integrates WHO maternity care guidelines with practical insights gained from [<strong>MomCare implementation</strong>] (cd:momcare.qmd). This approach ensures alignment with both global best practices and local healthcare systems to drive improved maternal and neonatal outcomes.</p>
+<section id="how-valuepoints-work" class="level3">
+<h3 class="anchored" data-anchor-id="how-valuepoints-work">How ValuePoints Work</h3>
+<p>Each pregnant participant can attain up to <strong>10 ValuePoints</strong>, allocated across key maternity services. Healthcare providers earn these points by registering service delivery in a digital health management tool, ensuring transparency and accountability. The core <strong>care indicators</strong> include:</p>
+<ul>
+<li><strong>Early antenatal care (&lt;12 weeks)</strong></li>
+<li><strong>Early ultrasound (&lt;24 weeks)</strong></li>
+<li><strong>Comprehensive antenatal screening (full ANC profile)</strong></li>
+<li><strong>At least four antenatal care (ANC) visits</strong></li>
+<li><strong>Facility-based delivery</strong></li>
+<li><strong>At least two postnatal care (PNC) visits</strong></li>
+</ul>
+<p>Services with stronger evidence linking them to positive health outcomes are weighted more heavily, reinforcing the importance of high-value care interventions. Additionally, ValuePoints can be <strong>shared among multiple providers</strong>—for instance, when a facility refers a patient for an ultrasound, points are distributed between the referring and receiving providers. This approach fosters collaboration and continuity of care across the maternal health system.</p>
+<p>A high <strong>ValuePoint score</strong> reflects a more complete journey, and serves as a valuable proxy for , high-quality maternity care. The score aims to provide a simplified overview of care practices to assess maternal health interventions, allocate resources effectively, and drive quality improvements.</p>
+<p>Furthermore, while VPs primarily measure care delivery outcomes, <strong>patient experience surveys</strong>—adapted from the ICHOM Pregnancy and Childbirth standard set—are incorporated to integrate maternal feedback. Future iterations of the framework will leverage these insights to enhance patient-centered care and ensure that maternity services are not only effective but also respectful and responsive to women’s needs.</p>
 </section>
-<section id="dhis2-reporter" class="level4">
-<h4 class="anchored" data-anchor-id="dhis2-reporter"><a href="../../../docs/vp/techspecs/dhis2.html">DHIS2 Reporter</a></h4>
-<p>DHIS2 reports provide insight in how many mothers visit a clinic, what conditions occur amongst mothers that visit that clinic, and what procedures mothers obtain in a clinic.</p>
+<section id="take-aways" class="level3">
+<h3 class="anchored" data-anchor-id="take-aways">Take-aways</h3>
+<p>By adopting the <strong>ValuePoints approach</strong>, care providers and policy makers have access to a digital tool that <strong>incentivizes best practices</strong>, <strong>strengthens provider accountability</strong>, and ultimately, <strong>improves maternal and neonatal health outcomes</strong> at scale.</p>
 
 
-</section>
 </section>
 </section>
 

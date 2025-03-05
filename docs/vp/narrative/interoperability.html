@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>implementation</title>
+<title>interoperability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/valuepoints.html">Narrative</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/interoperability.html">Interoperability</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/narrative/interoperability.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/narrative/interoperability.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Interoperability</span></a>
   </div>
 </li>
@@ -235,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Technical Specification</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -244,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General Specifications</span></a>
   </div>
 </li>
@@ -292,29 +292,39 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/valuepoints.html">Narrative</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/narrative/interoperability.html">Interoperability</a></li></ol></nav></header>
 
 
 
 
-<section id="data-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="data-pipeline">Data Pipeline</h2>
-<p>We provide a <strong>base reporter</strong> that extracts the most important information for the ValuePoints tool from the FHIR resources into standardized tables. These standardized tables serve as a starting point for further analysis.</p>
-<p><img src="reporting schema.png" class="img-fluid"></p>
-<section id="patient-timeline-table" class="level3">
-<h3 class="anchored" data-anchor-id="patient-timeline-table"><a href="../../../docs/vp/techspecs/pipeline.html">Patient timeline table</a></h3>
-<p>In the ValuePoints tool, the patient’s journey over time is tracked. This means that most important information would be captured with a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. For this reason we implemented a functionality to create the patient timeline table.</p>
-<p>Based on the base reports described above, different reports of interest can be created:</p>
-<section id="value-points-reporter" class="level4">
-<h4 class="anchored" data-anchor-id="value-points-reporter"><a href="../../../docs/vp/techspecs/metrics.html">Value Points Reporter</a></h4>
-<p>Value point reports provide the value points (described in the value points section) obtained by clinics by threathing their patients.</p>
+<section id="technical-interoperability" class="level2">
+<h2 class="anchored" data-anchor-id="technical-interoperability">Technical Interoperability</h2>
+<p>To effectively track key maternity care services across provider networks, the <strong>ValuePoints (VP) system</strong> was built on a digital reporting infrastructure, leveraging the <a href="cd:docs/mamatoto/narrative/index.qmd">openHIE architecture</a>. This technical foundation ensured interoperability, aiming to minimize the reporting burden on healthcare providers.</p>
+<p>The <a href="cd:docs/mamatoto/narrative/index.qmd">openHIE-based system</a> utilizes existing digital health applications and standardizes data using <a href="https://hl7.org/fhir/">FHIR (Fast Healthcare Interoperability Resources) standards</a>. This approach enables seamless data exchange between providers, supporting real-time reporting to national and local health systems such as the <a href="cd:docs/vp/techspecs/implementation">tailored VP dashboards</a> and <a href="cd:docs/vp/techspecs/dhis2">DHIS2 reports</a>.</p>
+<p>By adopting open standards and open-source technologies, the ValuePoints system was designed to be:</p>
+<ul>
+<li><strong>Interoperable</strong> – ensuring smooth data exchange across various digital health platforms<br>
+</li>
+<li><strong>Transferable</strong> – adaptable to different healthcare ecosystems<br>
+</li>
+<li><strong>Scalable</strong> – requiring minimal investment beyond standardization for broader implementation</li>
+</ul>
+<section id="valuepoint-dashboards" class="level3">
+<h3 class="anchored" data-anchor-id="valuepoint-dashboards">ValuePoint Dashboards</h3>
+<p><img src="vpdashboard.png" class="img-fluid"></p>
+<p>VP dashboards played a critical role in visualizing maternal care data, offering key insights into service delivery across provider networks. These dashboards enabled:</p>
+<ul>
+<li>Tracking of obtained, missed, and attainable ValuePoints per provider</li>
+<li>Comparative performance analysis against network averages</li>
+<li>Real-time insights to support providers in improving care delivery</li>
+</ul>
+<p>By presenting actionable data at both <strong>provider</strong> and <strong>district levels</strong>, the system empowered healthcare teams and policymakers to monitor trends, identify gaps, and implement targeted interventions.</p>
 </section>
-<section id="dhis2-reporter" class="level4">
-<h4 class="anchored" data-anchor-id="dhis2-reporter"><a href="../../../docs/vp/techspecs/dhis2.html">DHIS2 Reporter</a></h4>
-<p>DHIS2 reports provide insight in how many mothers visit a clinic, what conditions occur amongst mothers that visit that clinic, and what procedures mothers obtain in a clinic.</p>
+<section id="take-aways" class="level3">
+<h3 class="anchored" data-anchor-id="take-aways">Take-aways</h3>
+<p>The <strong>ValuePoints digital system</strong> highlights the power of <strong>open standards and digital health innovation</strong> in transforming maternity care. By leveraging <strong>interoperable, scalable, and cost-effective</strong> technologies, policymakers can ensure <strong>efficient tracking, evaluation, and improvement of maternal healthcare services</strong>, ultimately contributing to <strong>better health outcomes for mothers and newborns</strong>.</p>
 
 
-</section>
 </section>
 </section>
 
