@@ -1,0 +1,52 @@
+{
+  "name": "mnch_patient",
+  "title": "MNCH Patient View",
+  "version": "0.1.0",
+  "url": "https://momcare.cot.pharmaccess.org/fhir/ViewDefinition/patient",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sql-on-fhir/StructureDefinition/ShareableViewDefinition",
+      "http://hl7.org/fhir/uv/sql-on-fhir/StructureDefinition/TabularViewDefinition"
+    ]
+  },
+  "status": "draft",
+  "resource": "Patient",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "select": [
+    {
+      "column": [
+        {
+          "name": "birth_date",
+          "path": "birthDate",
+          "type": "datetime",
+          "collection": false
+        },
+        {
+          "name": "patient_id",
+          "path": "id",
+          "type": "ID",
+          "collection": false
+        }
+      ]
+    },
+    {
+      "forEachOrNull": "identifier",
+      "column": [
+        {
+          "name": "identifier_code",
+          "path": "type.coding.code",
+          "type": "code",
+          "collection": false
+        },
+        {
+          "name": "identifier_system_id",
+          "path": "value",
+          "type": "string",
+          "collection": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "mnch_medication_dispense",
+  "title": "MNCH Medication Dispense View",
+  "version": "0.1.0",
+  "url": "https://momcare.cot.pharmaccess.org/fhir/ViewDefinition/procedure",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sql-on-fhir/StructureDefinition/ShareableViewDefinition",
+      "http://hl7.org/fhir/uv/sql-on-fhir/StructureDefinition/TabularViewDefinition"
+    ]
+  },
+  "status": "draft",
+  "resource": "MedicationDispense",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "select": [
+    {
+      "column": [
+        {
+          "name": "encounter_id",
+          "path": "context.where(type = 'Encounter').reference",
+          "type": "string",
+          "collection": false
+        },
+        {
+          "name": "event_time",
+          "path": "whenHandedOver",
+          "type": "dateTime",
+          "collection": false
+        }
+      ]
+    },
+    {
+        "forEachOrNull": "medication.ofType(CodeableConcept)",
+        "column": [
+            {
+            "name": "description_name",
+            "path": "text",
+            "type": "string",
+            "collection": false
+            },
+          {
+            "name": "system",
+            "path": "coding.system",
+            "type": "uri",
+            "collection": false
+          },
+          {
+            "name": "code",
+            "path": "coding.code",
+            "type": "code",
+            "collection": false
+          }
+        ]
+    }
+  ]
+}

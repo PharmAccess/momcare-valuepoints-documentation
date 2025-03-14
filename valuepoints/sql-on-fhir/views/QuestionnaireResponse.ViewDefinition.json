@@ -1,0 +1,76 @@
+{
+  "name": "mnch_surveys",
+  "title": "MNCH Survey View",
+  "version": "0.1.0",
+  "url": "https://momcare.cot.pharmaccess.org/fhir/ViewDefinition/survey",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sql-on-fhir/StructureDefinition/ShareableViewDefinition",
+      "http://hl7.org/fhir/uv/sql-on-fhir/StructureDefinition/TabularViewDefinition"
+    ]
+  },
+  "status": "draft",
+  "resource": "QuestionnaireResponse",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "select": [
+    {
+      "column": [
+        {
+          "name": "patient_id",
+          "path": "subject.reference",
+          "type": "string",
+          "collection": false
+        },
+        {
+          "name": "survey_complete_time",
+          "path": "authored",
+          "type": "datetime",
+          "collection": false
+        }
+      ]
+    },
+    {
+      "forEachOrNull": "identifier",
+      "column": [
+        {
+          "name": "identifier_system",
+          "path": "system",
+          "type": "URI",
+          "collection": false
+        },
+        {
+          "name": "survey_id",
+          "path": "value",
+          "type": "string",
+          "collection": false
+        }
+      ]
+    },
+    {
+      "forEachOrNull": "item",
+      "column": [
+        {
+          "name": "question_code",
+          "path": "linkId",
+          "type": "string",
+          "collection": false
+        },
+        {
+          "name": "question_text",
+          "path": "text",
+          "type": "string",
+          "collection": false
+        },
+        {
+          "name": "answer_value",
+          "path": "answer.valueString",
+          "type": "string",
+          "collection": false
+        }
+      ]
+    }
+
+  ]
+}
