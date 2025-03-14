@@ -4,4 +4,3 @@ tasks:
   deps:
     cmds:
       - quarto check install
-      - go install github.com/google/cql/cmd/cli@latest
