@@ -1,5 +1,4 @@
-# TODO: update to latest again when connectorx 0.3.4 released
-FROM condaforge/mambaforge:24.3.0-0
+FROM condaforge/miniforge3:latest
 ENV PIP_NO_CACHE_DIR=1
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -25,16 +24,26 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quar
     dpkg -i quarto-1.6.42-linux-amd64.deb || apt-get install -f -y && \
     rm quarto-1.6.42-linux-amd64.deb
 
+# Install Go using the official binary distribution
+ENV GO_VERSION=1.20.6
+RUN wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
+    rm go${GO_VERSION}.linux-amd64.tar.gz && \
+    ln -s /usr/local/go/bin/go /usr/local/bin/go && \
+    ln -s /usr/local/go/bin/gofmt /usr/local/bin/gofmt
+ENV PATH="/usr/local/go/bin:${PATH}"
+
 # libraries
 RUN mamba install --yes \
-    "python>=3.10" \
+    "python>=3.11" \
     openjdk=17 \
+    go-task \
     # cleanup
     && mamba clean -tipy
 
 RUN pip install \
     dbt-core \
     polars \
-    "duckdb==1.0.0" \
+    duckdb \
     # TODO: update to pathling 8.0.0 once it is released
     pathling==8.0.0.dev0
