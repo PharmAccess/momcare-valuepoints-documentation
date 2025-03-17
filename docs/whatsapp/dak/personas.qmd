@@ -2,12 +2,13 @@
 
 #### Targeted generic personas
 The targeted personas for this DAK are the endusers of: 
-1. The WhatsApp enrolment feature: **pregnant mothers** (at the clinic or at home)
-2. The payers billing platform: The **registration and billing personnel** at a healthcare facility
+
+ 1. The WhatsApp enrolment feature: **pregnant women** (at the clinic or at home)
+ 2. The payers billing platform: The **registration and billing personnel** at a healthcare facility
 
 
 ::: {style="font-size: 0.8em;"}
 | Name            | Description                                                                                                                                                                                                                                                   | Different names (if relevant)                                                                                     | International Standard for Classification of Occupations code (if relevant) (9) |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | Pregnant woman | A woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent. | Mother, Pregnant woman                                                       | N/A                                                                            |
-| Registration and Billing personell| [IS THIS THE CORRECT USER TO ADD? INSERT DESCRIPTION HERE] | 2221 (nursing professionals)                                                  |
+| Registration and Billing personell| [IS THIS THE CORRECT USER TO ADD? INSERT DESCRIPTION HERE] | 2221 (nursing professionals) [WHAT IS THE CORRECT CODE FOR SUCH PERSONNEL?]                                                  |

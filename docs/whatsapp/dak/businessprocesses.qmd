@@ -1,7 +1,11 @@
 # Generic business processes and workflows
 
 #### Business processes
-[TEXT AND TABLE]
+A business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area. Workflows are a visual representation of the progression of activities (tasks, events, interactions) that are performed within the business process. The workflow provides a “story” for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders and engineers. 
+
+<br>.
+
+![](whatsapp_businessproccess.png)
 
 #### Workflows
 Workflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.
