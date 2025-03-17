@@ -190,11 +190,23 @@
     ]
   },
   {
+    "objectID": "docs/hybridcaremodel/dak/userscenarios.html",
+    "href": "docs/hybridcaremodel/dak/userscenarios.html",
+    "title": "User scenarios",
+    "section": "",
+    "text": "User scenarios\nUser scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the the WhatsApp enrolment feature:\n\nFirst physical consultation at a clinic.\nFirst virtual consultation with telehealth provider.\nRecurring physical consultations at a clinic.\nRecurring virtual consultations with telehealth provider.",
+    "crumbs": [
+      "Hybrid Care Model",
+      "Digital Adaptation Kit",
+      "4. User Scenarios"
+    ]
+  },
+  {
     "objectID": "docs/whatsapp/dak/objectivesofdak.html",
     "href": "docs/whatsapp/dak/objectivesofdak.html",
-    "title": "",
+    "title": "Objectives of the DAK",
     "section": "",
-    "text": "Objectives of DAK",
+    "text": "Objectives of the DAK",
     "crumbs": [
       "WhatsApp Engagement",
       "Digital Adaptation Kit"
@@ -205,7 +217,7 @@
     "href": "docs/whatsapp/dak/businessprocesses.html",
     "title": "Generic business processes and workflows",
     "section": "",
-    "text": "Generic business processes and workflows\n\nBusiness processes\n[TEXT AND TABLE]\n\n\nWorkflows\nWorkflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.\n\nA. Workflow for WhatsApp enrolment of a pregnant mother\n\n\n\n\nB. Workflow for [XXX]",
+    "text": "Generic business processes and workflows\n\nBusiness processes\nA business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area. Workflows are a visual representation of the progression of activities (tasks, events, interactions) that are performed within the business process. The workflow provides a “story” for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders and engineers.\n.\n\n\n\nWorkflows\nWorkflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.\n\nA. Workflow for WhatsApp enrolment of a pregnant mother\n\n\n\n\nB. Workflow for [XXX]",
     "crumbs": [
       "WhatsApp Engagement",
       "Digital Adaptation Kit",
@@ -213,11 +225,23 @@
     ]
   },
   {
+    "objectID": "docs/whatsapp/dak/healthinterventions.html",
+    "href": "docs/whatsapp/dak/healthinterventions.html",
+    "title": "Health Interventions",
+    "section": "",
+    "text": "Health Interventions",
+    "crumbs": [
+      "WhatsApp Engagement",
+      "Digital Adaptation Kit",
+      "2. Health Interventions"
+    ]
+  },
+  {
     "objectID": "docs/whatsapp/dak/userscenarios.html",
     "href": "docs/whatsapp/dak/userscenarios.html",
     "title": "User scenarios",
     "section": "",
-    "text": "User scenarios\nUser scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:\n\nUser scenario for registration to the program by a mother through WhatsApp\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM]\n[US 3 XXX]\n\n\nUser scenario for registration to the program by a mother through WhatsApp\n\n\n\nKey Personas\n\n\nPregnant woman: Ruth\n\n\n\n\nRuth is a 28-year-old pregnant woman, currently at 10 weeks gestation, who resides in Kajiado County. She is visiting a MamaToto-accredited facility, for her first ANC visit. Ann, a receptionist at the facility, explains the MamaToto program to Ruth and ensures she understand that enrolment for the program is done through WhatsApp chat. Ann shows Ruth a QR code which, upon scanning, opens into the WhatsApp chat on the phone of Ruth.\n Alternatively, Ruth could have heard about the MamaToto program from one of her family members or a pregnant friend who recently ernolled at the clinic. After receiving the WhatsApp enrolment phone number from one of them, Ruth can send a message to the dedicated phone number to start the enrolment from home. After enrolment from home, she will be able to receive the discounted care at a affiliated clinic of her liking.\n Upon sending any message in the chat, a response to register Ruth on for the discounted care program will be sent. As a first step, a consent form will be presented to which Ruth can agree or disagree. On agreeing, the follow up questions appear where details such as her name, date of birth, phone number, last menstrual period, basic medical history and ANC profile will be obtained. Following completion of the questionnaire, Ruth receives a confirmation of successful registration, a summary of information she has provided and her unique beneficiary number for the discounted care program.  Ruth will now receive maternal health education and gestational based appointment reminders on her WhatsApp. Following each visit, a follow-up experience survey is sent to Ruth to review the quality of services offered. She will also be able to update her Expected Date of Delivery (EDD) in case needed.  Anne registers all the gathered information in the digital system, as well as on the RCH card where she indicates the date for the next follow-up visit.\n\n\n\n\n\n\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].\n\n\n\nKey Personas\n\n\nRegistration and billing staff: XX\n\n\n\n\n[PARAGRAPH 1]  [PARAGRAPH 2]\n [PARAGRAPH 3]",
+    "text": "User scenarios\nUser scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the the WhatsApp enrolment feature:\n\nUser scenario for registration to the program by a mother through WhatsApp.\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM]\n[US 3 XXX]\n\n\nUser scenario for registration to the program by a mother through WhatsApp\n\n\n\nKey Personas\n\n\nPregnant woman: Ruth Receptionist: Ann\n\n\n\n\nRuth is a 28-year-old pregnant woman, currently at 10 weeks gestation, who resides in Kajiado County. She is visiting a MamaToto-accredited facility, for her first ANC visit. Ann, a receptionist at the facility, explains the MamaToto program to Ruth and ensures Ruth understands how enrolment for the program is done through WhatsApp chat. Ann shows Ruth a QR code which, upon scanning, opens into the WhatsApp chat on the phone of Ruth.\n Alternatively, Ruth could have heard about the MamaToto program from one of her family members or a pregnant friend who recently ernolled at the clinic. After receiving the WhatsApp enrolment phone number from one of them, Ruth can send a message to the dedicated phone number to start the enrolment from home. After enrolment from home, she will be able to receive the discounted care at a affiliated clinic of her liking.\n Upon sending any message in the chat, a response to register Ruth for the discounted care program will be sent. As a first step, a consent form will be presented to which Ruth can agree or disagree. On agreeing, the follow up questions appear where details such as her name, date of birth, phone number, last menstrual period, basic medical history and ANC profile will be obtained. Following completion of the questionnaire, Ruth receives a confirmation of successful registration, a summary of information she has provided and her unique beneficiary number for the discounted care program.  Ruth will now receive maternal health education and gestational based appointment reminders on her WhatsApp. Following each visit, a follow-up experience survey is sent to Ruth to review the quality of services offered. She will also be able to update her Expected Date of Delivery (EDD) in case needed.  Ann registers all the gathered information in the digital system, as well as on the RCH card where she indicates the date for the next follow-up visit.\n\n\n\n\n\n\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].\n\n\n\nKey Personas\n\n\nRegistration and billing staff: XX\n\n\n\n\n[PARAGRAPH 1]  [PARAGRAPH 2]\n [PARAGRAPH 3]",
     "crumbs": [
       "WhatsApp Engagement",
       "Digital Adaptation Kit",
@@ -343,7 +367,7 @@
     "href": "docs/whatsapp/dak/personas.html",
     "title": "Generic personas",
     "section": "",
-    "text": "Generic personas\n\nTargeted generic personas\nThe targeted personas for this DAK are the endusers of: 1. The WhatsApp enrolment feature: pregnant mothers (at the clinic or at home) 2. The payers billing platform: The registration and billing personnel at a healthcare facility\n\n\n\n\n\n\n\n\n\n\nName\nDescription\nDifferent names (if relevant)\nInternational Standard for Classification of Occupations code (if relevant) (9)\n\n\n\n\nPregnant woman\nA woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent.\nMother, Pregnant woman\nN/A\n\n\nRegistration and Billing personell\n[IS THIS THE CORRECT USER TO ADD? INSERT DESCRIPTION HERE]\n2221 (nursing professionals)",
+    "text": "Generic personas\n\nTargeted generic personas\nThe targeted personas for this DAK are the endusers of:\n\nThe WhatsApp enrolment feature: pregnant women (at the clinic or at home)\nThe payers billing platform: The registration and billing personnel at a healthcare facility\n\n\n\n\n\n\n\n\n\n\n\nName\nDescription\nDifferent names (if relevant)\nInternational Standard for Classification of Occupations code (if relevant) (9)\n\n\n\n\nPregnant woman\nA woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent.\nMother, Pregnant woman\nN/A\n\n\nRegistration and Billing personell\n[IS THIS THE CORRECT USER TO ADD? INSERT DESCRIPTION HERE]\n2221 (nursing professionals) [WHAT IS THE CORRECT CODE FOR SUCH PERSONNEL?]",
     "crumbs": [
       "WhatsApp Engagement",
       "Digital Adaptation Kit",
