@@ -190,15 +190,43 @@
     ]
   },
   {
-    "objectID": "docs/hybridcaremodel/dak/genericpersonas.html",
-    "href": "docs/hybridcaremodel/dak/genericpersonas.html",
-    "title": "Generic personas",
+    "objectID": "docs/whatsapp/dak/objectivesofdak.html",
+    "href": "docs/whatsapp/dak/objectivesofdak.html",
+    "title": "",
     "section": "",
-    "text": "Generic personas\n\nTargeted generic personas\nThe targeted personas for this DAK are the end-users of the HMIS systems that interact with the Interoperability layer (IOL) and Shared Health Record (SHR) for the purpose of patient information sharing between healthcare providers. This includes registration personell, ANC nurses and doctors.\n\n\n\n\n\n\n\n\n\n\nName\nDescription\nDifferent names\nInternational Standard for Classification of Occupations code (9)\n\n\n\n\nRegistration personnel\nA senior manager responsible for overseeing the overall operations of the hospital, including resource allocation, infrastructure management, and adherence to healthcare policies. The administrator plays a critical role in ensuring the adoption and integration of digital tools to improve patient care and operational efficiency. They prioritize financial sustainability, compliance with regulatory frameworks, and stakeholder engagement.\nHealth Facility Manager, Medical superintendent, Hospital manager, Hospital director.\n\n\n\nMNCH Nurse\nA graduate who has been legally authorized (registered) to practise after examination by a state board of nurse examiners or similar regulatory authority. Education includes 3, 4 or more years in nursing school, and it leads to a university or postgraduate university degree, or the equivalent. A registered nurse has the full range of nursing skills.\nRegistered nurse, nurse practitioner, clinical nurse specialist, advance practice nurse, practice nurse, licensed nurse, diploma nurse, BS nurse, nurse clinician\n2221 (nursing professionals)\n\n\nHead of MNCH department\nA specialized leader responsible for managing maternal, newborn, and child health (MNCH) programs within the healthcare facility. They focus on clinical guidelines, staff training, and optimizing service delivery for MNCH-related health outcomes. This role requires strong advocacy for digital health tools to streamline care delivery, enhance monitoring, and ensure compliance with national and international MNCH standards.\nMNCH clinical lead, Maternity-in-Charge, Maternal and Child Health Specialist\n\n\n\nDistrict Reproductive and Child Health Coordinator\nA district-level official responsible for planning and implementing reproductive, maternal, newborn, child, and adolescent health programs at the district level. They oversee the coordination, monitoring, and evaluation of integrated healthcare programs, including family planning and immunization. The role also involves capacity building at various administrative levels, supervision of health facilities within their district, managing essential medical supplies, coordinating research and data dissemination.\nReproductive, Maternal, Newborn, Child, and Adolescent Health (RMNCAH) Coordinator, Reproductive and Child Health Services Coordinator"
+    "text": "Objectives of DAK",
+    "crumbs": [
+      "WhatsApp Engagement",
+      "Digital Adaptation Kit"
+    ]
   },
   {
-    "objectID": "docs/whatsapp/whatsapp.html",
-    "href": "docs/whatsapp/whatsapp.html",
+    "objectID": "docs/whatsapp/dak/businessprocesses.html",
+    "href": "docs/whatsapp/dak/businessprocesses.html",
+    "title": "Generic business processes and workflows",
+    "section": "",
+    "text": "Generic business processes and workflows\n\nBusiness processes\n[TEXT AND TABLE]\n\n\nWorkflows\nWorkflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.\n\nA. Workflow for WhatsApp enrolment of a pregnant mother\n\n\n\n\nB. Workflow for [XXX]",
+    "crumbs": [
+      "WhatsApp Engagement",
+      "Digital Adaptation Kit",
+      "5. Business Processes"
+    ]
+  },
+  {
+    "objectID": "docs/whatsapp/dak/userscenarios.html",
+    "href": "docs/whatsapp/dak/userscenarios.html",
+    "title": "User scenarios",
+    "section": "",
+    "text": "User scenarios\nUser scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:\n\nUser scenario for registration to the program by a mother through WhatsApp\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM]\n[US 3 XXX]\n\n\nUser scenario for registration to the program by a mother through WhatsApp\n\n\n\nKey Personas\n\n\nPregnant woman: Ruth\n\n\n\n\nRuth is a 28-year-old pregnant woman, currently at 10 weeks gestation, who resides in Kajiado County. She is visiting a MamaToto-accredited facility, for her first ANC visit. Ann, a receptionist at the facility, explains the MamaToto program to Ruth and ensures she understand that enrolment for the program is done through WhatsApp chat. Ann shows Ruth a QR code which, upon scanning, opens into the WhatsApp chat on the phone of Ruth.\n Alternatively, Ruth could have heard about the MamaToto program from one of her family members or a pregnant friend who recently ernolled at the clinic. After receiving the WhatsApp enrolment phone number from one of them, Ruth can send a message to the dedicated phone number to start the enrolment from home. After enrolment from home, she will be able to receive the discounted care at a affiliated clinic of her liking.\n Upon sending any message in the chat, a response to register Ruth on for the discounted care program will be sent. As a first step, a consent form will be presented to which Ruth can agree or disagree. On agreeing, the follow up questions appear where details such as her name, date of birth, phone number, last menstrual period, basic medical history and ANC profile will be obtained. Following completion of the questionnaire, Ruth receives a confirmation of successful registration, a summary of information she has provided and her unique beneficiary number for the discounted care program.  Ruth will now receive maternal health education and gestational based appointment reminders on her WhatsApp. Following each visit, a follow-up experience survey is sent to Ruth to review the quality of services offered. She will also be able to update her Expected Date of Delivery (EDD) in case needed.  Anne registers all the gathered information in the digital system, as well as on the RCH card where she indicates the date for the next follow-up visit.\n\n\n\n\n\n\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].\n\n\n\nKey Personas\n\n\nRegistration and billing staff: XX\n\n\n\n\n[PARAGRAPH 1]  [PARAGRAPH 2]\n [PARAGRAPH 3]",
+    "crumbs": [
+      "WhatsApp Engagement",
+      "Digital Adaptation Kit",
+      "4. User Scenarios"
+    ]
+  },
+  {
+    "objectID": "docs/whatsapp/narrative.html",
+    "href": "docs/whatsapp/narrative.html",
     "title": "WhatsApp",
     "section": "",
     "text": "The WhatsApp platform plays a pivotal role in the Mamatoto project, serving as the primary interface for user engagement and self-enrollment. Its familiarity and accessibility make it an ideal choice for reaching a wide range of users, particularly pregnant mothers, ensuring ease of access to maternal healthcare services.\n\n\n\n\nUser-Friendly Interface:\n\nDesigned to guide users through the enrollment process with minimal effort.\nEmploys conversational prompts and buttons for intuitive navigation.\n\nAutomated Communication:\n\nResponds instantly to user inputs, delivering timely messages and instructions.\nSends reminders for antenatal care visits and collects post-visit feedback.\n\nDynamic Workflow:\n\nSeamlessly transitions users through key stages: consent, registration, and confirmation.\nAdjusts prompts based on user responses, ensuring personalized engagement.\n\nData Collection:\n\nCollects vital information such as name, date of birth, marital status, and health history.\nValidates data in real-time to ensure accuracy.\n\n\n\n\n\nThe WhatsApp integration leverages chatbot technology and backend systems to manage workflows and data processing.\n\n\n\nWhatsApp Business API: Handles communication between users and the chatbot.\nBackend Services:\n\nManages user sessions, stores data securely, and interfaces with other systems like SHR and IOL.\n\nConsent Management:\n\nGenerates PDF consent forms and tracks user approvals.\n\n\n\n\n\n// Example: Sending a welcome message\nconst message = {\n  to: userPhone,\n  type: \"text\",\n  text: {\n    body: \"Welcome to the Mamatoto platform! How can we assist you today? Please select an option:\\n1. Register\\n2. Ask a Question\"\n  }\n};\nsendWhatsAppMessage(message);",
@@ -208,8 +236,8 @@
     ]
   },
   {
-    "objectID": "docs/whatsapp/whatsapp.html#overview",
-    "href": "docs/whatsapp/whatsapp.html#overview",
+    "objectID": "docs/whatsapp/narrative.html#overview",
+    "href": "docs/whatsapp/narrative.html#overview",
     "title": "WhatsApp",
     "section": "",
     "text": "The WhatsApp platform plays a pivotal role in the Mamatoto project, serving as the primary interface for user engagement and self-enrollment. Its familiarity and accessibility make it an ideal choice for reaching a wide range of users, particularly pregnant mothers, ensuring ease of access to maternal healthcare services.",
@@ -219,8 +247,8 @@
     ]
   },
   {
-    "objectID": "docs/whatsapp/whatsapp.html#features-and-functionalities",
-    "href": "docs/whatsapp/whatsapp.html#features-and-functionalities",
+    "objectID": "docs/whatsapp/narrative.html#features-and-functionalities",
+    "href": "docs/whatsapp/narrative.html#features-and-functionalities",
     "title": "WhatsApp",
     "section": "",
     "text": "User-Friendly Interface:\n\nDesigned to guide users through the enrollment process with minimal effort.\nEmploys conversational prompts and buttons for intuitive navigation.\n\nAutomated Communication:\n\nResponds instantly to user inputs, delivering timely messages and instructions.\nSends reminders for antenatal care visits and collects post-visit feedback.\n\nDynamic Workflow:\n\nSeamlessly transitions users through key stages: consent, registration, and confirmation.\nAdjusts prompts based on user responses, ensuring personalized engagement.\n\nData Collection:\n\nCollects vital information such as name, date of birth, marital status, and health history.\nValidates data in real-time to ensure accuracy.",
@@ -230,25 +258,14 @@
     ]
   },
   {
-    "objectID": "docs/whatsapp/whatsapp.html#technical-implementation",
-    "href": "docs/whatsapp/whatsapp.html#technical-implementation",
+    "objectID": "docs/whatsapp/narrative.html#technical-implementation",
+    "href": "docs/whatsapp/narrative.html#technical-implementation",
     "title": "WhatsApp",
     "section": "",
     "text": "The WhatsApp integration leverages chatbot technology and backend systems to manage workflows and data processing.\n\n\n\nWhatsApp Business API: Handles communication between users and the chatbot.\nBackend Services:\n\nManages user sessions, stores data securely, and interfaces with other systems like SHR and IOL.\n\nConsent Management:\n\nGenerates PDF consent forms and tracks user approvals.\n\n\n\n\n\n// Example: Sending a welcome message\nconst message = {\n  to: userPhone,\n  type: \"text\",\n  text: {\n    body: \"Welcome to the Mamatoto platform! How can we assist you today? Please select an option:\\n1. Register\\n2. Ask a Question\"\n  }\n};\nsendWhatsAppMessage(message);",
     "crumbs": [
       "MomCare",
       "Narrative"
-    ]
-  },
-  {
-    "objectID": "docs/whatsapp/dak/personas.html",
-    "href": "docs/whatsapp/dak/personas.html",
-    "title": "Generic personas",
-    "section": "",
-    "text": "Generic personas\n\nTargeted generic personas\nThe targeted personas for this DAK are the endusers of: 1. The WhatsApp enrolment feature: pregnant mothers (at the clinic or at home) 2. The payers billing platform: The registration and billing personnel at a healthcare facility\n\n\n\n\n\n\n\n\n\n\nName\nDescription\nDifferent names (if relevant)\nInternational Standard for Classification of Occupations code (if relevant) (9)\n\n\n\n\nPregnant woman\nA woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent.\nMother, Pregnant woman\nN/A\n\n\nRegistration and Billing personell\n[IS THIS THE CORRECT USER TO ADD? INSERT DESCRIPTION HERE]\n2221 (nursing professionals)",
-    "crumbs": [
-      "Digital Adaptation Kit",
-      "3. Generic Personas"
     ]
   },
   {
@@ -322,35 +339,15 @@
     ]
   },
   {
-    "objectID": "docs/whatsapp/dak/userscenarios.html",
-    "href": "docs/whatsapp/dak/userscenarios.html",
-    "title": "User scenarios",
+    "objectID": "docs/whatsapp/dak/personas.html",
+    "href": "docs/whatsapp/dak/personas.html",
+    "title": "Generic personas",
     "section": "",
-    "text": "User scenarios\nUser scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:\n\nUser scenario for registration to the program by a mother through WhatsApp\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM]\n[US 3 XXX]\n\n\nUser scenario for registration to the program by a mother through WhatsApp\n\n\n\nKey Personas\n\n\nPregnant woman: Ruth\n\n\n\n\nRuth is a 28-year-old pregnant woman, currently at 10 weeks gestation, who resides in Kajiado County. She is visiting a MamaToto-accredited facility, for her first ANC visit. Ann, a receptionist at the facility, explains the MamaToto program to Ruth and ensures she understand that enrolment for the program is done through WhatsApp chat. Ann shows Ruth a QR code which, upon scanning, opens into the WhatsApp chat on the phone of Ruth.\n Alternatively, Ruth could have heard about the MamaToto program from one of her family members or a pregnant friend who recently ernolled at the clinic. After receiving the WhatsApp enrolment phone number from one of them, Ruth can send a message to the dedicated phone number to start the enrolment from home. After enrolment from home, she will be able to receive the discounted care at a affiliated clinic of her liking.\n Upon sending any message in the chat, a response to register Ruth on for the discounted care program will be sent. As a first step, a consent form will be presented to which Ruth can agree or disagree. On agreeing, the follow up questions appear where details such as her name, date of birth, phone number, last menstrual period, basic medical history and ANC profile will be obtained. Following completion of the questionnaire, Ruth receives a confirmation of successful registration, a summary of information she has provided and her unique beneficiary number for the discounted care program.  Ruth will now receive maternal health education and gestational based appointment reminders on her WhatsApp. Following each visit, a follow-up experience survey is sent to Ruth to review the quality of services offered. She will also be able to update her Expected Date of Delivery (EDD) in case needed.  Anne registers all the gathered information in the digital system, as well as on the RCH card where she indicates the date for the next follow-up visit.\n\n\n\n\n\n\nUser scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].\n\n\n\nKey Personas\n\n\nRegistration and billing staff: XX\n\n\n\n\n[PARAGRAPH 1]  [PARAGRAPH 2]\n [PARAGRAPH 3]",
+    "text": "Generic personas\n\nTargeted generic personas\nThe targeted personas for this DAK are the endusers of: 1. The WhatsApp enrolment feature: pregnant mothers (at the clinic or at home) 2. The payers billing platform: The registration and billing personnel at a healthcare facility\n\n\n\n\n\n\n\n\n\n\nName\nDescription\nDifferent names (if relevant)\nInternational Standard for Classification of Occupations code (if relevant) (9)\n\n\n\n\nPregnant woman\nA woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent.\nMother, Pregnant woman\nN/A\n\n\nRegistration and Billing personell\n[IS THIS THE CORRECT USER TO ADD? INSERT DESCRIPTION HERE]\n2221 (nursing professionals)",
     "crumbs": [
+      "WhatsApp Engagement",
       "Digital Adaptation Kit",
-      "4. User Scenarios"
-    ]
-  },
-  {
-    "objectID": "docs/whatsapp/dak/businessprocesses.html",
-    "href": "docs/whatsapp/dak/businessprocesses.html",
-    "title": "Generic business processes and workflows",
-    "section": "",
-    "text": "Generic business processes and workflows\n\nBusiness processes\n[TEXT AND TABLE]\n\n\nWorkflows\nWorkflows represent the progression of activities performed within the business process. They help users and stakeholders understand the relationship between activities, data elements and decision-support needs. The workflows shown depict processes that have been generalized and may not reflect variation and nuances across different settings. Also, the simplicity of the workflow may not adequately illustrate non-linear steps that may occur.\n\nA. Workflow for WhatsApp enrolment of a pregnant mother\n\n\n\n\nB. Workflow for [XXX]",
-    "crumbs": [
-      "Digital Adaptation Kit",
-      "5. Business Processes"
-    ]
-  },
-  {
-    "objectID": "docs/whatsapp/dak/objectivesofdak.html",
-    "href": "docs/whatsapp/dak/objectivesofdak.html",
-    "title": "",
-    "section": "",
-    "text": "Objectives of DAK",
-    "crumbs": [
-      "Digital Adaptation Kit"
+      "3. Generic Personas"
     ]
   },
   {
@@ -362,6 +359,18 @@
     "crumbs": [
       "MomCare",
       "Narrative"
+    ]
+  },
+  {
+    "objectID": "docs/hybridcaremodel/dak/personas.html",
+    "href": "docs/hybridcaremodel/dak/personas.html",
+    "title": "Generic personas",
+    "section": "",
+    "text": "Generic personas\n\nTargeted generic personas\nThe targeted personas for this DAK are the end-users of the HMIS systems that interact with the Interoperability layer (IOL) and Shared Health Record (SHR) for the purpose of patient information sharing between healthcare providers. This includes registration personell, ANC nurses and doctors.\n\n\n\n\n\n\n\n\n\n\nName\nDescription\nDifferent names\nInternational Standard for Classification of Occupations code (9)\n\n\n\n\nRegistration personnel\nA senior manager responsible for overseeing the overall operations of the hospital, including resource allocation, infrastructure management, and adherence to healthcare policies. The administrator plays a critical role in ensuring the adoption and integration of digital tools to improve patient care and operational efficiency. They prioritize financial sustainability, compliance with regulatory frameworks, and stakeholder engagement.\nHealth Facility Manager, Medical superintendent, Hospital manager, Hospital director.\n\n\n\nMNCH Nurse\nA graduate who has been legally authorized (registered) to practise after examination by a state board of nurse examiners or similar regulatory authority. Education includes 3, 4 or more years in nursing school, and it leads to a university or postgraduate university degree, or the equivalent. A registered nurse has the full range of nursing skills.\nRegistered nurse, nurse practitioner, clinical nurse specialist, advance practice nurse, practice nurse, licensed nurse, diploma nurse, BS nurse, nurse clinician\n2221 (nursing professionals)\n\n\nHead of MNCH department\nA specialized leader responsible for managing maternal, newborn, and child health (MNCH) programs within the healthcare facility. They focus on clinical guidelines, staff training, and optimizing service delivery for MNCH-related health outcomes. This role requires strong advocacy for digital health tools to streamline care delivery, enhance monitoring, and ensure compliance with national and international MNCH standards.\nMNCH clinical lead, Maternity-in-Charge, Maternal and Child Health Specialist\n\n\n\nDistrict Reproductive and Child Health Coordinator\nA district-level official responsible for planning and implementing reproductive, maternal, newborn, child, and adolescent health programs at the district level. They oversee the coordination, monitoring, and evaluation of integrated healthcare programs, including family planning and immunization. The role also involves capacity building at various administrative levels, supervision of health facilities within their district, managing essential medical supplies, coordinating research and data dissemination.\nReproductive, Maternal, Newborn, Child, and Adolescent Health (RMNCAH) Coordinator, Reproductive and Child Health Services Coordinator",
+    "crumbs": [
+      "Hybrid Care Model",
+      "Digital Adaptation Kit",
+      "3. Generic Personas"
     ]
   },
   {
