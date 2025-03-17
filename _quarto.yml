@@ -20,6 +20,7 @@ website:
       - file: docs/mamatoto/narrative/index.qmd
         text: Connected Care
       - file: docs/whatsapp/narrative.qmd
+        text: WhatsApp Engagement
       - file: docs/vp/narrative/valuepoints.qmd
         text: ValuePoints Tool
       - file: docs/hybridcaremodel/narrative.qmd
@@ -117,16 +118,16 @@ website:
       align: left
       contents: 
         - section: "Narrative"
-          href: docs/whatsapp/whatsapp.qmd
+          href: docs/whatsapp/narrative.qmd
           contents:
-            - file: docs/whatsapp/whatsapp.qmd
+            - file: docs/whatsapp/narrative.qmd
               text: WhatsApp Enrolment
         - section: "Digital Adaptation Kit"
           href: docs/whatsapp/dak/objectivesofdak.qmd
           contents:
             - file: docs/whatsapp/dak/objectivesofdak.qmd
               text: 1. Objectives of the DAK
-            - file: docs/whatsapp/healthinterventions.qmd
+            - file: docs/whatsapp/dak/healthinterventions.qmd
               text: 2. Health Interventions
             - file: docs/whatsapp/dak/personas.qmd
               text: 3. Generic Personas
