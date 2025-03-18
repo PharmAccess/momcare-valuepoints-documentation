@@ -4,10 +4,8 @@ User scenarios are a narrative description of how the end user would interact wi
 
 1.	User scenario for registration to the program by a mother through WhatsApp.
 2.	User scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM]
-3.	[US 3 XXX]
 
-
-###### **User scenario for registration to the program by a mother through WhatsApp**
+###### **1. User scenario for registration to the program by a mother through WhatsApp**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black;">
     <tr>
@@ -34,7 +32,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **User scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].**
+###### **2. User scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black;">
     <tr>

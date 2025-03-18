@@ -1,0 +1,92 @@
+# Core data elements
+This section outlines the minimum set of data needed to enroll the pregnant woman into the MamaToto program through the WhatsApp chat.
+
+[THIS SECTION REQUIRES A REVIEW ON THE DATA ELEMTNS FROM CHRIS]
+
+###### Core data elements - WhatsApp enrolment
+<table style="border-collapse: collapse; width: 100%;">
+  <thead style="background-color: #ADD8E6;">
+    <tr>
+      <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ccc;">Activity ID and name</th>
+      <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ccc;">Data element ID</th>
+      <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ccc;">Data element name</th>
+      <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ccc;">Description and definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;">MMT.A.create or update beneficiary</td>
+      <td style="padding: 12px;">MMT.A.DE1</td>
+      <td style="padding: 12px;">Identifier</td>
+      <td style="padding: 12px;">Beneficiary’s identifier</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE2</td>
+      <td style="padding: 12px;">First Name</td>
+      <td style="padding: 12px;">Beneficiary’s first names.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE3</td>
+      <td style="padding: 12px;">Middle Name</td>
+      <td style="padding: 12px;">Beneficiary’s given names (not always 'first'). Includes middle names.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE4</td>
+      <td style="padding: 12px;">Last Name</td>
+      <td style="padding: 12px;">Beneficiary’s family name (often called 'Surname').</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE5</td>
+      <td style="padding: 12px;">Gender</td>
+      <td style="padding: 12px;">Administrative gender - the gender that the patient is considered to have for administration and record-keeping purposes.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE6</td>
+      <td style="padding: 12px;">Date of Birth</td>
+      <td style="padding: 12px;">The date of birth of the individual.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE7</td>
+      <td style="padding: 12px;">Marital Status</td>
+      <td style="padding: 12px;">This field contains a patient's most recent marital (civil) status.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE8</td>
+      <td style="padding: 12px;">Phone Number</td>
+      <td style="padding: 12px;">A contact detail for the person, e.g., a telephone.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE9</td>
+      <td style="padding: 12px;">Email</td>
+      <td style="padding: 12px;">A contact detail for the person, e.g., an email address.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE10</td>
+      <td style="padding: 12px;">Residential Country Code</td>
+      <td style="padding: 12px;">Residential code that represents the beneficiary’s country of residence.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE11</td>
+      <td style="padding: 12px;">Residential County Code</td>
+      <td style="padding: 12px;">Residential code that represents the beneficiary’s county of residence.</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ccc;">
+      <td style="padding: 12px;"></td>
+      <td style="padding: 12px;">MMT.A.DE12</td>
+      <td style="padding: 12px;">Residential Location Code</td>
+      <td style="padding: 12px;">Residential code that represents the beneficiary’s location of residence.</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
