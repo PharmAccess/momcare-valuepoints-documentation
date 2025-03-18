@@ -43,12 +43,16 @@ One emerging approach in the FHIR community is SQL-on-FHIR, which allows direct 
 1. **Export Bulk Data**: Use the Bulk FHIR API to export large datasets from the FHIR server in JSON or Parquet format.
 2. **Use sql-on-fhir to extract views**: Extract table views using sql-on-fhir and import into any database.
 3. **Query the Data**: Use SQL-on-FHIR to query the imported data as if it were live FHIR resources. For example:
-    ```sql
-    SELECT Patient.id, Patient.name, Observation.code, Observation.value
-    FROM Patient
-    JOIN Observation ON Patient.id = Observation.subject
-    WHERE Observation.code = 'blood-pressure';
-    ```
+```sql
+SELECT 
+    Patient.id, Patient.name, Observation.code, Observation.value
+FROM 
+    Patient
+JOIN 
+    Observation ON Patient.id = Observation.subject
+WHERE 
+    Observation.code = 'blood-pressure';
+```
 4. **Analyze and Iterate**: Process the results using your preferred analytical tools and iterate as needed.
 
 This approach allows organizations to separate transaction workflows from analytical workflows. It is particularly useful for batch processing, historical data analysis, or scenarios where real-time access is not required. The approach is gaining traction due to its simplicity and ability to integrate seamlessly with existing SQL-based ecosystems.
