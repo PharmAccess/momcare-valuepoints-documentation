@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>requirements</title>
+<title>sqlonfhir</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,11 +99,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">WhatsApp Engagement</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../docs/vp/narrative/valuepoints.html"> 
+    <a class="nav-link active" href="../../../docs/vp/narrative/valuepoints.html" aria-current="page"> 
 <span class="menu-text">ValuePoints Tool</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../../docs/hybridcaremodel/narrative.html" aria-current="page"> 
+    <a class="nav-link" href="../../../docs/hybridcaremodel/narrative.html"> 
 <span class="menu-text">Hybrid Care Model</span></a>
   </li>  
 </ul>
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/hybridcaremodel/dak/objectivesofdak.html">Digital Adaptation Kit</a></li><li class="breadcrumb-item"><a href="../../../docs/hybridcaremodel/dak/requirements.html">8. Functional and non-functional requirements</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">Analytical approaches</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../docs/hybridcaremodel/narrative.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/vp/narrative/valuepoints.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Narrative</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -146,15 +146,45 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/narrative.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Background</span></a>
+  <a href="../../../docs/vp/narrative/valuepoints.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to ValuePoints</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/narrative/abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">List of Abbreviations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/narrative/journeytracking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Journey Tracking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/narrative/interoperability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interoperability</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/narrative/financialmodel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Financial Model</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/narrative/hanang.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Implementation in Hanang</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../docs/hybridcaremodel/dak/objectivesofdak.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/vp/dak/dak_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Digital Adaptation Kit</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -163,50 +193,114 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/objectivesofdak.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/dak_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Objectives of the DAK</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/healthinterventions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/healthinterventions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Health Interventions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/personas.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/personas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3. Generic Personas</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/userscenarios.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/userscenarios.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4. User Scenarios</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/businessprocesses.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/businessprocesses.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">5. Business Processes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/dataelements.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/data-elements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">6. Core Data Elements</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/metrics.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/dak/metrics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">7. Indicators and Performance Metrics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/hybridcaremodel/dak/requirements.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/vp/dak/requirements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">8. Functional and non-functional requirements</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Technical Specification</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Specifications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/techspecs/pipeline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Base Tables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/techspecs/sqlonfhir.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Analytical approaches</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/techspecs/valuepoints.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ValuePoints Jupyter Notebook</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/techspecs/metrics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ValuePoint Dashboards</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/techspecs/dhis2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DHIS2 Reports</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/vp/vpsoftware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/vp/vpsoftware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
   </div>
 </li>
       </ul>
@@ -218,15 +312,91 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/hybridcaremodel/dak/objectivesofdak.html">Digital Adaptation Kit</a></li><li class="breadcrumb-item"><a href="../../../docs/hybridcaremodel/dak/requirements.html">8. Functional and non-functional requirements</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">Analytical approaches</a></li></ol></nav></header>
 
 
 
 
-<section id="functional-and-non-functional-requirements" class="level1">
-<h1>8. Functional and non-functional requirements</h1>
+<section id="challenges-with-fhir-data" class="level1">
+<h1>Challenges with FHIR Data</h1>
+<p>Healthcare data retrieved from FHIR servers is often deeply nested, reflecting the complex relationships between patients, encounters, observations, and other clinical entities. While this structure is ideal for representing real-world relationships, it can be challenging to work with for analytical purposes. For example, extracting a simple list of patient diagnoses might require traversing multiple layers of nested JSON objects.</p>
+<section id="solutions-to-address-nesting-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="solutions-to-address-nesting-challenges">Solutions to Address Nesting Challenges</h2>
+<ol type="1">
+<li><p><strong>DuckDB</strong>: DuckDB is a high-performance analytical database system that supports querying nested data formats such as JSON and Parquet. By using DuckDB, users can load nested FHIR data, write SQL queries to flatten the structure, and perform analysis in a familiar SQL environment.</p></li>
+<li><p><strong>SQL-on-FHIR</strong>: SQL-on-FHIR provides a way to map FHIR resources to relational database tables, enabling users to write SQL queries to extract and analyze data. This approach simplifies the process of working with nested data by flattening it into a tabular format that is easier to query and analyze.</p></li>
+<li><p><strong>Clinical Query Language (CQL)</strong>: CQL is a domain-specific language designed for querying clinical data. It allows users to write high-level queries that abstract away the complexity of the underlying data structure. CQL is particularly useful for expressing clinical logic and retrieving specific subsets of data from nested FHIR resources.</p></li>
+</ol>
+<p>Each of these solutions offers unique advantages depending on the use case, enabling organizations to efficiently work with complex FHIR data structures for analytical purposes.</p>
+</section>
+<section id="getting-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="getting-the-data">Getting the data</h2>
+<p>Most analytical work with healthcare data begins with exporting data from Bulk FHIR (Fast Healthcare Interoperability Resources) endpoints. Bulk FHIR exports provide a standardized way to retrieve large datasets from FHIR servers, enabling efficient access to clinical data. This process can also allow for the anonymization of sensitive data to allow organizations to work with comprehensive datasets without the need for repeated individual queries.</p>
+<section id="simplify-nested-data-using-duckdb" class="level3">
+<h3 class="anchored" data-anchor-id="simplify-nested-data-using-duckdb">1. Simplify Nested Data using Duckdb</h3>
+<p>One effective approach to handle deeply nested data is to use tools like DuckDB, a high-performance analytical database system. DuckDB supports querying nested data formats such as JSON and Parquet, making it a powerful tool for working with FHIR data.</p>
+<p>Here’s an example workflow:</p>
+<ol type="1">
+<li><strong>Load the Data</strong>: Use DuckDB to load the exported FHIR data, which is often in JSON or Parquet format.</li>
+<li><strong>Flatten the Structure</strong>: Write SQL queries to extract and flatten the nested fields into a tabular format.</li>
+<li><strong>Perform Analysis</strong>: Once the data is flattened, standard SQL operations can be used for analysis.</li>
+</ol>
+<p>For more information on this approach and its applications, visit: https://pharmaccess.github.io/hdc-data-analytics-handbook/src/duckdb.html</p>
+</section>
+<section id="sql-on-fhir-an-alternative-way-to-work-with-bulk-fhir-exports" class="level3">
+<h3 class="anchored" data-anchor-id="sql-on-fhir-an-alternative-way-to-work-with-bulk-fhir-exports">2. SQL-on-FHIR: An alternative way to work with Bulk FHIR Exports</h3>
+<p>One emerging approach in the FHIR community is SQL-on-FHIR, which allows direct querying of FHIR resources using SQL. While SQL-on-FHIR provides real-time querying capabilities, it can also be combined with Bulk FHIR exports for scenarios where large datasets need to be processed offline. SQL-on-FHIR works by mapping FHIR resources to relational database tables, where each resource type (e.g., Patient, Observation, Encounter) is represented as a table. This mapping enables users to write SQL queries to retrieve and analyze data directly from the FHIR server.</p>
+<section id="benefits-of-sql-on-fhir" class="level4">
+<h4 class="anchored" data-anchor-id="benefits-of-sql-on-fhir">Benefits of SQL-on-FHIR:</h4>
+<ol type="1">
+<li><strong>Standardized Queries</strong>: Use familiar SQL syntax to interact with FHIR resources.</li>
+<li><strong>Interoperability</strong>: Leverage existing SQL-based tools and workflows for FHIR data analysis.</li>
+<li><strong>Mature Ecosystem and Tooling</strong>: The longstanding adoption of SQL has fostered a rich ecosystem of tools for reporting, data visualization, and business intelligence, facilitating seamless integration with existing data warehouses and analytics platforms.</li>
+<li><strong>Ease of Use and Familiarity</strong>: Many data professionals already possess deep SQL expertise, reducing the learning curve and speeding up the development of analytical workflows and reporting systems.</li>
+<li><strong>Integration with Existing Data Infrastructure</strong>: Organizations that rely on SQL-based systems can more easily incorporate bulk FHIR data into their current processes, promoting centralized data management and cross-system analytics.</li>
+</ol>
+</section>
+<section id="workflow-for-sql-on-fhir-with-bulk-exports" class="level4">
+<h4 class="anchored" data-anchor-id="workflow-for-sql-on-fhir-with-bulk-exports">Workflow for SQL-on-FHIR with Bulk Exports:</h4>
+<ol type="1">
+<li><strong>Export Bulk Data</strong>: Use the Bulk FHIR API to export large datasets from the FHIR server in JSON or Parquet format.</li>
+<li><strong>Use sql-on-fhir to extract views</strong>: Extract table views using sql-on-fhir and import into any database.</li>
+<li><strong>Query the Data</strong>: Use SQL-on-FHIR to query the imported data as if it were live FHIR resources. For example: <code>sql     SELECT Patient.id, Patient.name, Observation.code, Observation.value     FROM Patient     JOIN Observation ON Patient.id = Observation.subject     WHERE Observation.code = 'blood-pressure';</code></li>
+<li><strong>Analyze and Iterate</strong>: Process the results using your preferred analytical tools and iterate as needed.</li>
+</ol>
+<p>This approach allows organizations to separate transaction workflows from analytical workflows. It is particularly useful for batch processing, historical data analysis, or scenarios where real-time access is not required. The approach is gaining traction due to its simplicity and ability to integrate seamlessly with existing SQL-based ecosystems.</p>
+</section>
+</section>
+<section id="clinical-query-language-cql" class="level3">
+<h3 class="anchored" data-anchor-id="clinical-query-language-cql">3. Clinical Query Language (CQL)</h3>
+<p>Clinical Query Language (CQL) is a high-level, domain-specific language designed to express clinical logic and retrieve specific subsets of data from FHIR resources. Unlike SQL, which focuses on tabular data, CQL is tailored for healthcare use cases, enabling clinicians and analysts to write queries that align closely with clinical workflows and decision-making.</p>
+<p>However, most CQL engines are designed to evaluate clinical logic against FHIR data provided either via a FHIR API or as an in-memory collection of FHIR resources. This means that CQL is not typically used to directly query bulk FHIR exports. Instead, organizations often preprocess bulk FHIR data into a format compatible with CQL engines, such as loading the data into a FHIR server or converting it into an in-memory structure.</p>
+<section id="benefits-of-cql" class="level4">
+<h4 class="anchored" data-anchor-id="benefits-of-cql">Benefits of CQL:</h4>
+<ol type="1">
+<li><strong>Clinical Focus</strong>: Designed specifically for healthcare, making it easier to express clinical logic.</li>
+<li><strong>Interoperability</strong>: Works seamlessly with FHIR APIs and standards.</li>
+<li><strong>Reusability</strong>: Queries can be reused across different systems and workflows.</li>
+</ol>
+</section>
+<section id="workflow-for-using-cql-with-bulk-fhir-data" class="level4">
+<h4 class="anchored" data-anchor-id="workflow-for-using-cql-with-bulk-fhir-data">Workflow for Using CQL with Bulk FHIR Data:</h4>
+<ol type="1">
+<li><strong>Export Bulk Data</strong>: Retrieve data from Bulk FHIR endpoints.</li>
+<li><strong>Preprocess the Data</strong>: Load the data into a FHIR server or convert it into an in-memory collection.</li>
+<li><strong>Write CQL Queries</strong>: Use CQL to define clinical logic and extract the required data.</li>
+<li><strong>Evaluate and Analyze</strong>: Run the queries using a CQL engine and analyze the results.</li>
+</ol>
+<p>While CQL is not inherently designed for bulk data processing, its ability to express complex clinical logic makes it a valuable tool when combined with preprocessing steps to handle bulk FHIR exports.</p>
+</section>
+</section>
+</section>
+<section id="focus-on-sql-on-fhir-for-measure-creation" class="level2">
+<h2 class="anchored" data-anchor-id="focus-on-sql-on-fhir-for-measure-creation">Focus on SQL-on-FHIR for Measure Creation</h2>
+<p>While we will provide CQL scripts for specific use cases, our primary focus will be on creating measures using SQL-on-FHIR. SQL-on-FHIR offers a robust and flexible approach for defining and analyzing healthcare measures by leveraging the familiarity and power of SQL. This approach simplifies the process of working with FHIR data, enabling efficient measure creation and integration with existing analytical workflows. By prioritizing SQL-on-FHIR, we aim to streamline the development of actionable insights while still supporting the use of CQL for advanced clinical logic when needed.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
