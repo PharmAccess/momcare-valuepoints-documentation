@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -123,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">Analytical approaches</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">ValuePoints Calculations</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">Analytical approaches</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -262,6 +296,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Base Tables</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">ValuePoints Calculations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/vp/techspecs/sqlonfhir.html" class="sidebar-item-text sidebar-link active">
@@ -271,9 +314,11 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/vp/techspecs/valuepoints.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ValuePoints Jupyter Notebook</span></a>
+ <span class="menu-text">SQL on FHIR Implementation</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/vp/techspecs/metrics.html" class="sidebar-item-text sidebar-link">
@@ -292,11 +337,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../docs/vp/vpsoftware.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/vp/vpsoftware.html" class="sidebar-item-text sidebar-link">
@@ -312,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">Analytical approaches</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">ValuePoints Calculations</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">Analytical approaches</a></li></ol></nav></header>
 
 
 
@@ -361,7 +406,17 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><strong>Export Bulk Data</strong>: Use the Bulk FHIR API to export large datasets from the FHIR server in JSON or Parquet format.</li>
 <li><strong>Use sql-on-fhir to extract views</strong>: Extract table views using sql-on-fhir and import into any database.</li>
-<li><strong>Query the Data</strong>: Use SQL-on-FHIR to query the imported data as if it were live FHIR resources. For example: <code>sql     SELECT Patient.id, Patient.name, Observation.code, Observation.value     FROM Patient     JOIN Observation ON Patient.id = Observation.subject     WHERE Observation.code = 'blood-pressure';</code></li>
+<li><strong>Query the Data</strong>: Use SQL-on-FHIR to query the imported data as if it were live FHIR resources. For example:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Patient.<span class="kw">id</span>, Patient.name, Observation.code, Observation.<span class="fu">value</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    Patient</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    Observation <span class="kw">ON</span> Patient.<span class="kw">id</span> <span class="op">=</span> Observation.subject</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    Observation.code <span class="op">=</span> <span class="st">'blood-pressure'</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
 <li><strong>Analyze and Iterate</strong>: Process the results using your preferred analytical tools and iterate as needed.</li>
 </ol>
 <p>This approach allows organizations to separate transaction workflows from analytical workflows. It is particularly useful for batch processing, historical data analysis, or scenarios where real-time access is not required. The approach is gaining traction due to its simplicity and ability to integrate seamlessly with existing SQL-based ecosystems.</p>
