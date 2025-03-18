@@ -3,8 +3,8 @@
 // WHO Antenatal Care (ANC) Indicator 4
 // Percentage of pregnant women with at least four ANC contacts
 
-// Numerator: Number of pregnant women with four ANC contacts
-// Denominator: Total number of antenatal clients with a first contact
+// Numerator: Number of pregnant women with four ANC contacts between gestational age 20 weeks and 43 weeks
+// Denominator: Total number of antenatal clients with a first contact 
 
 // */
 library ANCIND04
@@ -31,6 +31,10 @@ context Patient
 define "Initial Population":
   exists (BaseData."Antenatal care case")
 
+define "First antenatal care contact":
+  BaseData."Antenatal care contact" C
+    where C.reasonCode in Cx."First Antenatal Care Contact Choices"
+
 // /*
 // Numerator: Number of pregnant women with four ANC contacts between gestational age 20 weeks and 43 weeks
 // */
@@ -38,17 +42,15 @@ define Numerator:
   exists(
     BaseData."Antenatal care contact"
       where Count(BaseData."Antenatal care contact") >= 4
-        and Interval[ContactData."Gestational age" >= 20 weeks, ContactData."Gestational age" <= 43 weeks]    
-  )
+        and Interval[ContactData."Gestational age" >= 20 weeks, ContactData."Gestational age" <= 43 weeks]
+)
  
-
 // /*
-// Denominator: Number of pregnant women with at least four ANC contacts between gestational age 20 weeks and 43 weeks
+// Denominator: Total number of antenatal clients with a first contact
 // */
 define Denominator:
-  exists(
-    BaseData."Antenatal care contact"
-      where Interval[ContactData."Gestational age" >= 20 weeks, ContactData."Gestational age" <= 43 weeks]    
+  exists (
+    "First antenatal care contact"
   )
 
 
