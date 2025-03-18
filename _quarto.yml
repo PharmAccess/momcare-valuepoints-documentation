@@ -105,8 +105,6 @@ website:
               text: Digitally Connected Maternal Care
             - file: docs/mamatoto/narrative/shr.qmd
               text: Shared Health Record
-            - file: docs/mamatoto/narrative/whatsapp.qmd
-              text: WhatsApp Enrolment
         - section: "Digital Adaptation Kit"
           href: docs/mamatoto/dak/dak.qmd
           contents:
