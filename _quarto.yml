@@ -77,6 +77,10 @@ website:
               text: General Specifications
             - file: docs/vp/techspecs/pipeline.qmd
               text: Base Tables
+            - file: docs/vp/techspecs/sqlonfhir.qmd
+              text: Analytical approaches
+            - file: docs/vp/techspecs/valuepoints.ipynb
+              text: ValuePoints Jupyter Notebook
             - file: docs/vp/techspecs/metrics.qmd
               text: ValuePoint Dashboards
             - file: docs/vp/techspecs/dhis2.qmd

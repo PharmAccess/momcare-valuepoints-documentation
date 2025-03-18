@@ -66,6 +66,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 # Install Python and other libraries via mamba
 RUN mamba install --yes \
     "python>=3.11" \
+    ipykernel \
     openjdk=17 \
     go-task \
     && mamba clean -tipy
