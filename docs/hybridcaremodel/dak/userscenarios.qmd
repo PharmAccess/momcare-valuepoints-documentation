@@ -6,3 +6,96 @@ User scenarios are a narrative description of how the end user would interact wi
 2. First virtual consultation with telehealth provider.
 3. Recurring physical consultations at a clinic.
 4. Recurring virtual consultations with telehealth provider. 
+
+###### **1. First physical consultation at a clinic.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Pregnant woman:</strong> Ruth<br>
+            <strong>Registration personnel:</strong> Ann<br>
+            <strong>MNCH nurse:</strong> Eli
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            Ruth arrives at the MamaToto-accredited clinic for her first antenatal visit. After confirming her identity, she provides her personal details to Ann (the receptionist). Ann informs Ruth about the Hybrid care program, specifically detailing the aspect of data sharing between providers. Upon approving taking part in the program, Ruth signs a consent form. Ann logs into the HMIS system using the secure credentials. Upon entering the system, she searches in the system using identifiers like a national ID or phone number to check if Ruth has an existing record. As the record does not already exist in the system, Ann selects the “Register New Patient” option and then fills in the necessary details, including the mother’s full name, date of birth and contact information. She then directs Ruth to the attending nurse.
+            <br><br>
+            Eli (ANC Nurse), creates a new medical record for Ruth in the HMIS systems. Eli begins documenting the antenatal visit. He enters key findings, including the mother's current gestational age, vital signs such as blood pressure and weight, any relevant medical history, and the results of lab tests. Additionally, Eli records the advice and counseling provided, such as guidance on nutrition, supplements, and recognizing potential danger signs during pregnancy. Any risks or complications noted during the visit are carefully documented as well. 
+            <br><br>
+            Once the data is entered and reviewed for accuracy, Eli saves the record. Automatically, the systems pushes the new patient record to the Shared Health Record (SHR). The system validates the information and successfully synchronizes it, making Ruth's visit details accessible to other healthcare providers involved in her care, to ensure continuity of care and a seamless care journey.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **2. First virtual consultation with telehealth provider.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Pregnant woman:</strong> Ruth<br>
+            <strong>Virtual care coordinator:</strong> John<br>
+            <strong>Virtual healthcare provider:</strong> Cecilia
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            As the care coordinator at the telehealth company, John is responsible for ensuring patient registration and administration is done appropriately. John open the HMIS system and is alerted that new patients have been enrolled for the hybrid care program at the physical provider. With a single click on a button, he can see the biodata of Ruth, including her name and phone number, yet does not have access to her medical data. John creates a new patient record in the HMIS system for Ruth, which is largely pre-filled by the system with the biodata collected during the first ANC visit at the physical provider. John ensure that the first virtual consultation is booked in the agenda of the virtual healthcare provider.
+            <br><br>
+            Cecilia (Virtual healthcare provider) has received an alert that a new mother (Ruth) has been registered in the MamaToto hybrid care program and is due for her first virtual consultation. As Cecilia is about to initiate a virtual touchpoint with Ruth, she opens the viewer that present the medical history stored in the SHR, ensuring she has up-to-date knowledge of Ruths medical status which includes the antenatal findings from her previous visit to the physical clinic. She then calls Ruth to do the virtual check-up.
+            <br><br>
+            Cecilia proceeds to update Ruth’s record with the latest findings from the virtual consultation. This includes any new symptoms or concerns Ruth reports and any advice, medication prescriptions or recommendations provided during the consultation. Once all the new information has been documented, Cecilia saves the updated record in the system. Ruths information is then pushed to the SHR to update her record, ensuring that Ruth’s antenatal care data is available and up-to-date for any future care providers who may need access.
+            <br><br> 
+            Ruth completes her virtual visit feeling assured that her health records are in good hands, and that the continuity of care across both physical and virtual settings is maintained through seamless integration with the SHR.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **3. Recurring physical consultations at a clinic.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Pregnant woman:</strong> Ruth<br>
+            <strong>MNCH nurse:</strong> Eli
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            Ruth returns to the healthcare clinic for her recurring physical ANC check-up. Eli, the MNCH nurse, open the HMIS system and find Ruth's medical record by searching with her phone number or national ID number. Then, Eli opens the viewer that shows the medical records of Ruth that is stored in the SHR. Eli is now able to see the key medical information and notes recorded during (i) all the previous visits at his own clinic and (ii) all virtual touchpoints with the virtual healthcare provider. As such, Eli now has a comprehensive overview of Ruth's pregnancy care journey and is able to provide high quality care.
+            <br><br>
+            During the ANC visit, he records all relevant information (as is described earlier) and ensures this is correctly stored in the SHR for any future visits.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **4. Recurring virtual consultations with telehealth provider.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Pregnant woman:</strong> Ruth<br>
+            <strong>Virtual healthcare provider:</strong> Cecilia
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            
+            For each scheduled virtual touchpoint, Cecilia opens the viewer that present the key medical information and notes recorded during (i) all the previous visits at the physical healthcare facility and (ii) all virtual touchpoints. As such, Cecilia now has a comprehensive overview of Ruth's pregnancy care journey before she initiates the call. She then calls Ruth to do the virtual check-up.
+            <br><br>
+            During the virtual touchpoint, Cecilia records all relevant information (as is described earlier) and ensures this is correctly stored in the SHR for any future touchpoints.
+        </td>
+    </tr>
+</table>
+
+<br>

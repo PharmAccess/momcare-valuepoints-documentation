@@ -2,9 +2,7 @@
 
 #### Business processes
 A business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area. Workflows are a visual representation of the progression of activities (tasks, events, interactions) that are performed within the business process. The workflow provides a “story” for the business process being diagrammed and is used to enhance communication and collaboration among users, stakeholders and engineers. 
-
-<br>.
-
+<br>
 ![](whatsapp_businessproccess.png)
 
 #### Workflows
@@ -13,6 +11,25 @@ Workflows represent the progression of activities performed within the business 
 ###### A. Workflow for WhatsApp enrolment of a pregnant mother
 ![](WappEnrolment.png)
 
+**Annotations for the business process for WhatsApp enrolment of a pregnant mother**
+1.	Woman enters the clinics.
+- For the workflow shown in Image XX, the pregnant woman is physically present at the clinic and not yet enrolled in the program. An alternative scenario is that the mother has received the MamaToto WhatsApp phone number or the QR code from family or friends and has started the enrolment at home. In this case, step 1 and 2 are no longer relevant, and the pregnant woman goes directly to step 3. 
+
+2.	Registration personnel instructs mother to WhatsApp enrolment
+
+
+3.	Initiating the MamaToto WhatsApp?
+- There are two ways of initiating the WhatsApp chat. (i) By scanning the QR code, that takes you directly to the chat. (ii) By saving the phone number linked to the WhatsApp chat and opening the conversation in WhatsApp.
+
+4.	Review of Terms and Conditions
+- Through the chat, the pregnant woman is provided with a PDF that contains the terms and conditions for taking part in the MamaToto program.
+
+5.	Filling out the enrolment form
+
+6.	Receiving feedback
+- Following completion of the form, the payers systems (handeling the claims and discounted payment) will check the mother for eligibility (to avoid double registrations). Once completed, the pregnant woman receives (i) confirmation of her enrolment as beneficiary of the discounted care program, (ii) het beneficiary ID for the program and (iii) a summary of the information she has provided through the forms.  
 <br>
 
-###### B. Workflow for [XXX]
+###### B. Workflow for digital health educations and experience surveys
+
+[IF WE WANT TO INCLUDE THIS BUSINESS PROCESS AND WORKFLOW, I CAN MAKE THE SCHEMATIC DRAWING]
