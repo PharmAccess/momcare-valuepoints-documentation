@@ -1,0 +1,85 @@
+# Challenges with FHIR Data
+Healthcare data retrieved from FHIR servers is often deeply nested, reflecting the complex relationships between patients, encounters, observations, and other clinical entities. While this structure is ideal for representing real-world relationships, it can be challenging to work with for analytical purposes. For example, extracting a simple list of patient diagnoses might require traversing multiple layers of nested JSON objects.
+
+## Solutions to Address Nesting Challenges
+
+1. **DuckDB**: DuckDB is a high-performance analytical database system that supports querying nested data formats such as JSON and Parquet. By using DuckDB, users can load nested FHIR data, write SQL queries to flatten the structure, and perform analysis in a familiar SQL environment.
+
+2. **SQL-on-FHIR**: SQL-on-FHIR provides a way to map FHIR resources to relational database tables, enabling users to write SQL queries to extract and analyze data. This approach simplifies the process of working with nested data by flattening it into a tabular format that is easier to query and analyze.
+
+3. **Clinical Query Language (CQL)**: CQL is a domain-specific language designed for querying clinical data. It allows users to write high-level queries that abstract away the complexity of the underlying data structure. CQL is particularly useful for expressing clinical logic and retrieving specific subsets of data from nested FHIR resources.
+
+
+Each of these solutions offers unique advantages depending on the use case, enabling organizations to efficiently work with complex FHIR data structures for analytical purposes.
+
+## Getting the data
+Most analytical work with healthcare data begins with exporting data from Bulk FHIR (Fast Healthcare Interoperability Resources) endpoints. Bulk FHIR exports provide a standardized way to retrieve large datasets from FHIR servers, enabling efficient access to clinical data. This process can also allow for the anonymization of sensitive data to allow organizations to work with comprehensive datasets without the need for repeated individual queries.
+
+### 1. Simplify Nested Data using Duckdb
+
+One effective approach to handle deeply nested data is to use tools like DuckDB, a high-performance analytical database system. DuckDB supports querying nested data formats such as JSON and Parquet, making it a powerful tool for working with FHIR data.
+
+Here’s an example workflow:
+
+1. **Load the Data**: Use DuckDB to load the exported FHIR data, which is often in JSON or Parquet format.
+2. **Flatten the Structure**: Write SQL queries to extract and flatten the nested fields into a tabular format.
+3. **Perform Analysis**: Once the data is flattened, standard SQL operations can be used for analysis.
+
+For more information on this approach and its applications, visit:
+https://pharmaccess.github.io/hdc-data-analytics-handbook/src/duckdb.html
+
+### 2. SQL-on-FHIR: An alternative way to work with Bulk FHIR Exports
+
+One emerging approach in the FHIR community is SQL-on-FHIR, which allows direct querying of FHIR resources using SQL. While SQL-on-FHIR provides real-time querying capabilities, it can also be combined with Bulk FHIR exports for scenarios where large datasets need to be processed offline. SQL-on-FHIR works by mapping FHIR resources to relational database tables, where each resource type (e.g., Patient, Observation, Encounter) is represented as a table. This mapping enables users to write SQL queries to retrieve and analyze data directly from the FHIR server.
+
+#### Benefits of SQL-on-FHIR:
+1. **Standardized Queries**: Use familiar SQL syntax to interact with FHIR resources.
+2. **Interoperability**: Leverage existing SQL-based tools and workflows for FHIR data analysis.
+3. **Mature Ecosystem and Tooling**: The longstanding adoption of SQL has fostered a rich ecosystem of tools for reporting, data visualization, and business intelligence, facilitating seamless integration with existing data warehouses and analytics platforms.
+4. **Ease of Use and Familiarity**: Many data professionals already possess deep SQL expertise, reducing the learning curve and speeding up the development of analytical workflows and reporting systems.
+5. **Integration with Existing Data Infrastructure**: Organizations that rely on SQL-based systems can more easily incorporate bulk FHIR data into their current processes, promoting centralized data management and cross-system analytics.
+
+#### Workflow for SQL-on-FHIR with Bulk Exports:
+1. **Export Bulk Data**: Use the Bulk FHIR API to export large datasets from the FHIR server in JSON or Parquet format.
+2. **Use sql-on-fhir to extract views**: Extract table views using sql-on-fhir and import into any database.
+3. **Query the Data**: Use SQL-on-FHIR to query the imported data as if it were live FHIR resources. For example:
+```sql
+SELECT 
+    Patient.id, Patient.name, Observation.code, Observation.value
+FROM 
+    Patient
+JOIN 
+    Observation ON Patient.id = Observation.subject
+WHERE 
+    Observation.code = 'blood-pressure';
+```
+4. **Analyze and Iterate**: Process the results using your preferred analytical tools and iterate as needed.
+
+This approach allows organizations to separate transaction workflows from analytical workflows. It is particularly useful for batch processing, historical data analysis, or scenarios where real-time access is not required. The approach is gaining traction due to its simplicity and ability to integrate seamlessly with existing SQL-based ecosystems.
+
+### 3. Clinical Query Language (CQL)
+
+Clinical Query Language (CQL) is a high-level, domain-specific language designed to express clinical logic and retrieve specific subsets of data from FHIR resources. Unlike SQL, which focuses on tabular data, CQL is tailored for healthcare use cases, enabling clinicians and analysts to write queries that align closely with clinical workflows and decision-making.
+
+However, most CQL engines are designed to evaluate clinical logic against FHIR data provided either via a FHIR API or as an in-memory collection of FHIR resources. This means that CQL is not typically used to directly query bulk FHIR exports. Instead, organizations often preprocess bulk FHIR data into a format compatible with CQL engines, such as loading the data into a FHIR server or converting it into an in-memory structure.
+
+#### Benefits of CQL:
+1. **Clinical Focus**: Designed specifically for healthcare, making it easier to express clinical logic.
+2. **Interoperability**: Works seamlessly with FHIR APIs and standards.
+3. **Reusability**: Queries can be reused across different systems and workflows.
+
+#### Workflow for Using CQL with Bulk FHIR Data:
+1. **Export Bulk Data**: Retrieve data from Bulk FHIR endpoints.
+2. **Preprocess the Data**: Load the data into a FHIR server or convert it into an in-memory collection.
+3. **Write CQL Queries**: Use CQL to define clinical logic and extract the required data.
+4. **Evaluate and Analyze**: Run the queries using a CQL engine and analyze the results.
+
+While CQL is not inherently designed for bulk data processing, its ability to express complex clinical logic makes it a valuable tool when combined with preprocessing steps to handle bulk FHIR exports.
+
+## Focus on SQL-on-FHIR for Measure Creation
+
+While we will provide CQL scripts for specific use cases, our primary focus will be on creating measures using SQL-on-FHIR. SQL-on-FHIR offers a robust and flexible approach for defining and analyzing healthcare measures by leveraging the familiarity and power of SQL. This approach simplifies the process of working with FHIR data, enabling efficient measure creation and integration with existing analytical workflows. By prioritizing SQL-on-FHIR, we aim to streamline the development of actionable insights while still supporting the use of CQL for advanced clinical logic when needed.
+
+
+
+
