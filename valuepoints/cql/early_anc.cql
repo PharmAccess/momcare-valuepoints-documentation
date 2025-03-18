@@ -31,6 +31,10 @@ context Patient
 define "Initial Population":
   exists (BaseData."Antenatal care case")
 
+define "First antenatal care contact":
+  BaseData."Antenatal care contact" C
+    where C.reasonCode in Cx."First Antenatal Care Contact Choices"
+
 // /*
 // Numerator: Number of pregnant women with four ANC contacts between gestational age 20 weeks and 43 weeks
 // */
@@ -43,7 +47,8 @@ define Numerator:
  
 
 // /*
-// Denominator: Number of pregnant women with at least four ANC contacts between gestational age 20 weeks and 43 weeks
+// Denominator: Number of antenatal clients with a first contact
+
 // */
 define Denominator:
   exists (
