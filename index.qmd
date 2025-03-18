@@ -14,15 +14,15 @@ program-logo: logo-pharmaccess.png #TODO: update to logo showing all partners
 
 ### ValuePoints
 
-The objective of the ValuePoints is to improve quality of pregnancy care. [ValuePoints (VPs)](/docs/background/valuepoints.qmd) consist of a set of six indicators that reflect the quality of pregnancy care. 
+The objective of the ValuePoints is to improve quality of pregnancy care. [ValuePoints (VPs)](/vp/narrative/valuepoints.qmd) consist of a set of six indicators that reflect the quality of pregnancy care. 
 
 #### MomCare: ValuePoints Implementation
 
-ValuePoints are an element of [MomCare](/docs/background/momcare.qmd), a digital pregnancy care bundle built on the following three pillars:  value-based financing, patient-centered (digital) care delivery and quality improvement tools. Together, these interventions improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost. 
+ValuePoints are an element of [MomCare](/momcare.qmd), a digital pregnancy care bundle built on the following three pillars:  value-based financing, patient-centered (digital) care delivery and quality improvement tools. Together, these interventions improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost. 
 
 #### Implementations
 
-1. [Hanang](/docs/background/hanang.qmd) - This implementation supported quality improvements in MomCare facilities across Hanang District, Tanzania. (2023)
+1. [Hanang](/vp/narrative/hanang.qmd) - This implementation supported quality improvements in MomCare facilities across Hanang District, Tanzania. (2023)
 
 2. Kisumu - This implementation supports quality improvements in Primary Care Networks in Kisumu County, Kenya. (2024 - 2025)
 
