@@ -17,10 +17,14 @@ website:
     left:
       - href: momcare.qmd
         text: MomCare
-      - file: docs/vp/narrative/valuepoints.qmd
-        text: ValuePoints
       - file: docs/mamatoto/narrative/index.qmd
-        text: MamaToto
+        text: Connected Care
+      - file: docs/whatsapp/narrative.qmd
+        text: WhatsApp Engagement
+      - file: docs/vp/narrative/valuepoints.qmd
+        text: ValuePoints Tool
+      - file: docs/hybridcaremodel/narrative.qmd
+        text: Hybrid Care Model
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
         text: GitHub
@@ -39,6 +43,10 @@ website:
               text: Introduction to ValuePoints
             - file: docs/vp/narrative/abbreviations.qmd
               text: List of Abbreviations
+            - file: docs/vp/narrative/journeytracking.qmd
+              text: Journey Tracking
+            - file: docs/vp/narrative/interoperability.qmd
+              text: Interoperability
             - file: docs/vp/narrative/financialmodel.qmd
               text: Financial Model
             - file: docs/vp/narrative/hanang.qmd
@@ -47,21 +55,21 @@ website:
           href: docs/vp/dak/dak_overview.qmd
           contents:
             - file: docs/vp/dak/dak_overview.qmd
-              text: Objectives of the DAK
+              text: 1. Objectives of the DAK
             - file: docs/vp/dak/healthinterventions.qmd
-              text: Health Interventions
+              text: 2. Health Interventions
             - file: docs/vp/dak/personas.qmd
-              text: Generic Personas
+              text: 3. Generic Personas
             - file: docs/vp/dak/userscenarios.qmd
-              text: User Scenarios
+              text: 4. User Scenarios
             - file: docs/vp/dak/businessprocesses.qmd
-              text: Business Processes
+              text: 5. Business Processes
             - file: docs/vp/dak/data-elements.qmd
-              text: Core Data Elements
+              text: 6. Core Data Elements
             - file: docs/vp/dak/metrics.qmd
-              text: Indicators and Performance Metrics
+              text: 7. Indicators and Performance Metrics
             - file: docs/vp/dak/requirements.qmd
-              text: Functional and non-functional requirements
+              text: 8. Functional and non-functional requirements
         - section: "Technical Specification"
           href: docs/vp/techspecs/implementation.qmd
           contents: 
@@ -74,36 +82,96 @@ website:
             - file: docs/vp/techspecs/dhis2.qmd
               text: DHIS2 Reports
         - section: "Software"
-          href: docs/vp/software.qmd
+          href: docs/vp/vpsoftware.qmd
           contents: 
-            - file: docs/vpsoftware.qmd
+            - file: docs/vp/vpsoftware.qmd
               text: Software
-sidebar:
-  - id: mamatoto
-    title: MamaToto
-    style: "floating"
-    search: false
-    align: left
-    contents: 
-      - section: "Narrative"
-        href: docs/mamatoto/narrative/index.qmd
-        contents:
-           - file: docs/mamatoto/narrative/index.qmd
-             text: Introduction to MamaToto
-           - file: docs/mamatoto/narrative/shr.qmd
-             text: Shared Health Record
-           - file: docs/mamatoto/narrative/whatsapp.qmd
-             text: WhatsApp Enrolment
-      - section: "Digital Adaptation Kit"
-        href: docs/mamatoto/dak/dak.qmd
-        contents:
-           - file: docs/mamatoto/dak/dak.qmd
-             text: MamaToto DAK
-      - section: "Technical Specification"
-        href: docs/mamatoto/techspecs/gettingstarted.qmd
-        contents: 
-           - file: docs/mamatoto/techspecs/gettingstarted.qmd
-             text: General Specifications
+    - id: mamatoto
+      title: MamaToto
+      style: "floating"
+      search: false
+      align: left
+      contents: 
+        - section: "Narrative"
+          href: docs/mamatoto/narrative/index.qmd
+          contents:
+            - file: docs/mamatoto/narrative/index.qmd
+              text: Digitally Connected Maternal Care
+            - file: docs/mamatoto/narrative/shr.qmd
+              text: Shared Health Record
+            - file: docs/mamatoto/narrative/whatsapp.qmd
+              text: WhatsApp Enrolment
+        - section: "Digital Adaptation Kit"
+          href: docs/mamatoto/dak/dak.qmd
+          contents:
+            - file: docs/mamatoto/dak/dak.qmd
+              text: MamaToto DAK
+        - section: "Technical Specification"
+          href: docs/mamatoto/techspecs/gettingstarted.qmd
+          contents: 
+            - file: docs/mamatoto/techspecs/gettingstarted.qmd
+              text: General Specifications
+    - id: whatsapp
+      title: WhatsApp Enrolment
+      style: "floating"
+      search: false
+      align: left
+      contents: 
+        - section: "Narrative"
+          href: docs/whatsapp/narrative.qmd
+          contents:
+            - file: docs/whatsapp/narrative.qmd
+              text: WhatsApp Enrolment
+        - section: "Digital Adaptation Kit"
+          href: docs/whatsapp/dak/objectivesofdak.qmd
+          contents:
+            - file: docs/whatsapp/dak/objectivesofdak.qmd
+              text: 1. Objectives of the DAK
+            - file: docs/whatsapp/dak/healthinterventions.qmd
+              text: 2. Health Interventions
+            - file: docs/whatsapp/dak/personas.qmd
+              text: 3. Generic Personas
+            - file: docs/whatsapp/dak/userscenarios.qmd
+              text: 4. User Scenarios
+            - file: docs/whatsapp/dak/businessprocesses.qmd
+              text: 5. Business Processes
+            - file: docs/whatsapp/dak/dataelements.qmd
+              text: 6. Core Data Elements
+            - file: docs/whatsapp/dak/metrics.qmd
+              text: 7. Indicators and Performance Metrics
+            - file: docs/whatsapp/dak/requirements.qmd
+              text: 8. Functional and non-functional requirements
+    - id: hybridcaremodel
+      title: Hybrid Care Model
+      style: "floating"
+      search: false
+      align: left
+      contents: 
+        - section: "Narrative"
+          href: docs/hybridcaremodel/narrative.qmd
+          contents:
+            - file: docs/hybridcaremodel/narrative.qmd
+              text: Background
+        - section: "Digital Adaptation Kit"
+          href: docs/hybridcaremodel/dak/objectivesofdak.qmd
+          contents:
+            - file: docs/hybridcaremodel/dak/objectivesofdak.qmd
+              text: 1. Objectives of the DAK
+            - file: docs/hybridcaremodel/dak/healthinterventions.qmd
+              text: 2. Health Interventions
+            - file: docs/hybridcaremodel/dak/personas.qmd
+              text: 3. Generic Personas
+            - file: docs/hybridcaremodel/dak/userscenarios.qmd
+              text: 4. User Scenarios
+            - file: docs/hybridcaremodel/dak/businessprocesses.qmd
+              text: 5. Business Processes
+            - file: docs/hybridcaremodel/dak/dataelements.qmd
+              text: 6. Core Data Elements
+            - file: docs/hybridcaremodel/dak/metrics.qmd
+              text: 7. Indicators and Performance Metrics
+            - file: docs/hybridcaremodel/dak/requirements.qmd
+              text: 8. Functional and non-functional requirements
+
 format:
   html:
     theme:

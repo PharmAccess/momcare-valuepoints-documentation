@@ -1,0 +1,25 @@
+## Technical Interoperability
+
+To effectively track key maternity care services across provider networks, the **ValuePoints (VP) system** was built on a digital reporting infrastructure, leveraging the [openHIE architecture](cd:docs/mamatoto/narrative/index.qmd). This technical foundation ensured interoperability, aiming to minimize the reporting burden on healthcare providers.
+
+The [openHIE-based system](cd:docs/mamatoto/narrative/index.qmd) utilizes existing digital health applications and standardizes data using [FHIR (Fast Healthcare Interoperability Resources) standards](https://hl7.org/fhir/). This approach enables seamless data exchange between providers, supporting real-time reporting to national and local health systems such as the [tailored VP dashboards](cd:docs/vp/techspecs/implementation) and [DHIS2 reports](cd:docs/vp/techspecs/dhis2).  
+
+By adopting open standards and open-source technologies, the ValuePoints system was designed to be:  
+
+- **Interoperable** – ensuring smooth data exchange across various digital health platforms  
+- **Transferable** – adaptable to different healthcare ecosystems  
+- **Scalable** – requiring minimal investment beyond standardization for broader implementation  
+
+### ValuePoint Dashboards
+![](vpdashboard.png)
+
+VP dashboards played a critical role in visualizing maternal care data, offering key insights into service delivery across provider networks. These dashboards enabled:  
+
+- Tracking of obtained, missed, and attainable ValuePoints per provider 
+- Comparative performance analysis against network averages 
+- Real-time insights to support providers in improving care delivery 
+
+By presenting actionable data at both **provider** and **district levels**, the system empowered healthcare teams and policymakers to monitor trends, identify gaps, and implement targeted interventions.  
+
+### Take-aways
+The **ValuePoints digital system** highlights the power of **open standards and digital health innovation** in transforming maternity care. By leveraging **interoperable, scalable, and cost-effective** technologies, policymakers can ensure **efficient tracking, evaluation, and improvement of maternal healthcare services**, ultimately contributing to **better health outcomes for mothers and newborns**.

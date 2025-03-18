@@ -1,4 +1,4 @@
-# Indicators and performance metrics
+# 7. Indicators and performance metrics
 This chapter details indicators and performance metrics that would be aggregated from core data elements for decision-making, performance metrics, and subnational and national reporting based on data collected from individual-level, routine health systems. 
 
 #### Mothers per trimester

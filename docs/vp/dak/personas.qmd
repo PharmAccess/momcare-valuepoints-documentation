@@ -1,4 +1,4 @@
-# Generic personas
+# 3. Generic personas
 
 #### Targeted generic personas
 The targeted personas for this DAK are the end users of the dashboard, such as district officials and leadership teams in clinics that provide (part of) the required essential interventions for Maternal and newborn health care delivery. This includes **Hospital administrators**, **Quality improvement officers**, **Maternity leads** and **District coordinators**.
@@ -13,12 +13,12 @@ The targeted personas for this DAK are the end users of the dashboard, such as d
 :::
 
 #### Related personas
-**(Expecting) mothers** and **nurses** do not directly interact with the digital system and are not directly involved in decision making processes that are part of this intervention. They are related personas through the ANC procedures that are underlying to this intervention. As such, they are taken along in this DAK for a comprehensive explanation.
+**Pregnant women** and **nurses** do not directly interact with the digital system and are not directly involved in decision making processes that are part of this intervention. They are related personas through the ANC procedures that are underlying to this intervention. As such, they are taken along in this DAK for a comprehensive explanation.
 
 ::: {style="font-size: 0.8em;"}
 | Name            | Description                                                                                                                                                                                                                                                   | Different names (if relevant)                                                                                     | International Standard for Classification of Occupations code (if relevant) (9) |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| (Expecting) mother | A woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent. | Mother, Pregnant woman                                                       | N/A                                                                            |
+| Pregnant woman | A woman who intends to seek medical support related to pregnancy or childcare from the health worker personas, such as the ANC nurse. A client who is under 19 years of age is considered to be an adolescent. | Mother, Pregnant woman                                                       | N/A                                                                            |
 | MNCH Nurse     | A graduate who has been legally authorized (registered) to practise after examination by a state board of nurse examiners or similar regulatory authority. Education includes 3, 4 or more years in nursing school, and it leads to a university or postgraduate university degree, or the equivalent. A registered nurse has the full range of nursing skills. | Registered nurse, nurse practitioner, clinical nurse specialist, advance practice nurse, practice nurse, licensed nurse, diploma nurse, BS nurse, nurse clinician | 2221 (nursing professionals)                                                  |
 :::
 

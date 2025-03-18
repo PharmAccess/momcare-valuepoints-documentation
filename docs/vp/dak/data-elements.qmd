@@ -1,4 +1,4 @@
-# Core data elements
+# 6. Core data elements
 
 This section outlines the minimum set of data needed to use the Value Points tool. This data set can be used on any software system and lists the data elements relevant for service delivery and for populating indicators and performance metrics. Figure XX is a schematic drawing that describes process of data capture, calculation of new datapoints, data transformation of developing performance metrics and calculation of performance indicators.
 

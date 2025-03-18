@@ -1,4 +1,4 @@
-#### User scenarios
+# 4. User scenarios
 
 User scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:
 
@@ -7,6 +7,8 @@ User scenarios are a narrative description of how the end user would interact wi
 3.	User scenario for identifying actionable groups of mothers in the dashboard.
 4.	User scenario for utilization of the dashboard by a district official.
 5.	User scenario for incentives payment based on value points.
+6.  User scenario for providers tracking how financial rewards are obtained and spent
+7.  User scanario for extraction of DHIS2 reports.
 
 **Note with regards to user scenario 1**: As has been stated earlier, this DAK does not intend to focus on the process of registration of patients and execution of ANC touchpoints, as the main digital system described in this DAK (the dashboard) is not used during these processes. Those processes have been described in detail in other sources (LINK 1 EN LINK 2). Availability of the core data elements (LINK TO THAT SECTION) is a prerequisite to the use of the dashboard. As such, the user scenario below is to provide an example of those data elements are collected in a real-life setting.
 
@@ -122,6 +124,48 @@ User scenarios are a narrative description of how the end user would interact wi
             Mary, a District Reproductive and Child Health Coordinator, is responsible for the financial reward payouts to participating facilities. At the end of each quarter, Mary uses the high-level clinic dashboard to identify how many value points each of the clinics in her district has obtained.
             <br><br>
             Mary writes a short report on the performance of each of the clinics, including a specification of the size of the financial reward per clinic. Mary shares this report with the financial team of the district, who makes the payout to the clinics.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scenario for providers tracking how financial rewards are obtained and spent.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>TYPE OF USER:</strong> NAME OF USER
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            [USER SCENARIO DESCRIPTION PARAGRAPH 1].
+            <br><br>
+            [USER SCENARIO DESCRIPTION PARAGRAPH 2]
+
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scanario for extraction of DHIS2 reports.**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>TYPE OF USER:</strong> NAME OF USER
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            [USER SCENARIO DESCRIPTION PARAGRAPH 1].
+            <br><br>
+            [USER SCENARIO DESCRIPTION PARAGRAPH 2]
+            
         </td>
     </tr>
 </table>

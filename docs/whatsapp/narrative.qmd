@@ -1,6 +1,7 @@
 ---
 title: "WhatsApp"
 description: "Detailed overview of the WhatsApp integration in the Mamatoto project."
+sidebar: whatsapp
 ---
 
 # WhatsApp Integration in the Mamatoto Project

@@ -1,6 +1,7 @@
 ---
 title: "Shared Health Record"
 format: html
+sidebar: mamatoto
 ---
 
 ##### Background.

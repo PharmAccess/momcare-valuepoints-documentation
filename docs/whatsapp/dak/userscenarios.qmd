@@ -1,0 +1,57 @@
+# User scenarios
+
+User scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the the WhatsApp enrolment feature:
+
+1.	User scenario for registration to the program by a mother through WhatsApp.
+2.	User scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM]
+3.	[US 3 XXX]
+
+
+###### **User scenario for registration to the program by a mother through WhatsApp**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Pregnant woman:</strong> Ruth<br>
+            <strong>Receptionist:</strong> Ann<br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            Ruth is a 28-year-old pregnant woman, currently at 10 weeks gestation, who resides in Kajiado County. She is visiting a MamaToto-accredited facility, for her first ANC visit. Ann, a  receptionist at the facility, explains the MamaToto program to Ruth and ensures Ruth understands how enrolment for the program is done through WhatsApp chat. Ann shows Ruth a  QR code which, upon scanning, opens into the WhatsApp chat on the phone of Ruth.  
+            <br>
+            Alternatively, Ruth could have heard about the MamaToto program from one of her family members or a pregnant friend who recently ernolled at the clinic. After receiving the WhatsApp enrolment phone number from one of them, Ruth can send a message to the dedicated phone number to start the enrolment from home. After enrolment from home, she will be able to receive the discounted care at a affiliated clinic of her liking.  
+            <br>
+            Upon sending any message in the chat, a response to register Ruth for the discounted care program will be sent. As a first step, a consent form will be presented to which Ruth can agree or disagree. On agreeing, the follow up questions appear where details such as her name, date of birth, phone number, last menstrual period, basic medical history and ANC profile will be obtained. Following completion of the questionnaire, Ruth receives a confirmation of successful registration, a summary of information she has provided and her unique beneficiary number for the discounted care program. 
+            <br>
+            Ruth will now receive maternal health education and gestational based appointment reminders on her WhatsApp. Following each visit, a follow-up experience survey is sent to Ruth to review the quality of services offered. She will also be able to update her Expected Date of Delivery (EDD) in case needed. 
+            <br>
+            Ann registers all the gathered information in the digital system, as well as on the RCH card where she indicates the date for the next follow-up visit.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+###### **User scenario for [SOMETHING WITH THE BILLING PERSON TO RECEIVE INFORMATION IN THE SYSTEM].**
+
+<table style="width:100%; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <td style="background-color: #c6e0b4; font-weight: bold; padding: 8px; border: 1px solid black;">Key Personas</td>
+        <td style="background-color: #c6e0b4; padding: 8px; border: 1px solid black;">
+            <strong>Registration and billing staff:</strong> XX<br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 8px; border: 1px solid black;">
+            [PARAGRAPH 1]
+            <br>
+            [PARAGRAPH 2]  
+            <br>
+            [PARAGRAPH 3] 
+        </td>
+    </tr>
+</table>
+
+<br>
