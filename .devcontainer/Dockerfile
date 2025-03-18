@@ -69,6 +69,8 @@ RUN mamba install --yes \
     ipykernel \
     openjdk=17 \
     go-task \
+    jupyter \
+    jupyterlab \
     && mamba clean -tipy
 
 # Install Python packages via pip

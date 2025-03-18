@@ -79,7 +79,7 @@ website:
               text: Base Tables
             - file: docs/vp/techspecs/sqlonfhir.qmd
               text: Analytical approaches
-            - file: docs/vp/techspecs/valuepoints.ipynb
+            - file: docs/vp/techspecs/valuepoints.html
               text: ValuePoints Jupyter Notebook
             - file: docs/vp/techspecs/metrics.qmd
               text: ValuePoint Dashboards
