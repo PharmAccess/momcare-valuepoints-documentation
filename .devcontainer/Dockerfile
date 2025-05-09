@@ -40,7 +40,6 @@ RUN apt-get update -y \
     ca-certificates \
     git \
     pandoc \
-    pandoc-citeproc \
     curl \
     gdebi-core \
     librsvg2-bin \
