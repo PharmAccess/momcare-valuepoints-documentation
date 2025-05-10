@@ -1,5 +1,5 @@
 ---
-title: "The ValuePoints Quality Improvement Tool"
+title: "The MomCare Connected Care Stack"
 subtitle: "A technical implementation for quality improvements in pregnancy care."
 sidebar: false
 toc: false
@@ -11,19 +11,40 @@ format:
 program-logo: logo-pharmaccess.png #TODO: update to logo showing all partners
 ---
 
+### MomCare 
+[MomCare](/momcare.qmd) is a digital pregnancy care bundle built on the following three pillars:  value-based financing, patient-centered (digital) care delivery and quality improvement tools. Together, these interventions improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost. 
 
-### ValuePoints
+### Connected Care Stack
 
-The objective of the ValuePoints is to improve quality of pregnancy care. [ValuePoints (VPs)](/vp/narrative/valuepoints.qmd) consist of a set of six indicators that reflect the quality of pregnancy care. 
+The MomCare Connected Care Stack is a modular, interoperable digital infrastructure designed to support quality maternal healthcare delivery across low-resource settings. It connects the full journey of care—spanning enrollment, direct patient engagement, clinical touchpoints, data exchange, and performance analytics—into a seamless digital ecosystem. Built around open standards and real-world integration needs, the stack enables healthcare providers, payers, and policymakers to coordinate care, make data-informed decisions, and deliver person-centered services. By embedding components such as direct patient engagement, health data exchange between service providers, and journey-based analytics for quality improvement, the stack ensures continuity of care and accountability across the maternal health journey. This foundation allows elements of MomCare to be scale efficiently while remaining adaptable to local health system contexts and evolving digital health innovations.
 
-#### MomCare: ValuePoints Implementation
+### How to read this publication? 
+This open-source publication presents the MomCare model as a modular set of digital components that collectively enable connected pregnancy care journeys. These components are designed to interoperate and build upon one another, forming a flexible digital health architecture that supports personalized, data-informed maternal care.
 
-ValuePoints are an element of [MomCare](/momcare.qmd), a digital pregnancy care bundle built on the following three pillars:  value-based financing, patient-centered (digital) care delivery and quality improvement tools. Together, these interventions improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost. 
+At its foundation, the guide outlines the architecture required for health data exchange, and introduces several key plug-in components that support analytics, patient engagement, and real-time journey monitoring. Each of these components is designed to integrate into the broader system, supporting both care continuity and innovation.
 
-#### Implementations
+This publication is intended as a living, evolving resource. As the design and implementation of the stack matures, this guide will be continuously updated to reflect new insights and adaptations from the field. Among the components, the most advanced to date is the [ValuePoints Tool](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/valuepoints.html). Lessons from its pilot in [Hanang](/vp/narrative/hanang.qmd) have been integrated, and the tool is now actively being adopted across diverse settings.
 
-1. [Hanang](/vp/narrative/hanang.qmd) - This implementation supported quality improvements in MomCare facilities across Hanang District, Tanzania. (2023)
+Other components, while still in pilot or early stages (as of May 2025), are shared here to promote open collaboration, early adoption, and localized innovation. By making them available early, we aim to foster a community of contributors who can iterate and co-develop solutions that are practical, scalable, and fit-to-context.
 
-2. Kisumu - This implementation supports quality improvements in Primary Care Networks in Kisumu County, Kenya. (2024 - 2025)
+#### Contents of the Connected Care Stack
+| **MomCare Element**                | **Software Component**                                                  | **MomCare Implementation**                                                                                                                               |
+|-----------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Digitally Connected Care Journey** | *Health Data Exchange Architecture*  <br> _(Interoperability Layer & Business Service)_ | [🔗 Connected Care](/docs/mamatoto/index.qmd)                                                                                   |
+| **Direct Patient Engagement Channel** | *Point of Service System*                                               | [💬 WhatsApp Engagement](docs/whatsapp/narrative.html)                                                                                                              |
+| **Journey-Based Analytics Dashboard** | *Analytics Service*                                                     | [📊 ValuePoints Tool](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/valuepoints.html)                                |
+| **Continuous Care Services**         | *Integrated Point of Service Systems*                                   | [🩺 Hybrid Care Model](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html)                              |
 
-3. Zanzibar - This implementation .... 
+#### Status of (Ongoing) PharmAccess Implementations
+[🔗 Connected Care](/docs/mamatoto/index.qmd)
+The connected care architecture is used and applied across all below implementations. 
+
+[📊 ValuePoints Tool](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/valuepoints.html)
+The ValuePoints tool has been implementated to support quality improvements in MomCare facilities across Hanang District, Tanzania (2023). It is also currently implemented in three wards across the Primary Care Networks in Kisumu County, Kenya (2024 - 2025). 
+
+[💬 WhatsApp](docs/whatsapp/narrative.html)
+WhatsApp enrolment is currently live across a 20+ private MNCH clinics in Nairobi, Kenya (2024 - 2025).
+
+[🩺 Hybrid Care Model](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html) 
+This implementation is tested as a pilot for a hybrid care model connecting one physical and digital clinic in Nairobi, Kenya (2025). 
+

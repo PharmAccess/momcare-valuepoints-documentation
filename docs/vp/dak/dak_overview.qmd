@@ -14,4 +14,5 @@ For user readability and understanding of how this intervention fits within the 
 For implementation of the intervention described in this DAK, it is assumed that:
 
 - A healthcare facility records the basic data elements listed in section “Core data elements” in a digital healthcare system (regardless of the processes or systems used to collect such data). Advised is to follow the guidelines mentioned above.
-- [OTHER ASSUMPTIONS?]
+- This data is available in a FHIR store, or there is capacity to apply the transformation to FHIR-based data. 
+- There is technical and financial capacity to integrate and maintain the tool for its implementation. 

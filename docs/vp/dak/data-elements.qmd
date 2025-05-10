@@ -1,14 +1,14 @@
 # 6. Core data elements
 
-This section outlines the minimum set of data needed to use the Value Points tool. This data set can be used on any software system and lists the data elements relevant for service delivery and for populating indicators and performance metrics. Figure XX is a schematic drawing that describes process of data capture, calculation of new datapoints, data transformation of developing performance metrics and calculation of performance indicators.
+This section outlines the minimum set of data needed to use the Value Points tool. This data set can be used on any software system and lists the data elements relevant for service delivery and for populating indicators and performance metrics. Figure 1 is a schematic drawing that describes process of data capture, calculation of new datapoints, data transformation of developing performance metrics and calculation of performance indicators.
 
-![](Data_SourceToDashboard.png)
+![Figure 1: Data Flow](Data_SourceToDashboard.png)
 
 <p><span style="color: green; font-weight: bold;">Highlighted in green</span> are the data elements which are expected to be available for the implementation of the VP tool. These are obtained during the process of registration of the mother and at each following MNCH visit (ANCs, delivery, PNCs). These required data elements are a subset of the full list of data elements described in [“Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems”](https://www.who.int/publications/i/item/9789240020306). These required data elements are listed in the table Core data elements – One time collection at registration and Core data elements – Repeat collection during each visit.</p>
 
-<p><span style="color: purple; font-weight: bold;">Highlighted in purple</span> are data elements calculated based on the core data elements to construct the patient information table (Fig. x) and patient timeline table (Fig X.). These calculated data elements are listed in table Calculated data elements.</p>
+<p><span style="color: purple; font-weight: bold;">Highlighted in purple</span> are data elements calculated based on the core data elements to construct the patient information table [Fig. 3](#the-patient-information-table) and patient timeline table [Fig. 2](#the-patient-timeline-table). These calculated data elements are listed in [Table 2](#table-2.-calculated-data-elements-for-the-patient-timeline-table-and-patient-information-table).</p>
 
-<p><span style="color: orange; font-weight: bold;">Highlighted in orange</span> is the step where the value points per patient are calculated. The data elements added to facilitate this data transformation are excluded from this DAK (and thus not in table XX) as they are not relevant for the end-user. More details on these this step can be found in L3.</p>
+<p><span style="color: orange; font-weight: bold;">Highlighted in orange</span> is the step where the value points per patient are calculated. The data elements added to facilitate this data transformation are excluded from this DAK (and thus not in [Table 1](#table-1.-core-data-elements-–-repeat-collection-during-each-visit)) as they are not relevant for the end-user. More details on these this step can be found in L3.</p>
 
 <p><span style="color: #d4af37; font-weight: bold;">Highlighted in Yellow</span> are the data elements calculated for the risk table and for allocation of value points to clinics. This is further described in "Indicators and performance metrics" section.</p>
 
@@ -67,7 +67,7 @@ This section outlines the minimum set of data needed to use the Value Points too
 
 <br>
 
-###### Core data elements – Repeat collection during each visit
+###### Table 1. Core data elements – Repeat collection during each visit
 <table style="border-collapse: collapse; width: 100%;">
   <thead style="background-color: #ADD8E6;">
     <tr>
@@ -167,7 +167,7 @@ This section outlines the minimum set of data needed to use the Value Points too
 
 <br>
 
-###### Calculated data elements for the patient timeline table and patient information table
+###### Table 2. Calculated data elements for the patient timeline table and patient information table
 
 <table style="border-collapse: collapse; width: 100%;">
   <thead style="background-color: #2F64B5; color: white;">
@@ -186,7 +186,6 @@ This section outlines the minimum set of data needed to use the Value Points too
       <td style="padding: 12px; font-weight: bold;">Age at enrolment</td>
       <td style="padding: 12px;">The age of the mother at the date of enrolment. This age is used for age classification.</td>
       <td style="padding: 12px;">- Date of birth <br> - Current date </td>
-      <td style="padding: 12px;"></td>
     </tr>
     <tr>
       <td colspan="4" style="padding: 12px; font-style: italic; border-bottom: 1px solid #ccc;">Patient timeline table, data element calculated per event</td>
@@ -216,16 +215,16 @@ This section outlines the minimum set of data needed to use the Value Points too
 <br>
 
 ###### The patient timeline table
-To use the VP tool, the patient’s journey over time needs to be tracked. This means that most important information is captured in a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. This is the patient timeline table (Fig. X). The patient timeline table is created based on the following FHIR resources: Patient, Procedure, Condition, Encounter, Observation, Organization. 
+To use the VP tool, the patient’s journey over time needs to be tracked. This means that most important information is captured in a table that tracks each procedure, treatment, or diagnosis that a patient receives over time. This is the patient timeline table (Fig. 2). The patient timeline table is created based on the following FHIR resources: Patient, Procedure, Condition, Encounter, Observation, Organization. 
 
-![](PatientTimeline.png)
+![Figure 2: The Patient Timeline Table](PatientTimeline.png)
 
 Each row in the table represents an unique event that occurred for the patient, for example the diagnosis of a condition or provision of a procedure. As such, multiple events can occur during a single visit of a mother to a clinic. Events are organised in chronological order. The data elements within the green box are part of the core data elements, meaning they are expected to be obtained during the registration process or during a visit. The data elements within the purple box are calculated based on the core data elements.
 
 
 ###### The patient information table
 The patient information table mostly shows data elements part of the core data elements list. Based on these data elements, what is calculated in the age at enrolment. The data elements within the purple box are calculated based on the core data elements.
-![](PatientInfo.png)
+![Figure 3: The Patient Information Table](PatientInfo.png)
 
 #### Additional considerations for adapting the data dictionary
 

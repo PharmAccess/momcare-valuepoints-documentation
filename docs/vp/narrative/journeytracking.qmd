@@ -2,7 +2,7 @@
 
 **ValuePoints (VPs)** are a set of standardized metrics designed to assess and incentivize high-quality maternal healthcare delivery. These metrics quantify key aspects of care throughout the pregnancy journey, offering insights into maternal care-seeking behavior and rewarding healthcare providers for timely and essential service delivery.
 
-Developed with guidance from the Leapfrog-to-Value Maternity Playbook (2024), the ValuePoints framework integrates WHO maternity care guidelines with practical insights gained from [**MomCare implementation**] (cd:momcare.qmd). This approach ensures alignment with both global best practices and local healthcare systems to drive improved maternal and neonatal outcomes.
+Developed with guidance from the Leapfrog-to-Value Maternity Playbook (2024), the ValuePoints framework integrates WHO maternity care guidelines with practical insights gained from [**MomCare implementation**](../../momcare/narrative/momcare.qmd). This approach ensures alignment with both global best practices and local healthcare systems to drive improved maternal and neonatal outcomes.
 
 ### How ValuePoints Work
 
