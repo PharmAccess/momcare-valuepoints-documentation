@@ -1,5 +1,5 @@
 ---
-title: "The MamaToto Digital Adaptation Kit (DAK)"
+title: "The MomCare Digital Adaptation Kit (DAK)"
 format: html
 sidebar: mamatoto
 ---
@@ -11,19 +11,19 @@ The Digital Assessment Kit (DAK) is a World Health Organization (WHO) initiative
 The DAK framework emphasizes a user-centered approach, ensuring that digital health solutions address the specific needs and challenges faced by healthcare providers and patients in LMIC settings. By following the DAK guidelines, developers and implementers can increase the likelihood of developing digital health solutions that are sustainable, impactful, and contribute to improved health outcomes.
 
 ### Steps.
-#### MamaToto Nairobi: Transforming Maternal Healthcare
-This document outlines the technical requirements for the MamaToto Nairobi project, which leverages technology to improve maternal healthcare. Built on the World Health Organization's DAK framework, it guides the system's design and development.
+#### Transforming Maternal Healthcare
+This document outlines the technical requirements for the MomCare Nairobi project, which leverages technology to improve maternal healthcare. Built on the World Health Organization's DAK framework, it guides the system's design and development.
 
 ##### The Challenge:
 
 Despite global efforts, maternal health in Nairobi faces a burden of high mortality and morbidity rates.
 
-##### MamaToto's Solution:
+##### MomCare's Solution:
 
 MamaToto tackles this challenge through:
 
 1. Enrollment: Self-registration via WhatsApp and clinics.
-2. ata Tracking: Shared Health Record (SHR) for mobile and clinic access.
+2. Data Tracking: Shared Health Record (SHR) for mobile and clinic access.
 3. Improved Care: Data exchange through a Health Information Exchange (HIE).
 
 ##### Benefits:
@@ -36,8 +36,8 @@ MamaToto tackles this challenge through:
 
 This document details the project's specifics using the DAK framework.
 
-### Core Data Elements in MamaToto
-The MamaToto project leverages a comprehensive set of data elements to track and manage the health information of pregnant women.  These elements are captured at various points, including enrollment, antenatal visits, and data exchange.
+### Core Data Elements in MomCare
+MomCare leverages a comprehensive set of data elements to track and manage the health information of pregnant women.  These elements are captured at various points, including enrollment, antenatal visits, and data exchange.
 
 A dedicated "Data Dictionary" appendix within this guide will provide detailed definitions, data types, and how each element is used.
 
@@ -52,7 +52,7 @@ Here's a categorized overview of some core data elements you'll find in the Data
 
 #### Sample Business Processes and Data Elements:
 
-The DAK also outlines data elements linked to specific business processes within MamaToto. Here are a few examples for illustration:
+The DAK also outlines data elements linked to specific business processes within MomCare. Here are a few examples for illustration:
 
 1. Create Beneficiary: This process captures basic information like name, date of birth, and contact details (MMT.A.DE1 - MMT.A.DE9).
 2. Add Beneficiary to Policy: This process includes details beyond basic demographics, such as beneficiary type, occupation, and insurance membership (MMT.B.DE5 - MMT.B.DE23).

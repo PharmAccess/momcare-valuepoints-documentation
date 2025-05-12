@@ -1,0 +1,57 @@
+### Digitally Connected Care
+*Why we need to be able to digitally exchange health data*
+
+The goal of MomCare is to support continuous, patient-centered care throughout the pregnancy journey, from enrollment through to postnatal care. As services are delivered across multiple points of care—including virtual (SMS, WhatsApp) and physical (clinic visits)—**the ability to share and reuse health data becomes essential.
+
+Without a reliable way to exchange data:
+
+- Providers lack full visibility into a mother's care history
+- Opportunities for timely interventions are missed
+- Financing and quality incentives cannot be linked to actual care delivery
+
+Effective **health information exchange (HIE)** allows care to be:
+
+- **Coordinated** across providers and time
+- **Personalized** based on risk and history
+- **Improved** through data-driven analytics
+
+This enables a shift from fragmented service delivery to a **connected care model** that improves outcomes and optimizes resource use.
+
+### Scalable Digital Architecture 
+*Why we need scalable digital architecture* 
+
+In the early stages of MomCare, our implementations in Kenya and Tanzania relied on custom-built apps and proprietary data pipelines. These systems were effective at capturing and analyzing maternal health data within their limited contexts, but they lacked the flexibility and interoperability needed to scale across regions or integrate with national health infrastructures. Each new implementation required manual integration, one-off development, and repeated setup of custom data flows.
+
+To move beyond these limitations, MomCare required a digital architecture that could support reuse, modularity, and consistent integration of diverse tools—such as SMS-based engagement systems, point-of-care applications, analytics dashboards, and claims engines. An open-source and standards-based approach provides this flexibility by allowing individual components to evolve independently while remaining interoperable through shared interfaces and protocols.
+
+Just as importantly, an open and community-driven architecture encourages transparency, collaboration, and sustainability. It enables MomCare to be adapted by local partners, aligned with national digital health strategies, and maintained without relying on proprietary vendors. This shift from siloed platforms to a shared infrastructure is essential for achieving the kind of scalability and impact we envision for connected maternal care.
+
+### Open Health Information Exchange 
+*Why did we choose OpenHIE*
+
+The MomCare Connected Care Stack takes the openHIE framework^[[ohie.org](https://ohie.org)] as a starting point, being the most generic and commonly used health information interoperability framework. This framework has by and large been adopted by sub-Saharan African countries^[@mamuye2022health], including Nigeria^[[Nigeria data exchange architecture for the national data repository](https://ohie.org/impact-stories/nigeria-data-exchange-architecture-for-the-national-data-repository/)], Kenya^[[KHISIF](https://www.data4sdgs.org/sites/default/files/services_files/Kenya%20Health%20Information%20Systems%20Interoperability%20Framework.pdf)] and Tanzania.^[@tzhea2020]
+
+![The OpenHIE framework](OpenHIE.png)
+
+The framework and its components are shown in the figure above. The bottom layer (yellow) comprises the point of service (PoS) systems, which includes the systems used by clinicians, health professionals, community health workers and the like. Examples of such systems are OpenMRS electronic medical records (EMR) system and the RapidSMS mHealth application, which are used to access and update a patient’s records, register activities and record healthcare transactions.
+
+The second, middle layer (teal) constitutes the interoperability layer (IOL), which acts as a gateway for exchanging information between systems. Any type of information exchange, be it between two PoS systems, or between a PoS system and business services (explained below), is mediated through this interoperability layer. The interoperability layer provides functionality such as routing, translation services, auditing and authentication.
+
+The top layer of framework comprises three distinct domains. Common Services (blue) include a variety of registry services that are designed to uniquely identify and track unique patients, facilities, healthcare products, and terminology that are used throughout the health data commons. Business Service (green) are designed to support the delivery of care within the health system. The District Health Information System version 2, for example, is a well-known and widely used Health Management Information System for collecting, analyzing, visualizing and sharing data through combining data from multiple PoS systems for a given geography or jurisdiction.^[[DHIS2](https://dhis2.org/)]
+
+The HDC framework explicitly adds a third domain in the top layer, which is not included in the OpenHIE specification, namely Analytics & Intelligence Services (light blue). The rationale for this addition is to facilitate secondary use of health data for academic research, real-world evidence studies etc. within the nascent concept of health data spaces.^[see for example the [International Data Spaces Association](https://internationaldataspaces.org/)] Note that the Kenyan Health Information Systems Interoperability Framework (KHISIF) has also explicitly included the analytics domain.
+
+💬 ***TLDR***: We adopted the **OpenHIE** (Open Health Information Exchange) framework because it provides a well-defined, community-driven framework specifically designed for **interoperable health systems in LMICs**. It aligns with national digital strategies and promotes a sustainable model of digitally connected care that can be replicated across countries and programs. **OpenHIE helps MomCare move from standalone digital solutions to a scalable, interoperable platform for maternal healthcare.**
+
+### The MomCare Connected Care Components
+The role of the OpenHIE building blocks in MomCare is visualized below: 
+![OpenHIEmomcare](OpenHIEmomcare.png)
+
+The previously outlined components fit into the OpenHIE structure as follows:
+
+| **MomCare Element**                | **Software Component**                                                  | **MomCare Implementation**                                                                                                                               | **Related OpenHIE Component**                                  |
+|-----------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| **Digitally Connected Care Journey** | *Health Data Exchange Architecture*  <br> _(Interoperability Layer & Business Service)_ | [🔗 Connected Care](/docs/mamatoto/index.qmd)                                                                                   | Health Information Mediator (HIM), Interoperability Layer, Shared Health Record (SHR)     |
+| **Direct Patient Engagement Channel** | *Point of Service System*                                               | [💬 WhatsApp Engagement](docs/whatsapp/narrative.html)                                                                                                   | Client Application (PoS), Mediator for patient communications |
+| **Journey-Based Analytics Dashboard** | *Analytics Service*                                                     | [📊 ValuePoints Tool](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/valuepoints.html)                                |  Analytics Service                  |
+| **Continuous Care Services**         | *Integrated Point of Service Systems*                                   | [🩺 Hybrid Care Model](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html)                              | Shared Health Record, Point of Service       |

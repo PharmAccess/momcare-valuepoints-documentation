@@ -1,0 +1,37 @@
+---
+title: "MomCare"
+format: html
+---
+
+##### MomCare: PharmAccess Maternal & Child Health Program
+
+MomCare is a digital pregnancy care bundle built on the following three pillars:  value-based financing, patient-centered (digital) care delivery and quality improvement tools. It is a set of interventions that together improve health outcomes, enabled by mobile technology and data exchange. To date, MomCare has supported over 60,000 women in Kenya and Tanzania in more than 70 clinics, resulting in good-quality pregnancy journeys at predictable cost. 
+
+### The MomCare Model
+
+The implementation of MomCare started in 2017, leveraging the increasing penetration of mobile technology across Kenya to leapfrog traditional models of maternal care delivery. Recognizing the opportunity for digital innovation, PharmAccess designed MomCare as a care bundle—a structured set of interventions that, when implemented together, significantly would improve health outcomes. While the MomCare implementations took many shapes over time, its principles led to the development of a combined-digital care model based on three pillars:
+
+| **Pillars**                     | **Implemented Interventions**                                                                                                                                                   |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Value-based financing mechanisms** | - Bundled payments that reimburse care journeys rather than fragmented services  <br> - Bonus incentives (**ValuePoints**) linked to care quality  <br> - Cesarean section controls to encourage medically appropriate interventions  <br> - Integrated digital claims management to ensure timely provider payments |
+| **Patient journey tracking**   | - Risk stratification  <br> - Digital reminders for appointment adherence  <br> - Provider dashboards for monitoring journeys and health outcomes  <br> - Collecting patient-reported outcomes and experiences |
+| **Quality improvement**        | - Regular quality assessments  <br> - Training programs and workshops  <br> - Network management                                                                                 |
+
+PharmAccess launched MomCare in Kenya (2017) and Tanzania (2019) with the objective to create transparency on the journeys of pregnant mothers. MomCare distinguishes two user groups: 
+
+- (Expecting) women, who are supported during their pregnancy through reminders and surveys, using their phone as the digital mode of engagement. 
+- Health workers, who are equipped with a digital device, in which visits, care activities and clinical observations are recorded. 
+
+Reimbursements of the maternal clinic are based on the data captured with patient-engagements and the provider device, thereby creating a conditional payment scheme, where providers are partially reimbursed up-front for a fixed bundle of activities, supplemented by bonus payments based on a predefined set of care activities.
+
+### The Need for Health Information Exchange
+In its earlier implementations, the MomCare program was able to connect care journeys, but it did not support interoperable data exchange. 
+
+For example in Kenya, M-TIBA is used as the primary data source, on top of which a relatively lightweight custom app has been built as the engagement layer for the health workers. M-TIBA provides data access through its data warehouse platform for the MomCare program. However, this is not a standardized, general purpose API. 
+
+In the case of Tanzania, a stand-alone custom app was used which does not provide an interface of any kind for interacting with the platform. Given these constraints, the MomCare program used a custom-built data warehouse environment as its main data platform, on which data extractions, transformations and analysis were performed to generate the operational reports. Feedback reports for the health workers, in the form of operational dashboards, were made accessible through the app. Similar reports were provided to the back-office for the periodic reimbursement to the clinics.
+
+While effective in context, these custom data architectures posed serious challenges to scalability, standardization, and reusability. They created a dependency on manual integrations and limited the potential to scale components of the MomCare model with local governments and other partners.
+
+### Connecting Care Journeys
+Within the this context of the MomCare program, we have built a number of demonstrators ([components](/#contents-of-the-connected-care-stack)) to show how connected pregnancy care journeys can be achieved using a [standardized, open-source digital architecture](docs/mamatoto/narrative/hie.html). We want to demonstrate that patient-centric data access and reuse is feasible, today. We take the approach of “show, don’t tell”. Through implementing demonstrator projects that contribute towards the creation of a digitally connected care journey, we show that health data sharing can be achieved in LMICs at acceptable cost and low technical risk. This document describes the learnings from implementations within the MomCare program. Through these demonstrators we aim to encourage a paradigm shift as to how data sharing can be realized such that it can act as a catalyst towards improved healthcare outcomes. 

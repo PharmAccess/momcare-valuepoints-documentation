@@ -2,17 +2,20 @@
 
 User scenarios are a narrative description of how the end user would interact with the digital system. The user scenario is provided to help the reader better understand how the system will be used and how it would fit into existing workflows. The following illustrative examples provide scenario’s that may be common when utilizing the dashboard:
 
-1.	User scenario for registration of a mother and an ANC visit (**Exemplary summarized process. No interaction with the digital system**).
+1.	User scenario for registration of a mother and an ANC visit <small>(**Exemplary summarized process. No interaction with the digital system**)</small>.
 2.	User scenario for analysis of historical data in the dashboard.
 3.	User scenario for identifying actionable groups of mothers in the dashboard.
 4.	User scenario for utilization of the dashboard by a district official.
 5.	User scenario for incentives payment based on value points.
 6.  User scenario for providers tracking how financial rewards are obtained and spent
-7.  User scanario for extraction of DHIS2 reports.
+7.  User scenario for extraction of DHIS2 reports.
 
-**Note with regards to user scenario 1**: As has been stated earlier, this DAK does not intend to focus on the process of registration of patients and execution of ANC touchpoints, as the main digital system described in this DAK (the dashboard) is not used during these processes. Those processes have been described in detail in other sources (LINK 1 EN LINK 2). Availability of the core data elements (LINK TO THAT SECTION) is a prerequisite to the use of the dashboard. As such, the user scenario below is to provide an example of those data elements are collected in a real-life setting.
+<small> **Note with regards to user scenario 1**: As has been stated earlier, this DAK does not intend to focus on the process of registration of patients and execution of ANC touchpoints, as the main digital system described in this DAK (the dashboard) is not used during these processes. Those processes have been described in detail in other sources, as mentioned [here](dakoverview.qmd). Availability of the [core data elements](data-elements.qmd) is a prerequisite to the use of the dashboard. As such, the user scenario below is to provide an example of those data elements are collected in a real-life setting. </small>
 
-###### **1. User scenario for registration of a mother and an ANC visit.**
+#
+#
+
+##### **1. User scenario for registration of a mother and an ANC visit.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black;">
     <tr>
@@ -37,7 +40,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **2. User scenario for analysis of historical data in the dashboard.**
+##### **2. User scenario for analysis of historical data in the dashboard.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
     <tr>
@@ -62,7 +65,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **3. User scenario for identifying actionable groups of mothers in the dashboard.**
+##### **3. User scenario for identifying actionable groups of mothers in the dashboard.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black;">
     <tr>
@@ -85,7 +88,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **4. User scenario for utilization of the dashboard by a district official.**
+##### **4. User scenario for utilization of the dashboard by a district official.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
     <tr>
@@ -110,7 +113,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **5. User scenario for incentives payment based on value points.**
+##### **5. User scenario for incentives payment based on value points.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
     <tr>
@@ -130,7 +133,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **6. User scenario for providers tracking how financial rewards are obtained and spent.**
+##### **6. User scenario for providers tracking how financial rewards are obtained and spent.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
     <tr>
@@ -150,7 +153,7 @@ User scenarios are a narrative description of how the end user would interact wi
 
 <br>
 
-###### **7. User scanario for extraction of DHIS2 reports.**
+##### **7. User scanario for extraction of DHIS2 reports.**
 
 <table style="width:100%; border-collapse: collapse; border: 1px solid black; margin-top: 10px;">
     <tr>

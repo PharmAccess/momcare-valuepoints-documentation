@@ -1,8 +1,8 @@
 ## Technical Interoperability
 
-To effectively track key maternity care services across provider networks, the **ValuePoints (VP) system** was built on a digital reporting infrastructure, leveraging the [openHIE architecture](cd:docs/mamatoto/narrative/index.qmd). This technical foundation ensured interoperability, aiming to minimize the reporting burden on healthcare providers.
+To effectively track key maternity care services across provider networks, the **ValuePoints (VP) system** was built on a digital reporting infrastructure, leveraging the [openHIE architecture](../../momcare/narrative/hie.qmd). This technical foundation ensured interoperability, aiming to minimize the reporting burden on healthcare providers.
 
-The [openHIE-based system](cd:docs/mamatoto/narrative/index.qmd) utilizes existing digital health applications and standardizes data using [FHIR (Fast Healthcare Interoperability Resources) standards](https://hl7.org/fhir/). This approach enables seamless data exchange between providers, supporting real-time reporting to national and local health systems such as the [tailored VP dashboards](cd:docs/vp/techspecs/implementation) and [DHIS2 reports](cd:docs/vp/techspecs/dhis2).  
+This openHIE-based system utilizes existing digital health applications and standardizes data using [FHIR (Fast Healthcare Interoperability Resources) standards](https://hl7.org/fhir/). This approach enables seamless data exchange between providers, supporting real-time reporting to national and local health systems such as the [tailored VP dashboards](../techspecs/implementation.qmd) and [DHIS2 reports](../techspecs/dhis2.qmd).  
 
 By adopting open standards and open-source technologies, the ValuePoints system was designed to be:  
 

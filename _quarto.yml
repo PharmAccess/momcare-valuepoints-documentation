@@ -8,17 +8,15 @@ execute:
   freeze: auto
 
 website:
-  title: ""
+  title: "Connected Care"
   navbar:
     logo: logo-pharmaccess.png
     background: white
     logo-alt: "PharmAccess"
     pinned: true
     left:
-      - href: momcare.qmd
+      - file: docs/momcare/narrative/momcare.qmd
         text: MomCare
-      - file: docs/mamatoto/narrative/index.qmd
-        text: Connected Care
       - file: docs/whatsapp/narrative.qmd
         text: WhatsApp Engagement
       - file: docs/vp/narrative/valuepoints.qmd
@@ -92,28 +90,30 @@ website:
           contents: 
             - file: docs/vp/vpsoftware.qmd
               text: Software
-    - id: mamatoto
-      title: MamaToto
+    - id: momcare
+      title: MomCare
       style: "floating"
       search: false
       align: left
       contents: 
         - section: "Narrative"
-          href: docs/mamatoto/narrative/index.qmd
+          href: docs/momcare/narrative/momcare.qmd
           contents:
-            - file: docs/mamatoto/narrative/index.qmd
+            - file: docs/momcare/narrative/hie.qmd
               text: Digitally Connected Maternal Care
-            - file: docs/mamatoto/narrative/shr.qmd
-              text: Shared Health Record
         - section: "Digital Adaptation Kit"
-          href: docs/mamatoto/dak/dak.qmd
+          href: docs/momcare/dak/dak.qmd
           contents:
-            - file: docs/mamatoto/dak/dak.qmd
-              text: MamaToto DAK
+            - file: docs/momcare/dak/dak.qmd
+              text: MomCare DAK
+            - file: docs/momcare/narrative/instanthie.qmd
+              text: Instant OpenHIE
+            - file: docs/momcare/narrative/shr.qmd
+              text: Shared Health Record
         - section: "Technical Specification"
-          href: docs/mamatoto/techspecs/gettingstarted.qmd
+          href: docs/momcare/techspecs/gettingstarted.qmd
           contents: 
-            - file: docs/mamatoto/techspecs/gettingstarted.qmd
+            - file: docs/momcare/techspecs/gettingstarted.qmd
               text: General Specifications
     - id: whatsapp
       title: WhatsApp Enrolment

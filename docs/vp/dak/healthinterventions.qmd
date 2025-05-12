@@ -12,5 +12,3 @@ The DAK is intended to reflect health recommendations and content that has alrea
 
 -	[WHO recommendations on antenatal care for a positive pregnancy experience.](https://www.who.int/publications/i/item/9789241549912)
 -	[Digital Adaptation Kit for Antenatal Care: Operational Requirements for Implementing WHO Recommendations in Digital Systems.](https://www.aidsdatahub.org/sites/default/files/resource/who-digital-adaptation-kit-antenatal-care-2021.pdf) 
--	XX
--	[COMMENT PS: IN CASE WE DO NOT ADD ANY OTHER REFERENCES, THIS SECTION FEELS A BIT REDUNDENT GIVEN THE LINKS ARE PROVIDED ABOVE]
