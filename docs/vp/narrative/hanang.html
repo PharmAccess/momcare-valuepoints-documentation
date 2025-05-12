@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hanang</title>
+<title>Hanang – Connected Care</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,6 +80,9 @@ ul.task-list li input[type="checkbox"] {
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../../logo-pharmaccess.png" alt="PharmAccess" class="navbar-logo">
     </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Connected Care</span>
+    </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -88,12 +91,8 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../momcare.html"> 
+    <a class="nav-link" href="../../../docs/momcare/narrative/momcare.html"> 
 <span class="menu-text">MomCare</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../docs/mamatoto/narrative/index.html"> 
-<span class="menu-text">Connected Care</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../docs/whatsapp/narrative.html"> 
@@ -345,22 +344,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="implementation-in-hanang" class="level4">
-<h4 class="anchored" data-anchor-id="implementation-in-hanang">Implementation in Hanang</h4>
+<section id="specification-for-the-implementation-in-hanang" class="level4">
+<h4 class="anchored" data-anchor-id="specification-for-the-implementation-in-hanang">Specification for the Implementation in Hanang</h4>
 </section>
 <section id="pregnancy-journey-quality-indicators" class="level3">
 <h3 class="anchored" data-anchor-id="pregnancy-journey-quality-indicators">Pregnancy Journey Quality Indicators</h3>
-<p>Value Points are assigned to key service indicators across the pregnancy journey. These indicators are defined as: Early ANC: An antenatal care (ANC) visit registered within the first 12 weeks of pregnancy (ANC &lt; 12 weeks) ANC profile: Full antenatal care profile administered.</p>
-<p>To count the mothers who had a full ANC profile, we check for visits that include the following procedures: • VDRL test • hemoglobin • blood grouping • HIV test • blood pressure • urine test In addition, the ANC profile should take place during the first visit.</p>
-<p>Ultrasound before end of second trimester: We check for visits with an ultrasound procedure that occurred within the first 24 weeks of pregnancy. (Ultrasound &lt; 24 weeks) 4+ ANCs: Four or more registered antenatal care visits. Clinics receive 0.5 points per visit for the first 4 visits. For further ANC visits no more points are received. Facility Based Birth: We filter mothers that have given birth at a healthcare facility. 2+ PNCs: Two or more registed postnatal care (PNC) visits. Clinics receive 0.5 points per visit for the first 2 visits. For further PNC visits no more points can be obtained.</p>
+<p>Value Points are assigned to key service indicators across the pregnancy journey.</p>
+<p>These indicators are defined as:</p>
+<p><strong>Early ANC:</strong> An antenatal care (ANC) visit registered within the first 12 weeks of pregnancy (ANC &lt; 12 weeks)</p>
+<p><strong>ANC profile:</strong> Full antenatal care profile administered.</p>
+<p>To count the mothers who had a full ANC profile, we check for visits that include the following procedures:</p>
+<pre><code>•   VDRL test 
+•   hemoglobin
+•   blood grouping
+•   HIV test
+•   blood pressure
+•   urine test</code></pre>
+<p>In addition, the ANC profile should take place during the first visit.</p>
+<p><strong>Ultrasound before end of second trimester:</strong> We check for visits with an ultrasound procedure that occurred within the first 24 weeks of pregnancy. (Ultrasound &lt; 24 weeks)</p>
+<p><strong>4+ ANCs:</strong> Four or more registered antenatal care visits. Clinics receive 0.5 points per visit for the first 4 visits. For further ANC visits no more points are received.</p>
+<p><strong>Facility Based Birth:</strong> We filter mothers that have given birth at a healthcare facility.</p>
+<p><strong>2+ PNCs:</strong> Two or more registed postnatal care (PNC) visits. Clinics receive 0.5 points per visit for the first 2 visits. For further PNC visits no more points can be obtained.</p>
 </section>
 <section id="provider-dashboards" class="level3">
 <h3 class="anchored" data-anchor-id="provider-dashboards">Provider Dashboards</h3>
-<p>The service indicators could be monitored in the ValuePoints dashboard, available to the individual care provider and the district managers. The VP system automatically generates these VP dashboards from patient data, allowing providers to visualize the completeness of maternal care and act promptly to deliver better value. The dashboard displayed ValuePoints as obtained points compared to the total missed and attainable points for the specific providers. Additionally, the providers’ VPs were compared to the average percentage of points earned at other providers. This way insights about care delivery were generated for health management both at the provider and district level. Dashboard screenshots The dashboards present a summarized view of the ValuePoints across their patient population. This dashboard includes a few elements: 1. Patients per trimester: This element shows how the pregnancy journeys of active maternal care users are distributed for this specific clinic. 2. Total ValuePoints: This indicates the percentage of the obtained ValuePoints out of the attainable ValuePoints. It provides the sum of ValuePoints and the total budget this translates into in the provider wallet. 3. Monthly Performance 4. Service Specific Perfomance 5. Journey performance over Time 6. Indicators over Time The dashboard allowed stratification by risk groups to enable closer monitoring and promote risk prevention measures. High risk patients were defined based on existing health complications, or high age. Teenagers were defined as (under 18 years old). • Definition of risk groups</p>
+<p>The service indicators could be monitored in the ValuePoints dashboard, available to the individual care provider and the district managers. The VP system automatically generates these VP dashboards from patient data, allowing providers to visualize the completeness of maternal care and act promptly to deliver better value. The dashboard displayed ValuePoints as obtained points compared to the total missed and attainable points for the specific providers. Additionally, the providers’ VPs were compared to the average percentage of points earned at other providers. This way insights about care delivery were generated for health management both at the provider and district level. Dashboard screenshots The dashboards present a summarized view of the ValuePoints across their patient population. This dashboard includes a few elements:</p>
+<ol type="1">
+<li>Patients per trimester: This element shows how the pregnancy journeys of active maternal care users are distributed for this specific clinic.</li>
+<li>Total ValuePoints: This indicates the percentage of the obtained ValuePoints out of the attainable ValuePoints. It provides the sum of ValuePoints and the total budget this translates into in the provider wallet.</li>
+<li>Monthly Performance</li>
+<li>Service Specific Perfomance</li>
+<li>Journey performance over Time</li>
+<li>Indicators over Time</li>
+</ol>
+<p>The dashboard allowed stratification by risk groups to enable closer monitoring and promote risk prevention measures. High risk patients were defined based on existing health complications, or high age. Teenagers were defined as under 18 years old.</p>
 </section>
 <section id="financial-model" class="level3">
 <h3 class="anchored" data-anchor-id="financial-model">Financial model</h3>
-<p>Each indicator was assigned a Value Point that can be attained by the provider and linked to a monetary reward of 7,500 TSh. Value Points can also obtained in a shared manner; for example when one facility referred to another for ultrasound, the VP for this service would be shared across the two. Adequate reporting of services in the ValuePoint system by the provider thereby generated extra budget to procure additional resources for care delivery. The sum of the rewards linked to the obtained ValuePoints, was calculated in the provider’s wallet. In the Hanang implementation, the available budget in the wallet was used to place orders for necessary supplies, such as equipment, medication. The local PharmAccess team managed the procurement and delivery of supplies based on providers choices. As such the VP system assumed that these incentives would drive improved agency and (collaborative) resource management, ultimately impacting the quality and value of care delivery.</p>
+<p>Each indicator was assigned a Value Point that can be attained by the provider and linked to a monetary reward of 7,500 TSh. Value Points can also obtained in a shared manner; for example when one facility referred to another for ultrasound, the VP for this service would be shared across the two. Adequate reporting of services in the ValuePoint system by the provider thereby generated extra budget to procure additional resources for care delivery.</p>
+<p>The sum of the rewards linked to the obtained ValuePoints, was calculated in the provider’s wallet. In the Hanang implementation, the available budget in the wallet was used to place orders for necessary supplies, such as equipment, medication. The local PharmAccess team managed the procurement and delivery of supplies based on providers choices. As such the VP system assumed that these incentives would drive improved agency and (collaborative) resource management, ultimately impacting the quality and value of care delivery.</p>
 
 
 </section>
