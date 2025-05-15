@@ -1,0 +1,11 @@
+5. dbt Models & Snippets 
+
+Here you walk through a few representative models. For each: 
+
+Model Name & Path  
+
+Purpose (what it does, which upstream tables it consumes) 
+
+Snippet 
+
+Tests & Documentation 

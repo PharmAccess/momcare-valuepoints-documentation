@@ -1,0 +1,32 @@
+1. Introduction 
+
+### 1.1 Purpose & Scope 
+
+What this section covers  
+
+Who it’s for (data engineers, product managers, etc.) 
+
+## Data Flows
+1. Start with *FHIR-based data pipelines* to standardize and support any digital intervention requiring analytics
+
+2. Preprocess *'raw' FHIR data* into flattened **patient timeline table**
+
+3. Define metric on top of **patient timeline table**
+
+4. Using the International Patient Summary (IPS) as data model
+
+## Linked repositories
+
+Data Pipeline: 
+
+- [Data Pipeline](https://github.com/PharmAccess/data-pipelines/tree/main/pipelines/flows/hdc)
+- [Metrics](https://github.com/PharmAccess/open-mnch-dbt-analytics)
+- [FHIR profile](https://github.com/PharmAccess/MamaToTo-FHIR-IG)
+- [FHIR questionnaire](https://github.com/PharmAccess/mamatoto/tree/main)
+
+Dashboard
+- [Shiny App](https://github.com/PharmAccess/hdc-inspire-clinics-kisumu-app)
+
+Utilities:
+- [Anonymized data](https://github.com/PharmAccess/hdc-furahi)
+- [Generic Mapping Tool](https://github.com/PharmAccess/FHIRPathMappingLanguage)
