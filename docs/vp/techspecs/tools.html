@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>sqlonfhir – Connected Care</title>
+<title>tools – Connected Care</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -158,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">ValuePoints Calculations</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">(Analytical approaches)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/tools.html">Tools &amp; Technologies</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -305,7 +270,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/tools.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/vp/techspecs/tools.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tools &amp; Technologies</span></a>
   </div>
 </li>
@@ -335,16 +300,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">ValuePoints Calculations</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/sqlonfhir.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/vp/techspecs/sqlonfhir.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">(Analytical approaches)</span></a>
   </div>
 </li>
@@ -394,102 +359,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">ValuePoints Calculations</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/sqlonfhir.html">(Analytical approaches)</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/tools.html">Tools &amp; Technologies</a></li></ol></nav></header>
 
 
 
 
-<section id="challenges-with-fhir-data" class="level1">
-<h1>Challenges with FHIR Data</h1>
-<p>Healthcare data retrieved from FHIR servers is often deeply nested, reflecting the complex relationships between patients, encounters, observations, and other clinical entities. While this structure is ideal for representing real-world relationships, it can be challenging to work with for analytical purposes. For example, extracting a simple list of patient diagnoses might require traversing multiple layers of nested JSON objects.</p>
-<section id="solutions-to-address-nesting-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="solutions-to-address-nesting-challenges">Solutions to Address Nesting Challenges</h2>
-<ol type="1">
-<li><p><strong>DuckDB</strong>: DuckDB is a high-performance analytical database system that supports querying nested data formats such as JSON and Parquet. By using DuckDB, users can load nested FHIR data, write SQL queries to flatten the structure, and perform analysis in a familiar SQL environment.</p></li>
-<li><p><strong>SQL-on-FHIR</strong>: SQL-on-FHIR provides a way to map FHIR resources to relational database tables, enabling users to write SQL queries to extract and analyze data. This approach simplifies the process of working with nested data by flattening it into a tabular format that is easier to query and analyze.</p></li>
-<li><p><strong>Clinical Query Language (CQL)</strong>: CQL is a domain-specific language designed for querying clinical data. It allows users to write high-level queries that abstract away the complexity of the underlying data structure. CQL is particularly useful for expressing clinical logic and retrieving specific subsets of data from nested FHIR resources.</p></li>
-</ol>
-<p>Each of these solutions offers unique advantages depending on the use case, enabling organizations to efficiently work with complex FHIR data structures for analytical purposes.</p>
-</section>
-<section id="getting-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="getting-the-data">Getting the data</h2>
-<p>Most analytical work with healthcare data begins with exporting data from Bulk FHIR (Fast Healthcare Interoperability Resources) endpoints. Bulk FHIR exports provide a standardized way to retrieve large datasets from FHIR servers, enabling efficient access to clinical data. This process can also allow for the anonymization of sensitive data to allow organizations to work with comprehensive datasets without the need for repeated individual queries.</p>
-<section id="simplify-nested-data-using-duckdb" class="level3">
-<h3 class="anchored" data-anchor-id="simplify-nested-data-using-duckdb">1. Simplify Nested Data using Duckdb</h3>
-<p>One effective approach to handle deeply nested data is to use tools like DuckDB, a high-performance analytical database system. DuckDB supports querying nested data formats such as JSON and Parquet, making it a powerful tool for working with FHIR data.</p>
-<p>Here’s an example workflow:</p>
-<ol type="1">
-<li><strong>Load the Data</strong>: Use DuckDB to load the exported FHIR data, which is often in JSON or Parquet format.</li>
-<li><strong>Flatten the Structure</strong>: Write SQL queries to extract and flatten the nested fields into a tabular format.</li>
-<li><strong>Perform Analysis</strong>: Once the data is flattened, standard SQL operations can be used for analysis.</li>
-</ol>
-<p>For more information on this approach and its applications, visit: https://pharmaccess.github.io/hdc-data-analytics-handbook/src/duckdb.html</p>
-</section>
-<section id="sql-on-fhir-an-alternative-way-to-work-with-bulk-fhir-exports" class="level3">
-<h3 class="anchored" data-anchor-id="sql-on-fhir-an-alternative-way-to-work-with-bulk-fhir-exports">2. SQL-on-FHIR: An alternative way to work with Bulk FHIR Exports</h3>
-<p>One emerging approach in the FHIR community is SQL-on-FHIR, which allows direct querying of FHIR resources using SQL. While SQL-on-FHIR provides real-time querying capabilities, it can also be combined with Bulk FHIR exports for scenarios where large datasets need to be processed offline. SQL-on-FHIR works by mapping FHIR resources to relational database tables, where each resource type (e.g., Patient, Observation, Encounter) is represented as a table. This mapping enables users to write SQL queries to retrieve and analyze data directly from the FHIR server.</p>
-<section id="benefits-of-sql-on-fhir" class="level4">
-<h4 class="anchored" data-anchor-id="benefits-of-sql-on-fhir">Benefits of SQL-on-FHIR:</h4>
-<ol type="1">
-<li><strong>Standardized Queries</strong>: Use familiar SQL syntax to interact with FHIR resources.</li>
-<li><strong>Interoperability</strong>: Leverage existing SQL-based tools and workflows for FHIR data analysis.</li>
-<li><strong>Mature Ecosystem and Tooling</strong>: The longstanding adoption of SQL has fostered a rich ecosystem of tools for reporting, data visualization, and business intelligence, facilitating seamless integration with existing data warehouses and analytics platforms.</li>
-<li><strong>Ease of Use and Familiarity</strong>: Many data professionals already possess deep SQL expertise, reducing the learning curve and speeding up the development of analytical workflows and reporting systems.</li>
-<li><strong>Integration with Existing Data Infrastructure</strong>: Organizations that rely on SQL-based systems can more easily incorporate bulk FHIR data into their current processes, promoting centralized data management and cross-system analytics.</li>
-</ol>
-</section>
-<section id="workflow-for-sql-on-fhir-with-bulk-exports" class="level4">
-<h4 class="anchored" data-anchor-id="workflow-for-sql-on-fhir-with-bulk-exports">Workflow for SQL-on-FHIR with Bulk Exports:</h4>
-<ol type="1">
-<li><strong>Export Bulk Data</strong>: Use the Bulk FHIR API to export large datasets from the FHIR server in JSON or Parquet format.</li>
-<li><strong>Use sql-on-fhir to extract views</strong>: Extract table views using sql-on-fhir and import into any database.</li>
-<li><strong>Query the Data</strong>: Use SQL-on-FHIR to query the imported data as if it were live FHIR resources. For example:</li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Patient.<span class="kw">id</span>, Patient.name, Observation.code, Observation.<span class="fu">value</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    Patient</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    Observation <span class="kw">ON</span> Patient.<span class="kw">id</span> <span class="op">=</span> Observation.subject</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    Observation.code <span class="op">=</span> <span class="st">'blood-pressure'</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li><strong>Analyze and Iterate</strong>: Process the results using your preferred analytical tools and iterate as needed.</li>
-</ol>
-<p>This approach allows organizations to separate transaction workflows from analytical workflows. It is particularly useful for batch processing, historical data analysis, or scenarios where real-time access is not required. The approach is gaining traction due to its simplicity and ability to integrate seamlessly with existing SQL-based ecosystems.</p>
-</section>
-</section>
-<section id="clinical-query-language-cql" class="level3">
-<h3 class="anchored" data-anchor-id="clinical-query-language-cql">3. Clinical Query Language (CQL)</h3>
-<p>Clinical Query Language (CQL) is a high-level, domain-specific language designed to express clinical logic and retrieve specific subsets of data from FHIR resources. Unlike SQL, which focuses on tabular data, CQL is tailored for healthcare use cases, enabling clinicians and analysts to write queries that align closely with clinical workflows and decision-making.</p>
-<p>However, most CQL engines are designed to evaluate clinical logic against FHIR data provided either via a FHIR API or as an in-memory collection of FHIR resources. This means that CQL is not typically used to directly query bulk FHIR exports. Instead, organizations often preprocess bulk FHIR data into a format compatible with CQL engines, such as loading the data into a FHIR server or converting it into an in-memory structure.</p>
-<section id="benefits-of-cql" class="level4">
-<h4 class="anchored" data-anchor-id="benefits-of-cql">Benefits of CQL:</h4>
-<ol type="1">
-<li><strong>Clinical Focus</strong>: Designed specifically for healthcare, making it easier to express clinical logic.</li>
-<li><strong>Interoperability</strong>: Works seamlessly with FHIR APIs and standards.</li>
-<li><strong>Reusability</strong>: Queries can be reused across different systems and workflows.</li>
-</ol>
-</section>
-<section id="workflow-for-using-cql-with-bulk-fhir-data" class="level4">
-<h4 class="anchored" data-anchor-id="workflow-for-using-cql-with-bulk-fhir-data">Workflow for Using CQL with Bulk FHIR Data:</h4>
-<ol type="1">
-<li><strong>Export Bulk Data</strong>: Retrieve data from Bulk FHIR endpoints.</li>
-<li><strong>Preprocess the Data</strong>: Load the data into a FHIR server or convert it into an in-memory collection.</li>
-<li><strong>Write CQL Queries</strong>: Use CQL to define clinical logic and extract the required data.</li>
-<li><strong>Evaluate and Analyze</strong>: Run the queries using a CQL engine and analyze the results.</li>
-</ol>
-<p>While CQL is not inherently designed for bulk data processing, its ability to express complex clinical logic makes it a valuable tool when combined with preprocessing steps to handle bulk FHIR exports.</p>
-</section>
-</section>
-</section>
-<section id="focus-on-sql-on-fhir-for-measure-creation" class="level2">
-<h2 class="anchored" data-anchor-id="focus-on-sql-on-fhir-for-measure-creation">Focus on SQL-on-FHIR for Measure Creation</h2>
-<p>While we will provide CQL scripts for specific use cases, our primary focus will be on creating measures using SQL-on-FHIR. SQL-on-FHIR offers a robust and flexible approach for defining and analyzing healthcare measures by leveraging the familiarity and power of SQL. This approach simplifies the process of working with FHIR data, enabling efficient measure creation and integration with existing analytical workflows. By prioritizing SQL-on-FHIR, we aim to streamline the development of actionable insights while still supporting the use of CQL for advanced clinical logic when needed.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 36%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Version</th>
+<th>Role</th>
+<th>Key Configurations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prefect</td>
+<td>2.x</td>
+<td>Orchestration &amp; scheduling</td>
+<td>Schedules, retries, notifications</td>
+</tr>
+<tr class="even">
+<td>dbt</td>
+<td>1.x</td>
+<td>SQL-based transformations &amp; docs/tests</td>
+<td>models/, tests/, docs/</td>
+</tr>
+<tr class="odd">
+<td>DuckDB</td>
+<td>0.x</td>
+<td>In-memory analytical database</td>
+<td>File‐backed .duckdb</td>
+</tr>
+<tr class="even">
+<td>Dashboards</td>
+<td>—</td>
+<td>Visualization &amp; KPIs</td>
+<td>Data sources, filters, alerts</td>
+</tr>
+</tbody>
+</table>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
