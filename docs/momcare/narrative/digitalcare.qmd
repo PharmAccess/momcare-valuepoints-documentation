@@ -1,0 +1,27 @@
+### Digitally Connected Care
+*Why we need to be able to digitally exchange health data*
+
+The goal of MomCare is to support continuous, patient-centered care throughout the pregnancy journey, from enrollment through to postnatal care. As services are delivered across multiple points of care—including virtual (SMS, WhatsApp) and physical (clinic visits)—**the ability to share and reuse health data becomes essential.
+
+Without a reliable way to exchange data:
+
+- Providers lack full visibility into a mother's care history
+- Opportunities for timely interventions are missed
+- Financing and quality incentives cannot be linked to actual care delivery
+
+Effective **health information exchange (HIE)** allows care to be:
+
+- **Coordinated** across providers and time
+- **Personalized** based on risk and history
+- **Improved** through data-driven analytics
+
+This enables a shift from fragmented service delivery to a **connected care model** that improves outcomes and optimizes resource use.
+
+### Scalable Digital Architecture 
+*Why we need scalable digital architecture* 
+
+In the early stages of MomCare, our implementations in Kenya and Tanzania relied on custom-built apps and proprietary data pipelines. These systems were effective at capturing and analyzing maternal health data within their limited contexts, but they lacked the flexibility and interoperability needed to scale across regions or integrate with national health infrastructures. Each new implementation required manual integration, one-off development, and repeated setup of custom data flows.
+
+To move beyond these limitations, MomCare required a digital architecture that could support reuse, modularity, and consistent integration of diverse tools—such as SMS-based engagement systems, point-of-care applications, analytics dashboards, and claims engines. An open-source and standards-based approach provides this flexibility by allowing individual components to evolve independently while remaining interoperable through shared interfaces and protocols.
+
+Just as importantly, an open and community-driven architecture encourages transparency, collaboration, and sustainability. It enables MomCare to be adapted by local partners, aligned with national digital health strategies, and maintained without relying on proprietary vendors. This shift from siloed platforms to a shared infrastructure is essential for achieving the kind of scalability and impact we envision for connected maternal care.

@@ -17,12 +17,12 @@ website:
     left:
       - file: docs/momcare/narrative/momcare.qmd
         text: MomCare
-      - file: docs/whatsapp/narrative.qmd
-        text: WhatsApp Engagement
       - file: docs/vp/narrative/valuepoints.qmd
         text: ValuePoints Tool
+      - file: docs/whatsapp/narrative.qmd
+        text: (WhatsApp Engagement)
       - file: docs/hybridcaremodel/narrative.qmd
-        text: Hybrid Care Model
+        text: (Hybrid Care Model)
     right:
       - href: https://github.com/PharmAccess/hdc-documentation
         text: GitHub
@@ -70,21 +70,33 @@ website:
               text: 8. Functional and non-functional requirements
         - section: "Technical Specification"
           href: docs/vp/techspecs/implementation.qmd
-          contents: 
+          contents:
+            - file: docs/vp/techspecs/introduction.qmd
+              text: Introduction
+            - file: docs/vp/techspecs/background.qmd
+              text: Background & Rationale
+            - file: docs/vp/techspecs/system.qmd
+              text: System Overview & Flow
+            - file: docs/vp/techspecs/tools.qmd
+              text: Tools & Technologies
+            - file: docs/vp/techspecs/models.qmd
+              text: Models
+            - file: docs/vp/techspecs/appendix.qmd
+              text: Additional Materials
             - file: docs/vp/techspecs/implementation.qmd
-              text: General Specifications
+              text: (General Specifications)
             - file: docs/vp/techspecs/pipeline.qmd
-              text: Base Tables
+              text: (Base Tables)
             - section: ValuePoints Calculations
               contents:
                 - file: docs/vp/techspecs/sqlonfhir.qmd
-                  text: Analytical approaches
+                  text: (Analytical approaches)
                 - file: docs/vp/techspecs/valuepoints.ipynb
-                  text: SQL on FHIR Implementation
+                  text: (SQL on FHIR Implementation)
             - file: docs/vp/techspecs/metrics.qmd
-              text: ValuePoint Dashboards
+              text: (ValuePoint Dashboards)
             - file: docs/vp/techspecs/dhis2.qmd
-              text: DHIS2 Reports
+              text: (DHIS2 Reports)
         - section: "Software"
           href: docs/vp/vpsoftware.qmd
           contents: 
@@ -99,22 +111,30 @@ website:
         - section: "Narrative"
           href: docs/momcare/narrative/momcare.qmd
           contents:
+            - file: docs/momcare/narrative/momcare.qmd
+              text: The MomCare Model
+            - file: docs/momcare/narrative/digitalcare.qmd
+              text: Digitally Connected Care
             - file: docs/momcare/narrative/hie.qmd
-              text: Digitally Connected Maternal Care
+              text: Health Information Exchange
+            - file: docs/momcare/narrative/connectedcare.qmd
+              text: Connected Care Components
         - section: "Digital Adaptation Kit"
           href: docs/momcare/dak/dak.qmd
           contents:
             - file: docs/momcare/dak/dak.qmd
               text: MomCare DAK
-            - file: docs/momcare/narrative/instanthie.qmd
+            - file: docs/momcare/dak/instanthie.qmd
               text: Instant OpenHIE
-            - file: docs/momcare/narrative/shr.qmd
+            - file: docs/momcare/dak/shr.qmd
               text: Shared Health Record
         - section: "Technical Specification"
           href: docs/momcare/techspecs/gettingstarted.qmd
           contents: 
             - file: docs/momcare/techspecs/gettingstarted.qmd
-              text: General Specifications
+              text: Getting Started
+            - file: docs/momcare/techspecs/information.qmd
+              text: Further Information 
     - id: whatsapp
       title: WhatsApp Enrolment
       style: "floating"

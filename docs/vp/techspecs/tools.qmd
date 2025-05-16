@@ -1,0 +1,6 @@
+| Tool       | Version | Role                             | Key Configurations                  |
+|------------|---------|----------------------------------|-------------------------------------|
+| Prefect    | 2.x     | Orchestration & scheduling       | Schedules, retries, notifications   |
+| dbt        | 1.x     | SQL-based transformations & docs/tests | models/, tests/, docs/     |
+| DuckDB     | 0.x     | In-memory analytical database    | File‐backed .duckdb                 |
+| Dashboards | —       | Visualization & KPIs             | Data sources, filters, alerts       |

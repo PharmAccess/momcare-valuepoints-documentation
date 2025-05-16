@@ -1,0 +1,12 @@
+### The MomCare Connected Care Components
+The role of the OpenHIE building blocks in MomCare is visualized below: 
+![OpenHIEmomcare](OpenHIEmomcare.png)
+
+The previously outlined components fit into the OpenHIE structure as follows:
+
+| **MomCare Element**                | **Software Component**                                                  | **MomCare Implementation**                                                                                                                               | **Related OpenHIE Component**                                  |
+|-----------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| **Digitally Connected Care Journey** | *Health Data Exchange Architecture*  <br> _(Interoperability Layer & Business Service)_ | [🔗 Connected Care](/docs/mamatoto/index.qmd)                                                                                   | Health Information Mediator (HIM), Interoperability Layer, Shared Health Record (SHR)     |
+| **Direct Patient Engagement Channel** | *Point of Service System*                                               | [💬 WhatsApp Engagement](docs/whatsapp/narrative.html)                                                                                                   | Client Application (PoS), Mediator for patient communications |
+| **Journey-Based Analytics Dashboard** | *Analytics Service*                                                     | [📊 ValuePoints Tool](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/valuepoints.html)                                |  Analytics Service                  |
+| **Continuous Care Services**         | *Integrated Point of Service Systems*                                   | [🩺 Hybrid Care Model](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html)                              | Shared Health Record, Point of Service       |
