@@ -43,7 +43,7 @@ The connected care architecture is used and applied across all below implementat
 The ValuePoints tool has been implementated to support quality improvements in MomCare facilities across Hanang District, Tanzania (2023). It is also currently implemented in three wards across the Primary Care Networks in Kisumu County, Kenya (2024 - 2025). 
 
 [💬 WhatsApp](docs/whatsapp/narrative.html)
-WhatsApp enrolment is currently live across a 20+ private MNCH clinics in Nairobi, Kenya (2024 - 2025).
+WhatsApp enrolment is currently live across 6+ private MNCH clinics in Nairobi, Kenya (2024 - 2025).
 
 [🩺 Hybrid Care Model](https://pharmaccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html) 
 This implementation is tested as a pilot for a hybrid care model connecting one physical and digital clinic in Nairobi, Kenya (2025). 
