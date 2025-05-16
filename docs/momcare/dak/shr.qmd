@@ -1,14 +1,11 @@
----
-title: "Shared Health Record"
-format: html
-sidebar: mamatoto
----
+## Shared Health Record
+The **Shared Health Record (SHR)** is a business service component of the **OpenHIE architecture** in the Connected Care Stack. It functions as a **longitudinal clinical repository**, enabling a unified view of a patient’s health history across encounters, systems, and providers.
 
-##### Background.
-In the spirit of adopting a FHIR-native approach, the MamaToto Health Information Exchange (HIE) uses the HAPI FHIR Server as its Shared Health Record (SHR). This system ensures seamless data exchange and compatibility across multiple healthcare systems by leveraging the FHIR standard, enabling efficient patient care coordination, data sharing, and interoperability.
+By adopting a **FHIR-native approach** through the use of the **HAPI FHIR Server**, the SHR facilitates **standards-based clinical data exchange**, promoting patient-centered continuity of care across digital and physical services.
 
-#### MDM Configurations.
-To allow for unique Patient Identification, the SHR system leverages **Master Data Management (MDM)** configurations that ensure consistent and accurate identification of patients across different systems. This includes:
+### Master Data Management (MDM)
+
+To enable accurate and reliable patient identification across systems, the SHR system leverages **Master Data Management (MDM)** configurations that ensure consistent and accurate identification of patients across different systems. This includes:
 
 - **Patient Identity Matching**:  
   The system uses algorithms such as **Probabilistic Matching** and **Deterministic Matching** to ensure accurate linking of patient records.
@@ -23,7 +20,7 @@ To allow for unique Patient Identification, the SHR system leverages **Master Da
   The system supports cross-system identity matching, enabling patient identification across different healthcare providers and systems using shared data sources.
 
 #### MDM Rules.
-MDM rules define how patient data is validated, matched, and linked across various health systems. These rules ensure that:
+The SHR applies MDM rules that define how patient data is validated, matched, and linked across various health systems. These rules ensure that:
 
 - **Data Integrity**:  
   All incoming patient data is checked for completeness and accuracy before being stored in the SHR.
@@ -40,30 +37,16 @@ MDM rules define how patient data is validated, matched, and linked across vario
 - **Security & Compliance**:  
   Patient identification rules are aligned with security regulations such as HIPAA and GDPR, ensuring patient confidentiality and data protection.
 
-##### FHIR Implementation Guides (IGs) for SHR
+## FHIR Implementation Guides
 
-FHIR (Fast Healthcare Interoperability Resources) is a standard for exchanging healthcare information electronically. The SHR system leverages FHIR to ensure compatibility and interoperability with other health systems. Below are the relevant FHIR Implementation Guides (IGs) for SHR.
+The SHR is implemented using multiple **FHIR Implementation Guides (IGs)** to ensure broad compatibility and use-case alignment:
 
-### SMART on FHIR
-- **Purpose**: SMART on FHIR allows third-party applications to integrate seamlessly with health systems. It provides secure authorization and access to electronic health record (EHR) data.
-- **FHIR Resources Used**: Patient, Observation, Encounter, Medication, etc.
-- **Link to SMART on FHIR Implementation Guide**: [SMART on FHIR IG](https://smarthealthit.org/)
+| IG Name | Purpose | Key FHIR Resources |
+|--------|---------|--------------------|
+| [**SMART on FHIR**](https://smarthealthit.org/) | SMART on FHIR allows third-party applications to integrate seamlessly with health systems. It provides secure authorization and access to electronic health record (EHR) data. | `Patient`, `Observation`, `Encounter`, `Medication` |
+| [**FHIR for Mobile Health (mHealth)**](https://www.hl7.org/fhir/mhealth.html)| This IG supports mobile applications that interact with health records. It provides guidance on how mobile apps should consume FHIR data for patient care. | `Observation`, `MedicationRequest`, `DiagnosticReport` |
+| [**FHIR for EHR**](https://www.hl7.org/fhir/ehr.html)| The EHR IG defines how FHIR resources can be used to manage health records electronically. | `Patient`, `Practitioner`, `Encounter`, `Observation` |
+| [**FHIR for Clinical Data Interchange**](https://www.hl7.org/fhir/clinical.html)| This IG focuses on the exchange of clinical data across different health systems using FHIR. | `Patient`, `Condition`, `Procedure`, `Observation` |
 
-### FHIR for Mobile Health (mHealth)
-- **Purpose**: This IG supports mobile applications that interact with health records. It provides guidance on how mobile apps should consume FHIR data for patient care.
-- **FHIR Resources Used**: Observation, MedicationRequest, Patient, DiagnosticReport, etc.
-- **Link to mHealth Implementation Guide**: [FHIR mHealth IG](https://www.hl7.org/fhir/mhealth.html)
 
-### FHIR for Electronic Health Records (EHR)
-- **Purpose**: The EHR IG defines how FHIR resources can be used to manage health records electronically.
-- **FHIR Resources Used**: Patient, Practitioner, Encounter, Observation, etc.
-- **Link to EHR Implementation Guide**: [FHIR EHR IG](https://www.hl7.org/fhir/ehr.html)
-
-### FHIR for Clinical Data Interchange
-- **Purpose**: This IG focuses on the exchange of clinical data across different health systems using FHIR.
-- **FHIR Resources Used**: Patient, Observation, Procedure, Condition, etc.
-- **Link to Clinical Data Interchange IG**: [FHIR Clinical Data IG](https://www.hl7.org/fhir/clinical.html)
-
-### Additional FHIR Resources
-For a deeper dive into the FHIR standard and related Implementation Guides, refer to the official FHIR documentation:
-- **FHIR Official Site**: [HL7 FHIR](https://www.hl7.org/fhir/)
+For additional FHIR IGs and resources, visit: [HL7 FHIR Official Site](https://www.hl7.org/fhir/)
