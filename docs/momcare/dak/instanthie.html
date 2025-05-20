@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-4557da021e712a9fcc51e134a561163d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-3cb9c2a0afda33a37dd3e08a38260dc6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -234,27 +234,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="interoperability-layer-instant-openhie" class="level2">
+<h2 class="anchored" data-anchor-id="interoperability-layer-instant-openhie">Interoperability Layer: Instant OpenHIE</h2>
+<p>The Instant OpenHIE component serves as the interoperability backbone of the Connected Care Stack. It enables secure, standards-based data exchange across digital health applications—empowering coordinated, patient-centered care in low-resource settings.</p>
 <section id="instant-openhie" class="level3">
 <h3 class="anchored" data-anchor-id="instant-openhie">Instant OpenHIE</h3>
-<p>Instant OpenHIE aims to allow Health Information Exchange components to be packaged up, deployed, operated and scaled via a simple CLI.</p>
+<p><strong>Instant OpenHIE aims to allow Health Information Exchange components to be packaged up, deployed, operated and scaled via a simple CLI.</strong> Instant OpenHIE is a lightweight, modular, and portable implementation of the OpenHIE architecture. It allows digital health teams to deploy and operate interoperable Health Information Exchange (HIE) systems using a simple command-line interface (CLI).</p>
 <section id="vision" class="level4">
 <h4 class="anchored" data-anchor-id="vision">Vision</h4>
-<p>The Instant OpenHIE based model aims to reduce the costs and skills required for software developers to deploy applications conforming to an OpenHIE architecture. This will enable quicker initial solution testing, demonstrations. It will also serve as a starting point for faster production implementation and customisation.</p>
-<p>The Instant OpenHIE is a simple way for semi-technical persons to install and see a complex system working against a real-world use case. It will illustrate how interoperability can work to solve health challenges. It will also show how a national interoperability architecture could be created with open-source software and standards.</p>
-<p>Instant OpenHIE aim to provide a simple, portable way to deploy health information exchange systems to facilitate:</p>
+<p>The Instant OpenHIE based model aims to reduce the costs and skills required for software developers to deploy applications conforming to an OpenHIE architecture. This will enable quicker initial solution testing and demonstrations. It will also serve as a starting point for faster production implementation and customisation.</p>
+<p>The Instant OpenHIE is a simple way for semi-technical persons to install and see a complex system working against a real-world use case. It will illustrate how interoperability can work to solve health challenges. It will also show <em>how</em> a <strong>national interoperability architecture could be created with open-source software and standards.</strong></p>
+</section>
+</section>
+<section id="deploying-interoperability" class="level3">
+<h3 class="anchored" data-anchor-id="deploying-interoperability">Deploying Interoperability</h3>
+<p>Interoperability is the foundation of coordinated care. Instant OpenHIE reduces the technical burden for health implementers by providing a simple, portable way to deploy health information exchange systems. Its design is:</p>
+<ul>
+<li><p><strong>Modular</strong> Packaging essential HIE components into reusable, production-ready containers. Its <em>composable infrastructure</em> allows you to deploy only what you need—tailor the architecture to national, regional, or program-level requirements.</p></li>
+<li><p><strong>Standardized</strong> Supporting standards-based integration using HL7 FHIR, ensuring consistent data formats and exchange protocols. This combined with the modular workflows enables <em>reproducible</em> and <em>version-controlled</em> deployments aligned with OpenHIE profiles and workflows.</p></li>
+<li><p><strong>Minimal</strong> Built for low-resource settings, it is designed to works in environments with limited connectivity and compute resources. The <em>developer-friendly CLI</em> allows you to launch interoperable systems quickly for testing, demonstrations, or production use, making it easy to test, customize, and scale digital care pathways in real-world contexts.</p></li>
+</ul>
+<p>Older version:</p>
 <ol type="1">
 <li>Demonstrable reference products - those that align with the OpenHIE Community’s vision for low resource contexts</li>
 <li>Rapid software development of mediators and point-of-service systems by making it possible to launch several applications easily so the developer can focus on their task</li>
 <li>Reproducible, version-controlled infrastructure for user-contributed tests of the OpenHIE Architecture profiles, workflows, and use cases.</li>
 <li>Production-ready containers and orchestratable components that are deployable in any context.</li>
 <li>Extensibility so that anyone may create Instant OpenHIE packages and plug them into the existing Instant OpenHIE functionality.</li>
-</ol>
-</section>
-<section id="use-cases" class="level4">
-<h4 class="anchored" data-anchor-id="use-cases">Use Cases</h4>
-<ol type="1">
-<li>Beneficiary Enrollment - This implementation supports Momcare beneficiary enrollment via Whatsapp using a standards-based approach using FHIR &amp; OpenHIE.</li>
-<li>Hybrid maternal care - This implementation supports seamless data sharing of Antenatal Care information between physical and virtual providers.</li>
 </ol>
 
 

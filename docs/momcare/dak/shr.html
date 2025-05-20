@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Shared Health Record – Connected Care</title>
+<title>shr – Connected Care</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-4557da021e712a9fcc51e134a561163d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-3cb9c2a0afda33a37dd3e08a38260dc6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -229,34 +229,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/momcare/dak/dak.html">Digital Adaptation Kit</a></li><li class="breadcrumb-item"><a href="../../../docs/momcare/dak/shr.html">Shared Health Record</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Shared Health Record</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/momcare/dak/dak.html">Digital Adaptation Kit</a></li><li class="breadcrumb-item"><a href="../../../docs/momcare/dak/shr.html">Shared Health Record</a></li></ol></nav></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="background." class="level5">
-<h5 class="anchored" data-anchor-id="background.">Background.</h5>
-<p>In the spirit of adopting a FHIR-native approach, the MamaToto Health Information Exchange (HIE) uses the HAPI FHIR Server as its Shared Health Record (SHR). This system ensures seamless data exchange and compatibility across multiple healthcare systems by leveraging the FHIR standard, enabling efficient patient care coordination, data sharing, and interoperability.</p>
-</section>
-<section id="mdm-configurations." class="level4">
-<h4 class="anchored" data-anchor-id="mdm-configurations.">MDM Configurations.</h4>
-<p>To allow for unique Patient Identification, the SHR system leverages <strong>Master Data Management (MDM)</strong> configurations that ensure consistent and accurate identification of patients across different systems. This includes:</p>
+<section id="shared-health-record" class="level2">
+<h2 class="anchored" data-anchor-id="shared-health-record">Shared Health Record</h2>
+<p>The <strong>Shared Health Record (SHR)</strong> is a business service component of the <strong>OpenHIE architecture</strong> in the Connected Care Stack. It functions as a <strong>longitudinal clinical repository</strong>, enabling a unified view of a patient’s health history across encounters, systems, and providers.</p>
+<p>By adopting a <strong>FHIR-native approach</strong> through the use of the <strong>HAPI FHIR Server</strong>, the SHR facilitates <strong>standards-based clinical data exchange</strong>, promoting patient-centered continuity of care across digital and physical services.</p>
+<section id="master-data-management-mdm" class="level3">
+<h3 class="anchored" data-anchor-id="master-data-management-mdm">Master Data Management (MDM)</h3>
+<p>To enable accurate and reliable patient identification across systems, the SHR system leverages <strong>Master Data Management (MDM)</strong> configurations that ensure consistent and accurate identification of patients across different systems. This includes:</p>
 <ul>
 <li><p><strong>Patient Identity Matching</strong>:<br>
 The system uses algorithms such as <strong>Probabilistic Matching</strong> and <strong>Deterministic Matching</strong> to ensure accurate linking of patient records.</p></li>
@@ -267,10 +251,9 @@ A single authoritative record for each patient is maintained, ensuring that data
 <li><p><strong>Cross-System Patient Identification</strong>:<br>
 The system supports cross-system identity matching, enabling patient identification across different healthcare providers and systems using shared data sources.</p></li>
 </ul>
-</section>
 <section id="mdm-rules." class="level4">
 <h4 class="anchored" data-anchor-id="mdm-rules.">MDM Rules.</h4>
-<p>MDM rules define how patient data is validated, matched, and linked across various health systems. These rules ensure that:</p>
+<p>The SHR applies MDM rules that define how patient data is validated, matched, and linked across various health systems. These rules ensure that:</p>
 <ul>
 <li><p><strong>Data Integrity</strong>:<br>
 All incoming patient data is checked for completeness and accuracy before being stored in the SHR.</p></li>
@@ -283,46 +266,44 @@ When duplicate records are detected, MDM rules ensure that the correct action is
 <li><p><strong>Security &amp; Compliance</strong>:<br>
 Patient identification rules are aligned with security regulations such as HIPAA and GDPR, ensuring patient confidentiality and data protection.</p></li>
 </ul>
-<section id="fhir-implementation-guides-igs-for-shr" class="level5">
-<h5 class="anchored" data-anchor-id="fhir-implementation-guides-igs-for-shr">FHIR Implementation Guides (IGs) for SHR</h5>
-<p>FHIR (Fast Healthcare Interoperability Resources) is a standard for exchanging healthcare information electronically. The SHR system leverages FHIR to ensure compatibility and interoperability with other health systems. Below are the relevant FHIR Implementation Guides (IGs) for SHR.</p>
 </section>
 </section>
-<section id="smart-on-fhir" class="level3">
-<h3 class="anchored" data-anchor-id="smart-on-fhir">SMART on FHIR</h3>
-<ul>
-<li><strong>Purpose</strong>: SMART on FHIR allows third-party applications to integrate seamlessly with health systems. It provides secure authorization and access to electronic health record (EHR) data.</li>
-<li><strong>FHIR Resources Used</strong>: Patient, Observation, Encounter, Medication, etc.</li>
-<li><strong>Link to SMART on FHIR Implementation Guide</strong>: <a href="https://smarthealthit.org/">SMART on FHIR IG</a></li>
-</ul>
 </section>
-<section id="fhir-for-mobile-health-mhealth" class="level3">
-<h3 class="anchored" data-anchor-id="fhir-for-mobile-health-mhealth">FHIR for Mobile Health (mHealth)</h3>
-<ul>
-<li><strong>Purpose</strong>: This IG supports mobile applications that interact with health records. It provides guidance on how mobile apps should consume FHIR data for patient care.</li>
-<li><strong>FHIR Resources Used</strong>: Observation, MedicationRequest, Patient, DiagnosticReport, etc.</li>
-<li><strong>Link to mHealth Implementation Guide</strong>: <a href="https://www.hl7.org/fhir/mhealth.html">FHIR mHealth IG</a></li>
-</ul>
-</section>
-<section id="fhir-for-electronic-health-records-ehr" class="level3">
-<h3 class="anchored" data-anchor-id="fhir-for-electronic-health-records-ehr">FHIR for Electronic Health Records (EHR)</h3>
-<ul>
-<li><strong>Purpose</strong>: The EHR IG defines how FHIR resources can be used to manage health records electronically.</li>
-<li><strong>FHIR Resources Used</strong>: Patient, Practitioner, Encounter, Observation, etc.</li>
-<li><strong>Link to EHR Implementation Guide</strong>: <a href="https://www.hl7.org/fhir/ehr.html">FHIR EHR IG</a></li>
-</ul>
-</section>
-<section id="fhir-for-clinical-data-interchange" class="level3">
-<h3 class="anchored" data-anchor-id="fhir-for-clinical-data-interchange">FHIR for Clinical Data Interchange</h3>
-<ul>
-<li><strong>Purpose</strong>: This IG focuses on the exchange of clinical data across different health systems using FHIR.</li>
-<li><strong>FHIR Resources Used</strong>: Patient, Observation, Procedure, Condition, etc.</li>
-<li><strong>Link to Clinical Data Interchange IG</strong>: <a href="https://www.hl7.org/fhir/clinical.html">FHIR Clinical Data IG</a></li>
-</ul>
-</section>
-<section id="additional-fhir-resources" class="level3">
-<h3 class="anchored" data-anchor-id="additional-fhir-resources">Additional FHIR Resources</h3>
-<p>For a deeper dive into the FHIR standard and related Implementation Guides, refer to the official FHIR documentation: - <strong>FHIR Official Site</strong>: <a href="https://www.hl7.org/fhir/">HL7 FHIR</a></p>
+<section id="fhir-implementation-guides" class="level2">
+<h2 class="anchored" data-anchor-id="fhir-implementation-guides">FHIR Implementation Guides</h2>
+<p>The SHR is implemented using multiple <strong>FHIR Implementation Guides (IGs)</strong> to ensure broad compatibility and use-case alignment:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>IG Name</th>
+<th>Purpose</th>
+<th>Key FHIR Resources</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://smarthealthit.org/"><strong>SMART on FHIR</strong></a></td>
+<td>SMART on FHIR allows third-party applications to integrate seamlessly with health systems. It provides secure authorization and access to electronic health record (EHR) data.</td>
+<td><code>Patient</code>, <code>Observation</code>, <code>Encounter</code>, <code>Medication</code></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.hl7.org/fhir/mhealth.html"><strong>FHIR for Mobile Health (mHealth)</strong></a></td>
+<td>This IG supports mobile applications that interact with health records. It provides guidance on how mobile apps should consume FHIR data for patient care.</td>
+<td><code>Observation</code>, <code>MedicationRequest</code>, <code>DiagnosticReport</code></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.hl7.org/fhir/ehr.html"><strong>FHIR for EHR</strong></a></td>
+<td>The EHR IG defines how FHIR resources can be used to manage health records electronically.</td>
+<td><code>Patient</code>, <code>Practitioner</code>, <code>Encounter</code>, <code>Observation</code></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.hl7.org/fhir/clinical.html"><strong>FHIR for Clinical Data Interchange</strong></a></td>
+<td>This IG focuses on the exchange of clinical data across different health systems using FHIR.</td>
+<td><code>Patient</code>, <code>Condition</code>, <code>Procedure</code>, <code>Observation</code></td>
+</tr>
+</tbody>
+</table>
+<p>For additional FHIR IGs and resources, visit: <a href="https://www.hl7.org/fhir/">HL7 FHIR Official Site</a></p>
 
 
 </section>
