@@ -72,7 +72,7 @@ website:
           href: docs/vp/analytics/implementation.qmd
           contents:
             - file: docs/vp/analytics/introduction.qmd
-              text: 1. Introduction
+              text: Introduction
             - file: docs/vp/analytics/background.qmd
               text: Background & Rationale
             - file: docs/vp/analytics/system.qmd

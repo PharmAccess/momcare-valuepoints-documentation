@@ -1,32 +1,56 @@
-1. Introduction 
+# Introduction
 
-### 1.1 Purpose & Scope 
+Health data in FHIR format is rich but highly nested. Without a solid ETL pipeline and smart data modeling, you end up drowning in complexity.
 
-What this section covers  
+It then becomes challenging how HL7 FHIR data flowing from a maternal health program can be used to generate the metrics used to compute value points for facilities in a program
 
-Who it’s for (data engineers, product managers, etc.) 
+In this guide, we’ll walk through the journey from raw FHIR bundles to dashboards, highlighting the architectural choices and open-source building blocks that make it all possible.
 
-## Data Flows
-1. Start with *FHIR-based data pipelines* to standardize and support any digital intervention requiring analytics
+## Who Should Read This?
 
-2. Preprocess *'raw' FHIR data* into flattened **patient timeline table**
+Whether you’re a:
 
-3. Define metric on top of **patient timeline table**
+- **Data Engineer** interested in orchestration, data modeling, and analytics pipelines  
+- **Product Manager** or **Digital Health Implementer** evaluating integration, scalability, and deployment  
+- **Developer** looking to customize or extend the solution  
+- **Health Informatics Expert** exploring value-based care models powered by real-time, interoperable data  
 
-4. Using the International Patient Summary (IPS) as data model
+you’ll find everything you need to understand how we transform complex HL7 FHIR data into analytics-ready formats.
 
-## Linked repositories
+## What is covered
 
-Data Pipeline: 
+1. **ETL Automation**  
+   How we extract, transform, and load FHIR resources at scale while preserving data integrity. We assume you are using the resources defined in [MNCH FHIR profile](https://github.com/PharmAccess/MamaToTo-FHIR-IG)
 
-- [Data Pipeline](https://github.com/PharmAccess/data-pipelines/tree/main/pipelines/flows/hdc)
-- [Metrics](https://github.com/PharmAccess/open-mnch-dbt-analytics)
-- [FHIR profile](https://github.com/PharmAccess/MamaToTo-FHIR-IG)
-- [FHIR questionnaire](https://github.com/PharmAccess/mamatoto/tree/main)
+2. **Data Flattening & Modeling**  
+   The strategies we use to denormalize FHIR data for efficient metric calculation and reporting.
 
-Dashboard
-- [Shiny App](https://github.com/PharmAccess/hdc-inspire-clinics-kisumu-app)
+3. **Metric Computation**  
+   Generating the [ValuePoints metrics](../dak/metrics.qmd) demonstrated for a maternal health program.
 
-Utilities:
-- [Anonymized data](https://github.com/PharmAccess/hdc-furahi)
-- [Generic Mapping Tool](https://github.com/PharmAccess/FHIRPathMappingLanguage)
+4. **Visualization & Reporting**  
+   Turning flattened data into dashboards and reports that drive actionable insights.  
+
+By the end of this section, it'll be clear how the ValuePoints Tool leverages open-source technologies to deliver a scalable, interoperable analytics solution for real-time health data.  
+
+## Key Repositories
+
+Below are the core projects that lead to the calculation of value points:
+
+- **DBT Metrics**
+
+  Houses the SQL models and macros for computing ValuePoints metrics
+  - [Metrics](https://github.com/PharmAccess/open-mnch-dbt-analytics)
+  
+- **FHIR Profile & Questionnaire**  
+  Defines the MNCH FHIR resources and data collection forms  
+  - [Profile](https://github.com/PharmAccess/MamaToTo-FHIR-IG)  
+  - [Questionnaire](https://github.com/PharmAccess/mamatoto/tree/main)
+
+- **Dashboard App** 
+  - [Dashboard App](https://github.com/PharmAccess/hdc-inspire-clinics-kisumu-app)
+    A Shiny application for visualizing the value points
+
+- **Utilities** 
+  - [Anonymized sample data for testing](https://github.com/PharmAccess/hdc-furahi)
+  - [Generic FHIR-to-analytics Mapping Tool](https://github.com/PharmAccess/FHIRPathMappingLanguage)
