@@ -61,21 +61,32 @@ The ValuePoints solution adopts the SQL-on-FHIR approach, a nascent standard tha
 
 <!-- TODO: add contents from the page with resources to vp tool here  -->
 
-### ETL Pipeline Overview
+## ETL Pipeline Overview
 
 The ValuePoints ETL pipeline includes a **Base Reporter** module that leverages SQL-on-FHIR to extract event-level data from FHIR resources and assemble a canonical patient timeline. That timeline then serves as the foundation for all subsequent metric computation and reporting.
 
 ![](reporting schema.png)
 
 
-### [Patient Timeline Table](pipeline.qmd)
+## [Patient Timeline Table](pipeline.qmd)
 
 The **Patient Timeline** table captures each clinical event—procedures, treatments, diagnoses—alongside standardized timestamps and contextual metadata. By reconstructing the sequence of a patient’s interactions over time, this table enables longitudinal analysis and supports all downstream reports.
 
 - Construction is based on a standardized workflow originally demonstrated for maternal care programs, ensuring consistency in event sequencing.  
 - Similar “event data” and timeline approaches are documented in recent literature[^1] [^2] [^3].
 
-### Extending the Pipeline
+## [DHIS2 Reporter](dhis2.qmd)
+
+As an additional validation of the Patient Timeline approach, the DHIS2 Reporter module produces MNCH-specific DHIS2–compatible reports directly from the canonical timeline. By reusing the same event-level data source:
+
+- **Consistency** is ensured across all analytics outputs  
+- **Duplication** of ETL logic is eliminated  
+- **Risk of transcription or aggregation errors** is significantly reduced  
+
+These reports deliver insights on clinic attendance (e.g., number of mothers per visit), prevalent maternal conditions, and performed procedures, all derived from the unified patient timeline.
+
+
+## Extending the Pipeline
 
 Once the Patient Timeline is in place, additional ValuePoints reports (e.g., program adherence, outcome measures) can be implemented by building on the base tables and models.
 
