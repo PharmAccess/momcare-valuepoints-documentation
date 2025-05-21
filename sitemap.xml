@@ -2,242 +2,230 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/narrative/digitalcare.html</loc>
-    <lastmod>2025-05-20T07:01:48.105Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/narrative/connectedcare.html</loc>
-    <lastmod>2025-05-20T07:01:48.105Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/techspecs/information.html</loc>
-    <lastmod>2025-05-20T07:01:48.105Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/dak/dak.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/dak/shr.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/narrative.html</loc>
-    <lastmod>2025-05-20T07:01:48.146Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.443Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/businessprocesses.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/userscenarios.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/objectivesofdak.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/healthinterventions.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/financialmodel.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/valuepoints.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/journeytracking.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/introduction.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/introduction.html</loc>
+    <lastmod>2025-05-21T15:56:40.399Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/metrics.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/patient_timeline.html</loc>
+    <lastmod>2025-05-21T15:56:40.400Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/sqlonfhir.html</loc>
-    <lastmod>2025-05-20T07:01:48.135Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/metrics_layer.html</loc>
+    <lastmod>2025-05-21T15:56:40.399Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/tools.html</loc>
-    <lastmod>2025-05-20T07:01:48.135Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/dhis2.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/system.html</loc>
-    <lastmod>2025-05-20T07:01:48.135Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/businessprocesses.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/userscenarios.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/data-elements.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/personas.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/dak_overview.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/healthinterventions.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/businessprocesses.html</loc>
-    <lastmod>2025-05-20T07:01:48.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/userscenarios.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/objectivesofdak.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/healthinterventions.html</loc>
-    <lastmod>2025-05-20T07:01:48.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/index.html</loc>
-    <lastmod>2025-05-20T07:01:48.147Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/dataelements.html</loc>
-    <lastmod>2025-05-20T07:01:48.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/personas.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/metrics.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/requirements.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/vpsoftware.html</loc>
-    <lastmod>2025-05-20T07:01:48.135Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/technical-components.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/phase1.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/workflow.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/outcomes.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
-  </url>
-  <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/metrics.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/dhis2.html</loc>
+    <lastmod>2025-05-21T15:56:40.399Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/requirements.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/valuepoints.html</loc>
-    <lastmod>2025-05-20T07:01:48.135Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/metrics.html</loc>
+    <lastmod>2025-05-21T15:56:40.430Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/models.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/outcomes.html</loc>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/appendix.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/workflow.html</loc>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/background.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/phase1.html</loc>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/implementation.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/technical-components.html</loc>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
-    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/techspecs/pipeline.html</loc>
-    <lastmod>2025-05-20T07:01:48.134Z</lastmod>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/vpsoftware.html</loc>
+    <lastmod>2025-05-21T15:56:40.432Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/requirements.html</loc>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/metrics.html</loc>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/personas.html</loc>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/dataelements.html</loc>
+    <lastmod>2025-05-21T15:56:40.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/index.html</loc>
+    <lastmod>2025-05-21T15:56:40.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/healthinterventions.html</loc>
+    <lastmod>2025-05-21T15:56:40.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/objectivesofdak.html</loc>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/userscenarios.html</loc>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/dak/businessprocesses.html</loc>
+    <lastmod>2025-05-21T15:56:40.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/hybridcaremodel/narrative.html</loc>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/healthinterventions.html</loc>
+    <lastmod>2025-05-21T15:56:40.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/dak_overview.html</loc>
+    <lastmod>2025-05-21T15:56:40.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/personas.html</loc>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/data-elements.html</loc>
+    <lastmod>2025-05-21T15:56:40.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/userscenarios.html</loc>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/dak/businessprocesses.html</loc>
+    <lastmod>2025-05-21T15:56:40.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/analytical_approaches.html</loc>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/models.html</loc>
+    <lastmod>2025-05-21T15:56:40.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/metrics.html</loc>
+    <lastmod>2025-05-21T15:56:40.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/architecture.html</loc>
+    <lastmod>2025-05-21T15:56:40.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/analytics/pipeline.html</loc>
+    <lastmod>2025-05-21T15:56:40.400Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/hanang.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/interoperability.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/vp/narrative/abbreviations.html</loc>
-    <lastmod>2025-05-20T07:01:48.133Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.431Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/dataelements.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/personas.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/metrics.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/whatsapp/dak/requirements.html</loc>
-    <lastmod>2025-05-20T07:01:48.139Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.436Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/implementation.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/dak/instanthie.html</loc>
-    <lastmod>2025-05-20T07:01:48.102Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.395Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/techspecs/gettingstarted.html</loc>
-    <lastmod>2025-05-20T07:01:48.105Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/narrative/hie.html</loc>
-    <lastmod>2025-05-20T07:01:48.105Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
   </url>
   <url>
     <loc>https://PharmAccess.github.io/momcare-valuepoints-documentation/docs/momcare/narrative/momcare.html</loc>
-    <lastmod>2025-05-20T07:01:48.105Z</lastmod>
+    <lastmod>2025-05-21T15:56:40.398Z</lastmod>
   </url>
 </urlset>

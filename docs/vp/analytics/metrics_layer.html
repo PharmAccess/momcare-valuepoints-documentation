@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>introduction – Connected Care</title>
+<title>metrics_layer – Connected Care</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -38,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-3cb9c2a0afda33a37dd3e08a38260dc6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-7098f7e56083f0439e3b2e803b95518d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/PharmAccess/hdc-documentation"> 
+    <a class="nav-link" href="https://github.com/PharmAccess"> 
 <span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
@@ -123,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/introduction.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/analytics/implementation.qmd">Analytics Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/analytics/patient_timeline.html">Implementations</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/analytics/metrics_layer.html">Metrics layer</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -243,8 +278,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Technical Specification</span></a>
+            <a href="../../../docs/vp/analytics/implementation.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analytics Documentation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -252,104 +287,45 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/vp/analytics/introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/background.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Background &amp; Rationale</span></a>
+  <a href="../../../docs/vp/analytics/architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Architectural Approaches</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/system.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">System Overview &amp; Flow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools &amp; Technologies</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Models</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Additional Materials</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(General Specifications)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/pipeline.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(Base Tables)</span></a>
+  <a href="../../../docs/vp/analytics/analytical_approaches.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analytical Approaches</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">ValuePoints Calculations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Implementations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/sqlonfhir.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(Analytical approaches)</span></a>
+  <a href="../../../docs/vp/analytics/patient_timeline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Patient Timeline Generation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/valuepoints.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(SQL on FHIR Implementation)</span></a>
+  <a href="../../../docs/vp/analytics/metrics_layer.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Metrics layer</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/metrics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(ValuePoint Dashboards)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/techspecs/dhis2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(DHIS2 Reports)</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../docs/vp/vpsoftware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../docs/vp/vpsoftware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -359,41 +335,71 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/implementation.html">Technical Specification</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/techspecs/introduction.html">Introduction</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/vp/analytics/implementation.qmd">Analytics Documentation</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/analytics/patient_timeline.html">Implementations</a></li><li class="breadcrumb-item"><a href="../../../docs/vp/analytics/metrics_layer.html">Metrics layer</a></li></ol></nav></header>
 
 
 
 
+<section id="dbt-models" class="level1">
+<h1>DBT Models</h1>
+<p>This section outlines the DBT models used in the project, explaining how raw data in the form of FHIR resources was transformed into tables used in the dashboard. DBT was chosen because it fits well with SQL-based workflows, enforce modular and reusable code through the use of <code>models</code> and <code>macros</code>. It also provides useful features like documentation and lineage tracking, which made it easier to maintain and understand the project structure. The code for the DBT project can be found on GitHub: <a href="https://github.com/PharmAccess/open-mnch-dbt-analytics/tree/main">open-mnch-dbt-analytics</a></p>
+<section id="transformations" class="level2">
+<h2 class="anchored" data-anchor-id="transformations">Transformations</h2>
+<p>The FHIR resources (located in the “base_reports” folder at the root) are first transformed into two models <code>patient_timeline</code> and <code>patient_info</code> which serve as the base models for all other downstream models used in calculating value points.</p>
 <ol type="1">
-<li>Introduction</li>
+<li><p><code>patient_timeline</code>: The model ingests a parquet file containing a patient timeline and transforms it into a dataframe. The patient timeline contains records of patient encounters extracted from FHIR resources. The model is located at <code>models/base_reports/br_timeline/patient_timeline.py</code></p></li>
+<li><p><code>patient_info</code>: The model processes a parquet file, which contains information such as patient unique identifier (patient_id), and date of birth extracted from <code>patient</code> FHIR resource and transforms it into a dataframe. The model can be found at <code>models/base_reports/br_timeline/patient_info.py</code></p></li>
 </ol>
-<section id="purpose-scope" class="level3">
-<h3 class="anchored" data-anchor-id="purpose-scope">1.1 Purpose &amp; Scope</h3>
-<p>What this section covers</p>
-<p>Who it’s for (data engineers, product managers, etc.)</p>
+<p>These models are then transformed and combined into a single dataset <code>patient timeline combined</code>, which serves as a building block for subsequent models used in calculating value points. The transformations applied to the base models include, filtering the patient events data based on age, and adding information that flags high-risk patients based on their captured conditions. The code for the intermediary models used to create the <code>patient_timeline_combined</code> can be found at <code>models/value_points/staging</code>.</p>
+<p><img src="base_staged_m-schema.png" class="img-fluid"></p>
+<p>The code below is used to create the <code>patient_timeline_combined</code> based on the intermediary models <code>patient_info_enriched</code> and <code>patient_timeline_enriched</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>{{</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    config(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="kw">materialized</span> <span class="op">=</span> <span class="st">'table'</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        on_schema_change <span class="op">=</span> <span class="st">'fail'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    pi.<span class="op">*</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    pt.<span class="op">*</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    {{ <span class="fu">ref</span>(<span class="st">'patient_info_enriched'</span>) }} <span class="kw">AS</span> pi</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    {{ <span class="fu">ref</span>(<span class="st">'patient_timeline_enriched'</span>) }} <span class="kw">AS</span> pt</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">ON</span> pi.patient_id <span class="op">=</span> pt.patient_id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The table below is an output from the code above and shows part of the <code>patient_timeline_combined</code> table</p>
+<p><img src="pt_combined.png" class="img-fluid"></p>
 </section>
-<section id="data-flows" class="level2">
-<h2 class="anchored" data-anchor-id="data-flows">Data Flows</h2>
+<section id="value-points-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="value-points-calculation">Value-Points Calculation</h2>
+<p>There are three models that are used in calculating the value points for the different indicators: early ANC, full ANC profile, ultrasound, 4 ANC’s, facility based delivery and 2 PNC’s.</p>
+<p>The tables resulting from these calculations serve as the basis for the tables used to create the dashboard visualizations. The models are located at: <code>models/value_points/indicator_base</code></p>
 <ol type="1">
-<li><p>Start with <em>FHIR-based data pipelines</em> to standardize and support any digital intervention requiring analytics</p></li>
-<li><p>Preprocess <em>‘raw’ FHIR data</em> into flattened <strong>patient timeline table</strong></p></li>
-<li><p>Define metric on top of <strong>patient timeline table</strong></p></li>
-<li><p>Using the International Patient Summary (IPS) as data model</p></li>
+<li><p><code>events_timeline</code>: The model captures records of every visit for each mother along with the corresponding “actions” (or services) performed in each visit</p></li>
+<li><p><code>patient_list</code>: The model tracks the journey date range for each mother based on their expected delivery date</p></li>
+<li><p><code>value_points_config</code>: The model contains all the configuration settings for the different indicators and is used by <code>patient_points_base.sql</code> and <code>value_points_base</code>.sql. For every indicator, the relevant configurations are collected from this file and then used in other queries</p></li>
+<li><p><code>value_points_base</code>: The model calculates the number of value points that are obtained, missed or can still be obtained per clinic, patient and indicator. This model is based on models 1,2 and 3 above</p></li>
 </ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="vp_base.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>The tables below show some of the columns from the <code>value_points_base</code> model.</p>
+<p><img src="vp_base-1.png" class="img-fluid"></p>
+<p><img src="vp_base-2.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li><code>patient_points_base</code>: The model calculates the number of patients that have missed or received the services corresponding to a certain indicator, or are still able to receive those services, per clinic and indicator. The model is derived of from <code>value_points_base</code></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pt_base.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+
+
 </section>
-<section id="linked-repositories" class="level2">
-<h2 class="anchored" data-anchor-id="linked-repositories">Linked repositories</h2>
-<p>Data Pipeline:</p>
-<ul>
-<li><a href="https://github.com/PharmAccess/data-pipelines/tree/main/pipelines/flows/hdc">Data Pipeline</a></li>
-<li><a href="https://github.com/PharmAccess/open-mnch-dbt-analytics">Metrics</a></li>
-<li><a href="https://github.com/PharmAccess/MamaToTo-FHIR-IG">FHIR profile</a></li>
-<li><a href="https://github.com/PharmAccess/mamatoto/tree/main">FHIR questionnaire</a></li>
-</ul>
-<p>Dashboard - <a href="https://github.com/PharmAccess/hdc-inspire-clinics-kisumu-app">Shiny App</a></p>
-<p>Utilities: - <a href="https://github.com/PharmAccess/hdc-furahi">Anonymized data</a> - <a href="https://github.com/PharmAccess/FHIRPathMappingLanguage">Generic Mapping Tool</a></p>
-
-
 </section>
 
 </main> <!-- /main -->
