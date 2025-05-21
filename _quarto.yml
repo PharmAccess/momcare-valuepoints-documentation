@@ -24,7 +24,7 @@ website:
       - file: docs/hybridcaremodel/narrative.qmd
         text: (Hybrid Care Model)
     right:
-      - href: https://github.com/PharmAccess/hdc-documentation
+      - href: https://github.com/PharmAccess
         text: GitHub
 
   sidebar: 
