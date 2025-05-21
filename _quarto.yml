@@ -85,8 +85,6 @@ website:
                   text: Metrics layer
                 - file: docs/vp/analytics/pipeline.qmd
                   text: (Base Tables)
-                - file: docs/vp/analytics/sqlonfhir.qmd
-                  text: (Analytical approaches)
                 - file: docs/vp/analytics/metrics.qmd
                   text: (ValuePoint Dashboards)
             # - file: docs/vp/analytics/dhis2.qmd
