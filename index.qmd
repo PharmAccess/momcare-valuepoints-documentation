@@ -33,14 +33,14 @@ Other components, while still in pilot or early stages (as of May 2025), are sha
 
 | **MomCare Element**                | **Software Component**                                                  | **MomCare Implementation**                                                                                                                               |
 |-----------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Digitally Connected Care Journey** | *Health Data Exchange Architecture*  <br> _(Interoperability Layer & Business Service)_ | [🔗 Connected Care](/docs/mamatoto/index.qmd)                                                                                   |
+| **Digitally Connected Care Journey** | *Health Data Exchange Architecture*  <br> _(Interoperability Layer & Business Service)_ | [🔗 Connected Care](docs/momcare/narrative/momcare.html)                                                                                   |
 | **Direct Patient Engagement Channel** | *Point of Service System*                                               | [💬 WhatsApp Engagement](docs/whatsapp/narrative.html)                                                                                                              |
 | **Journey-Based Analytics Dashboard** | *Analytics Service*                                                     | [📊 ValuePoints Tool](docs/vp/narrative/valuepoints.html)                                |
 | **Continuous Care Services**         | *Integrated Point of Service Systems*                                   | [🩺 Hybrid Care Model](docs/hybridcaremodel/narrative.html)                              |
 
 #### Status of (Ongoing) PharmAccess Implementations
 
-[🔗 Connected Care](/docs/mamatoto/index.qmd)
+[🔗 Connected Care](docs/momcare/narrative/momcare.html)
 The connected care architecture is used and applied across all below implementations. 
 
 [📊 ValuePoints Tool](docs/vp/narrative/valuepoints.html)
