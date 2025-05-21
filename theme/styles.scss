@@ -116,3 +116,16 @@ div.sidebar-item-container, div.sidebar-item-container .sidebar-link > code {
   text-indent: -0.7rem;
   padding-left: 1.4rem;
 }
+
+/* Allow long TOC links to wrap instead of being clipped */
+.quarto-sidebar-secondary .toc .toc-item a {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Make the right-sidebar scrollable if it grows too tall */
+.quarto-sidebar-secondary {
+  max-height: calc(100vh - var(--quarto-header-height));
+  overflow-y: auto;
+}
+

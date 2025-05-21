@@ -68,40 +68,32 @@ website:
               text: 7. Indicators and Performance Metrics
             - file: docs/vp/dak/requirements.qmd
               text: 8. Functional and non-functional requirements
-        - section: "Technical Specification"
-          href: docs/vp/techspecs/implementation.qmd
+        - section: "Analytics Documentation"
+          href: docs/vp/analytics/implementation.qmd
           contents:
-            - file: docs/vp/techspecs/introduction.qmd
+            - file: docs/vp/analytics/introduction.qmd
               text: Introduction
-            - file: docs/vp/techspecs/background.qmd
-              text: Background & Rationale
-            - file: docs/vp/techspecs/system.qmd
-              text: System Overview & Flow
-            - file: docs/vp/techspecs/tools.qmd
-              text: Tools & Technologies
-            - file: docs/vp/techspecs/models.qmd
-              text: Models
-            - file: docs/vp/techspecs/appendix.qmd
-              text: Additional Materials
-            - file: docs/vp/techspecs/implementation.qmd
-              text: (General Specifications)
-            - file: docs/vp/techspecs/pipeline.qmd
-              text: (Base Tables)
-            - section: ValuePoints Calculations
+            - file: docs/vp/analytics/architecture.qmd
+              text: Architectural Approaches
+            - file: docs/vp/analytics/analytical_approaches.qmd
+              text: Analytical Approaches            
+            - section: Implementations
               contents:
-                - file: docs/vp/techspecs/sqlonfhir.qmd
-                  text: (Analytical approaches)
-                - file: docs/vp/techspecs/valuepoints.ipynb
-                  text: (SQL on FHIR Implementation)
-            - file: docs/vp/techspecs/metrics.qmd
-              text: (ValuePoint Dashboards)
-            - file: docs/vp/techspecs/dhis2.qmd
-              text: (DHIS2 Reports)
-        - section: "Software"
-          href: docs/vp/vpsoftware.qmd
-          contents: 
-            - file: docs/vp/vpsoftware.qmd
-              text: Software
+                - file: docs/vp/analytics/patient_timeline.ipynb
+                  text: Patient Timeline Generation
+                - file: docs/vp/analytics/metrics_layer.qmd
+                  text: Metrics layer
+                # - file: docs/vp/analytics/pipeline.qmd
+                #   text: (Base Tables)
+                # - file: docs/vp/analytics/metrics.qmd
+                #   text: (ValuePoint Dashboards)
+            # - file: docs/vp/analytics/dhis2.qmd
+            #   text: (DHIS2 Reports)
+        # - section: "Software"
+        #   href: docs/vp/vpsoftware.qmd
+        #   contents: 
+        #     - file: docs/vp/vpsoftware.qmd
+        #       text: Software
     - id: momcare
       title: MomCare
       style: "floating"
@@ -129,11 +121,11 @@ website:
             - file: docs/momcare/dak/shr.qmd
               text: Shared Health Record
         - section: "Technical Specification"
-          href: docs/momcare/techspecs/gettingstarted.qmd
+          href: docs/momcare/analytics/gettingstarted.qmd
           contents: 
-            - file: docs/momcare/techspecs/gettingstarted.qmd
+            - file: docs/momcare/analytics/gettingstarted.qmd
               text: Getting Started
-            - file: docs/momcare/techspecs/information.qmd
+            - file: docs/momcare/analytics/information.qmd
               text: Further Information 
     - id: whatsapp
       title: WhatsApp Enrolment
