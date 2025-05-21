@@ -1,8 +1,8 @@
-# 5. DBT Models
+# DBT Models
 
 This section outlines the DBT models used in the project, explaining how raw data in the form of FHIR resources was transformed into tables used in the dashboard. DBT was chosen because it fits well with SQL-based workflows, enforce modular and reusable code through the use of `models` and `macros`. It also provides useful features like documentation and lineage tracking, which made it easier to maintain and understand the project structure. The code for the DBT project can be found on GitHub: [open-mnch-dbt-analytics](https://github.com/PharmAccess/open-mnch-dbt-analytics/tree/main)
 
-## 5.1 Transformations
+## Transformations
 
 The FHIR resources (located in the "base_reports" folder at the root) are first transformed into two models `patient_timeline` and `patient_info` which serve as the base models for all other downstream models used in calculating value points.
 
@@ -37,7 +37,7 @@ The table below is an output from the code above and shows part of the `patient_
 
 ![](pt_combined.png)
 
-## 5.2 Value-Points Calculation 
+## Value-Points Calculation 
 
 There are three models that are used in calculating the value points for the different indicators: early ANC, full ANC profile, ultrasound, 4 ANC’s, facility based delivery and 2 PNC’s.
 

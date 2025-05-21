@@ -81,7 +81,7 @@ website:
               contents:
                 - file: docs/vp/analytics/patient_timeline.ipynb
                   text: Patient Timeline Generation
-                - file: docs/vp/analytics/models.qmd
+                - file: docs/vp/analytics/metrics_layer.qmd
                   text: Metrics layer
                 # - file: docs/vp/analytics/pipeline.qmd
                 #   text: (Base Tables)
