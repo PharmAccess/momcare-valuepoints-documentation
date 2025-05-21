@@ -79,10 +79,6 @@ website:
               text: Analytical Approaches
             - file: docs/vp/analytics/models.qmd
               text: Models
-            - file: docs/vp/analytics/appendix.qmd
-              text: Additional Materials
-            - file: docs/vp/analytics/implementation.qmd
-              text: (General Specifications)
             - file: docs/vp/analytics/pipeline.qmd
               text: (Base Tables)
             - section: ValuePoints Calculations
@@ -93,8 +89,8 @@ website:
                   text: (SQL on FHIR Implementation)
             - file: docs/vp/analytics/metrics.qmd
               text: (ValuePoint Dashboards)
-            - file: docs/vp/analytics/dhis2.qmd
-              text: (DHIS2 Reports)
+            # - file: docs/vp/analytics/dhis2.qmd
+            #   text: (DHIS2 Reports)
         # - section: "Software"
         #   href: docs/vp/vpsoftware.qmd
         #   contents: 
