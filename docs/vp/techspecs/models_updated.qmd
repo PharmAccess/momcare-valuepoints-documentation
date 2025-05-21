@@ -2,7 +2,7 @@
 
 This section outlines the DBT models used in the project, explaining how raw data in the form of FHIR resources was transformed into tables used in the dashboard. DBT was chosen because it fits well with SQL-based workflows, enforce modular and reusable code through the use of `models` and `macros`. It also provides useful features like documentation and lineage tracking, which made it easier to maintain and understand the project structure. The code for the DBT project can be found on GitHub: [open-mnch-dbt-analytics](https://github.com/PharmAccess/open-mnch-dbt-analytics/tree/main)
 
-## 5.1 Transfromations
+## 5.1 Transformations
 
 The FHIR resources (located in the "base_reports" folder at the root) are first transformed into two models `patient_timeline` and `patient_info` which serve as the base models for all other downstream models used in calculating value points.
 
@@ -13,6 +13,29 @@ The FHIR resources (located in the "base_reports" folder at the root) are first 
 These models are then transformed and combined into a single dataset `patient timeline combined`, which serves as a building block for subsequent models used in calculating value points. The transformations applied to the base models include, filtering the patient events data based on age, and adding information that flags high-risk patients based on their captured conditions. The code for the intermediary models used to create the `patient_timeline_combined` can be found at `models/value_points/staging`.
 
 ![](base_staged_m-schema.png)
+
+The code below is used to create the `patient_timeline_combined` based on the intermediary models `patient_info_enriched` and `patient_timeline_enriched`
+
+```sql
+{{
+    config(
+        materialized = 'table',
+        on_schema_change = 'fail'
+    )
+}}
+
+SELECT
+    pi.*,
+    pt.*
+FROM
+    {{ ref('patient_info_enriched') }} AS pi
+INNER JOIN
+    {{ ref('patient_timeline_enriched') }} AS pt
+    ON pi.patient_id = pt.patient_id
+```
+The table below is an output from the code above and shows part of the `patient_timeline_combined` table
+
+![](pt_combined.png)
 
 ## 5.2 Value-Points Calculation 
 
@@ -29,6 +52,12 @@ The tables resulting from these calculations serve as the basis for the tables u
 4. `value_points_base`: The model calculates the number of value points that are obtained, missed or can still be obtained per clinic, patient and indicator. This model is based on models 1,2 and 3 above
 
 ![](vp_base.png){fig-align="center"}
+
+The tables below show some of the columns from the `value_points_base` model. 
+
+![](vp_base-1.png)
+
+![](vp_base-2.png)
 
 5. `patient_points_base`: The model calculates the number of patients that have missed or received the services corresponding to a certain indicator, or are still able to receive those services, per clinic and indicator. The model is derived of from `value_points_base`
 
