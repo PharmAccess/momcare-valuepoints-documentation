@@ -83,10 +83,10 @@ website:
                   text: Patient Timeline Generation
                 - file: docs/vp/analytics/models.qmd
                   text: Metrics layer
-                - file: docs/vp/analytics/pipeline.qmd
-                  text: (Base Tables)
-                - file: docs/vp/analytics/metrics.qmd
-                  text: (ValuePoint Dashboards)
+                # - file: docs/vp/analytics/pipeline.qmd
+                #   text: (Base Tables)
+                # - file: docs/vp/analytics/metrics.qmd
+                #   text: (ValuePoint Dashboards)
             # - file: docs/vp/analytics/dhis2.qmd
             #   text: (DHIS2 Reports)
         # - section: "Software"
