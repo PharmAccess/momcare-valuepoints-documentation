@@ -76,19 +76,19 @@ website:
             - file: docs/vp/analytics/architecture.qmd
               text: Architectural Approaches
             - file: docs/vp/analytics/analytical_approaches.qmd
-              text: Analytical Approaches
-            - file: docs/vp/analytics/models.qmd
-              text: Models
-            - file: docs/vp/analytics/pipeline.qmd
-              text: (Base Tables)
-            - section: ValuePoints Calculations
+              text: Analytical Approaches            
+            - section: Implementation
               contents:
+                - file: docs/vp/analytics/models.qmd
+                  text: Models
+                - file: docs/vp/analytics/pipeline.qmd
+                  text: (Base Tables)
                 - file: docs/vp/analytics/sqlonfhir.qmd
                   text: (Analytical approaches)
                 - file: docs/vp/analytics/valuepoints.ipynb
                   text: (SQL on FHIR Implementation)
-            - file: docs/vp/analytics/metrics.qmd
-              text: (ValuePoint Dashboards)
+                - file: docs/vp/analytics/metrics.qmd
+                  text: (ValuePoint Dashboards)
             # - file: docs/vp/analytics/dhis2.qmd
             #   text: (DHIS2 Reports)
         # - section: "Software"
