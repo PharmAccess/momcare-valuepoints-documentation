@@ -1,18 +1,86 @@
+---
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-location: right
+---
 # Analytical approaches
 
-<!-- TODO: add contents from the page with resources to vp tool here  -->
+## Working with FHIR Data
 
-## Patient Timeline 
+Healthcare data retrieved from FHIR servers is inherently hierarchical, reflecting the relationships between patients, encounters, observations and other clinical entities. While this model excels at representing real-world workflows, it can complicate analytics: extracting a simple list of patient diagnoses may require traversing multiple layers of nested JSON.
 
-(•	Key concepts are identical to Open Health Stack: https://google.github.io/fhir-data-pipes/concepts/concepts/, so we could re-use their text.
-o	difference in implementation is that we use modern/performant Python components (DuckDB, polars) instead of Java-based stack, so we can put a forward reference to the implementation part
-•	In OHS, there are two approaches to 'flatten' FHIR resources, see https://google.github.io/fhir-data-pipes/concepts/views/
-o	We choose SQL-on-FHIR because it is a new upcoming standard defined for this purpose
-o	For a introductory tutorial SQL-on-FHIR: https://www.youtube.com/watch?app=desktop&v=n6Pwi4cKHI0) 
+Several strategies have emerged to simplify FHIR data for analysis:
 
+1. **Direct RESTful Queries**  
+   - **Description:** Clients issue HTTP GET requests against FHIR endpoints (e.g. `/Observation?patient=123`) to retrieve raw resources.  
+   - **Shortcomings:**  
+     - Results remain deeply nested JSON, requiring custom parsing logic.  
+     - Related resources often require additional round-trips (e.g. follow-up requests to fetch linked Patient or Encounter).  
+     - Performance can degrade when paging through large result sets.
+
+2. **FHIRPath Expressions**  
+   - **Description:** FHIRPath is a domain-specific language for navigating and extracting data from FHIR resources (e.g. `Observation.where(code = 'XYZ').value`).  
+   - **Shortcomings:**  
+     - Engine support varies by server; not all servers expose a FHIRPath execution endpoint.  
+     - Complex expressions become hard to maintain for broad analytic queries.  
+     - Performance may suffer when evaluating on large collections.
+
+3. **Clinical Quality Language (CQL)**  
+   - **Description:** CQL is a higher-level, human-readable language designed for clinical decision support and quality measurement; it can query and compute over FHIR data.  
+   - **Shortcomings:**  
+     - Primarily intended for clinical rules rather than ad-hoc analytics.  
+     - Requires a CQL execution engine (e.g. on a CDS server).  
+     - Steeper learning curve for analytics teams accustomed to SQL.
+
+4. **SQL-on-FHIR**  
+   - **Description:** This approach flattens nested FHIR resources into relational tables or views, enabling analysts to use standard SQL to query FHIR data as if it were in a traditional data warehouse.  
+   - **Shortcomings:**  
+     - Initial setup requires mapping FHIR structures to tables 
+     - May lose some of the hierarchical semantics and provenance metadata.  
+     - Ongoing maintenance needed as resource profiles evolve.
+
+Each method balances trade-offs between real-time access, complexity, performance, and maintenance. In practice, many organizations combine bulk export for periodic batch processing with SQL-on-FHIR or dbt for ongoing analytics, reserving FHIRPath or CQL for domain-specific rule evaluations.
+
+The method that was best suited to generate the required metrics was bulk exports of FHIR data in NDJSON files, using SQL-ON-FHIR to flatten the tables and dbt for analytics.
 
 ## SQL-on-FHIR
 
-(•	In OHS, there are two approaches to 'flatten' FHIR resources, see https://google.github.io/fhir-data-pipes/concepts/views/
-o	We choose SQL-on-FHIR because it is a new upcoming standard defined for this purpose
-o	For a introductory tutorial SQL-on-FHIR: https://www.youtube.com/watch?app=desktop&v=n6Pwi4cKHI0)
+Within the Open Health Stack (OHS) Analytics framework, two primary strategies exist for “flattening” FHIR resources into analytics‐ready tables:
+
+1. **SQL Virtual Views**  
+   - Analysts write SQL statements against raw FHIR exports (e.g., Parquet files) to define virtual views.  
+   - These views live outside the core ETL pipeline, in the downstream SQL engine, and can be modified independently.  
+
+2. **FHIR ViewDefinition Resources**  
+   - The SQL-on-FHIR-v2 spec introduces a `ViewDefinition` resource that uses FHIRPath expressions to map nested elements into columns.  
+   - An OHS “View Runner” within the pipeline materializes these definitions into persistent tables.  
+
+The ValuePoints solution adopts the SQL-on-FHIR approach, a nascent standard that provides portable, version-controlled view definitions and seamless integration with downstream analytics platforms.
+
+<!-- TODO: add contents from the page with resources to vp tool here  -->
+
+### ETL Pipeline Overview
+
+The ValuePoints ETL pipeline includes a **Base Reporter** module that leverages SQL-on-FHIR to extract event-level data from FHIR resources and assemble a canonical patient timeline. That timeline then serves as the foundation for all subsequent metric computation and reporting.
+
+![](reporting schema.png)
+
+
+### [Patient Timeline Table](pipeline.qmd)
+
+The **Patient Timeline** table captures each clinical event—procedures, treatments, diagnoses—alongside standardized timestamps and contextual metadata. By reconstructing the sequence of a patient’s interactions over time, this table enables longitudinal analysis and supports all downstream reports.
+
+- Construction is based on a standardized workflow originally demonstrated for maternal care programs, ensuring consistency in event sequencing.  
+- Similar “event data” and timeline approaches are documented in recent literature[^1] [^2] [^3].
+
+### Extending the Pipeline
+
+Once the Patient Timeline is in place, additional ValuePoints reports (e.g., program adherence, outcome measures) can be implemented by building on the base tables and models.
+
+[^1]: MedInfo 2023;1:e43847: Defines an “event data” model similar to patient timelines.  
+[^2]: MedInfo 2021;4:e25645: Presents a workflow for filtering and inclusion criteria in clinical event extraction.  
+[^3]: BMC Health Services Research 2023;23:09498-1: Describes methods for integrating data across multiple FHIR resources.  
+
+
